@@ -27,7 +27,7 @@
                         <td><input type="checkbox" name="" id=""></td>
                         <td>' . $id . '</td>
                         <td>' . $namedm . '</td>
-                        <td>' . $hinh . '</td>
+                        <td>' . $imgdm . '</td>
                         <td><a  href="' . $suadm . '"> <input class="btn-act" type="button" value="Sửa"></a> 
                         <a href="' . $xoadm . '"><input class="btn-act" type="button" value="xoá"></a></td>
                     </tr>';

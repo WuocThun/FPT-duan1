@@ -19,7 +19,7 @@
                 $xoadm = "index.php?act=xoadm&id=".$id;
                 $imgpath= "../upload/".$imgdm;
                 if(is_file($imgpath)){
-                    $hinh = "<img src='".$imgpath."' height='80'>";
+                    $hinh = "<img src='".$hinhpath."' height='80'>";
                 }else{
                     $hinh = "No photo";
                 }
@@ -27,7 +27,7 @@
                         <td><input type="checkbox" name="" id=""></td>
                         <td>' . $id . '</td>
                         <td>' . $namedm . '</td>
-                        <td>' . $hinh . '</td>
+                        <td>' . $imgdm . '</td>
                         <td><a  href="' . $suadm . '"> <input class="btn-act" type="button" value="Sửa"></a> 
                         <a href="' . $xoadm . '"><input class="btn-act" type="button" value="xoá"></a></td>
                     </tr>';

@@ -56,7 +56,7 @@ if (isset($_GET['act'])) {
                     // echo "Sorry, there was an error uploading your file.";
                 }                $namedm = $_POST['namedm'];
                 $id = $_POST['id'];
-                update_danhmuc($id, $namedm, $imgdm1);
+                update_danhmuc($id, $namedm, $imgdm);
             }
             $listdanhmuc = loadAll_danhmuc();
             include "danhmuc/list.php";

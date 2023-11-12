@@ -1,12 +1,6 @@
 <?php
 if (is_array($dm)){
     extract($dm);
-    $imgpath= "../upload/".$imgdm;
-    if(is_file($imgpath)){
-        $hinh = "<img src='".$imgpath."' height='80'>";
-    }else{
-        $hinh = "No photo";
-    }
 }
 ?>
 <div class="row container_dm">
@@ -37,11 +31,6 @@ if (is_array($dm)){
             width: 100%;
             margin: auto;
         }
-        .imgpath{
-            width: 100px;
-            height: 70;
-            
-        }
     </style>
     <div class="row frmtitle">
         <h1>Cập nhật danh mục</h1>
@@ -54,9 +43,8 @@ if (is_array($dm)){
                 <input type="text" name="namedm" value="<?php if(isset($namedm)&& ($namedm!="")) echo $namedm ?>">
             </div>
             <div class="row mb10 text_dm">
-                Ảnh Danh mục<br>
-                <input type="file" name="imgdm"> </br> <?=$hinh?> 
-                            
+                Ảnh Danh mục<br>/
+                <input type="file" name="imgdm" value="< $hinh ?>">
             </div>
             <div class="row mb20 btn_container_dm">
             <input type="hidden" name="id" value="<?php if(isset($id)&& ($id >0)) echo $id ?>">

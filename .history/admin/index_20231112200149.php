@@ -12,7 +12,7 @@ if (isset($_GET['act'])) {
             if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
                 if (isset($_POST['namedm']) && $_POST['namedm'] != "") {
                     $namedm = $_POST['namedm'];
-                    $imgdm1 = $_FILES['imgdm']['name'];
+                    $imgdm1 = $_FILES['imgd1m']['name'];
                     $target_dir = "../upload/";
                     $target_file = $target_dir . basename($_FILES["imgdm"]["name"]);
                     if (move_uploaded_file($_FILES["imgdm"]["tmp_name"], $target_file)) {
@@ -20,7 +20,7 @@ if (isset($_GET['act'])) {
                     } else {
                         // echo "Sorry, there was an error uploading your file.";
                     }
-                    insert_danhmuc($namedm, $imgdm1);
+                    insert_danhmuc($namedm, $imgdm);
                     $thongbao = "Thêm thành công";
                 } else {
                     $thongbao = "Vui lòng nhập đủ thông tin.";
@@ -47,16 +47,10 @@ if (isset($_GET['act'])) {
             break;
         case 'updatedm':
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
-                $imgdm1 = $_FILES['imgdm']['name'];
-                $target_dir = "../upload/";
-                $target_file = $target_dir . basename($_FILES["imgdm"]["name"]);
-                if (move_uploaded_file($_FILES["imgdm"]["tmp_name"], $target_file)) {
-                    // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
-                } else {
-                    // echo "Sorry, there was an error uploading your file.";
-                }                $namedm = $_POST['namedm'];
+                $imgdm = $_POST['imgdm'];
+                $namedm = $_POST['namedm'];
                 $id = $_POST['id'];
-                update_danhmuc($id, $namedm, $imgdm1);
+                update_danhmuc($id, $namedm, $imgdm);
             }
             $listdanhmuc = loadAll_danhmuc();
             include "danhmuc/list.php";

@@ -55,8 +55,11 @@ if (is_array($dm)){
             </div>
             <div class="row mb10 text_dm">
                 Ảnh Danh mục<br>
-                <input type="file" name="imgdm"> </br> <?=$hinh?> 
-                            
+                <input type="file" name="imgdm"> </br>
+                <div class="imgpath">
+               <?php 
+               echo '<img src='
+               ?>               
             </div>
             <div class="row mb20 btn_container_dm">
             <input type="hidden" name="id" value="<?php if(isset($id)&& ($id >0)) echo $id ?>">

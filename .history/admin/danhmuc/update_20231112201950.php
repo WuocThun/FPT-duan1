@@ -37,11 +37,6 @@ if (is_array($dm)){
             width: 100%;
             margin: auto;
         }
-        .imgpath{
-            width: 100px;
-            height: 70;
-            
-        }
     </style>
     <div class="row frmtitle">
         <h1>Cập nhật danh mục</h1>
@@ -55,8 +50,9 @@ if (is_array($dm)){
             </div>
             <div class="row mb10 text_dm">
                 Ảnh Danh mục<br>
-                <input type="file" name="imgdm"> </br> <?=$hinh?> 
-                            
+                <input type="file" name="imgdm"> </br>
+                <div style="hei">
+                <?=$hinh ?></div>
             </div>
             <div class="row mb20 btn_container_dm">
             <input type="hidden" name="id" value="<?php if(isset($id)&& ($id >0)) echo $id ?>">
