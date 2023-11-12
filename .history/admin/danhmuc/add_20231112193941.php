@@ -36,7 +36,7 @@
                     </div>
                     <div class="row mb10 text_dm">
                         Ảnh Danh mục<br>
-                        <input type="file" name="imgdm">
+                        <input type="text" name="imgdm">
                     </div>
                     <div class="row mb20 btn_container_dm">
                         <input type="submit" class="btn_dm" name="themmoi" value="Thêm">

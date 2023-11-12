@@ -29,14 +29,14 @@
                     }
                 </style>
             <div class="row formcontent">
-                <form enctype="multipart/form-data" class="form_dm" action="index.php?act=adddm" method="post" class="box_dm">
+                <form class="form_dm" action="index.php?act=adddm" method="post" class="box_dm">
                     <div class="row mb10 text_dm">
                     Tên Danh Mục<br>
                     <input type="text" name="namedm">
                     </div>
                     <div class="row mb10 text_dm">
                         Ảnh Danh mục<br>
-                        <input type="file" name="imgdm">
+                        <input type="text" name="imgdm">
                     </div>
                     <div class="row mb20 btn_container_dm">
                         <input type="submit" class="btn_dm" name="themmoi" value="Thêm">
