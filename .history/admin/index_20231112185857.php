@@ -51,25 +51,6 @@ if (isset($_GET['act'])) {
         //END DANH MỤC
         //SẢN PHẨM
 case 'addsp':
-     // kiểm tra xem người dùng có add hay không
-     if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
-        if (isset($_POST['namedm']) && $_POST['namedm'] != "") {
-            $namedm = $_POST['namedm'];
-            $imgdm = $_FILES['imgdm']['name'];
-            $target_dir = "../upload/";
-            $target_file = $target_dir . basename($_FILES["imgdm"]["name"]);
-            if (move_uploaded_file($_FILES["imgdm"]["tmp_name"], $target_file)) {
-                // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
-            } else {
-                // echo "Sorry, there was an error uploading your file.";
-            }
-            insert_danhmuc($namedm, $imgdm);
-            $thongbao = "Thêm thành công";
-        } else {
-            $thongbao = "Vui lòng nhập đủ thông tin.";
-        }
-    }
-        $listdanhmuc = loadAll_danhmuc();
     include'sanpham/add.php';
     break;
 

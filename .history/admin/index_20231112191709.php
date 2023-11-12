@@ -55,15 +55,15 @@ case 'addsp':
      if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
         if (isset($_POST['namedm']) && $_POST['namedm'] != "") {
             $namedm = $_POST['namedm'];
-            $imgdm = $_FILES['imgdm']['name'];
-            $target_dir = "../upload/";
-            $target_file = $target_dir . basename($_FILES["imgdm"]["name"]);
-            if (move_uploaded_file($_FILES["imgdm"]["tmp_name"], $target_file)) {
+            $hinh = $_FILES['imgdm']['name'];
+            $target_dir = "../uploaddm/";
+            $target_file = $target_dir . basename($_FILES["hinh"]["name"]);
+            if (move_uploaded_file($_FILES["hinh"]["tmp_name"], $target_file)) {
                 // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
             } else {
                 // echo "Sorry, there was an error uploading your file.";
             }
-            insert_danhmuc($namedm, $imgdm);
+            // insert_danhmuc($namedm, $imgdm);
             $thongbao = "Thêm thành công";
         } else {
             $thongbao = "Vui lòng nhập đủ thông tin.";

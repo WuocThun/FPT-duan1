@@ -56,7 +56,7 @@ case 'addsp':
         if (isset($_POST['namedm']) && $_POST['namedm'] != "") {
             $namedm = $_POST['namedm'];
             $imgdm = $_FILES['imgdm']['name'];
-            $target_dir = "../upload/";
+            $target_dir = "../uploaddm/";
             $target_file = $target_dir . basename($_FILES["imgdm"]["name"]);
             if (move_uploaded_file($_FILES["imgdm"]["tmp_name"], $target_file)) {
                 // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
