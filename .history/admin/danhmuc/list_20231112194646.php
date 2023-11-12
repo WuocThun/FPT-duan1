@@ -17,11 +17,9 @@
                 extract($danhmuc);
                 $suadm = "index.php?act=suadm&id=".$id;
                 $xoadm = "index.php?act=xoadm&id=".$id;
-                $imgpath= "../upload/".$imgdm;
+                $hinhpath= "../upload/".$img;
                 if(is_file($hinhpath)){
-                    $hinh = "<img src='".$hinhpath."' height='80'>";
-                }else{
-                    $hinh = "No photo";
+                    $hinh = "<img src='".$hinhpath."' height='80'"
                 }
                 echo ' <tr>
                         <td><input type="checkbox" name="" id=""></td>
