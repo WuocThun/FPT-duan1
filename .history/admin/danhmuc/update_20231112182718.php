@@ -44,7 +44,7 @@ if (is_array($dm)){
             </div>
             <div class="row mb10 text_dm">
                 Ảnh Danh mục<br>
-                <input type="text" name="imgdm" value="<?php if(isset($imgdm)&& ($imgdm!="")) echo $imgdm ?>">
+                <input type="text" name="tenloai" value="<?php if(isset($imgdm)&& ($imgdm!="")) echo $imgdm ?>">
             </div>
             <div class="row mb20 btn_container_dm">
                 <input type="submit" class="btn_dm" name="capnhat" value="Cập nhật">

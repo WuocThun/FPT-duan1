@@ -39,7 +39,7 @@
                         <input type="text" name="imgdm">
                     </div>
                     <div class="row mb20 btn_container_dm">
-                        <input type="submit" class="btn_dm" name="themmoi" value="Thêm nút">
+                        <input type="submit" class="btn_dm" name="themmoi" value="Thêm">
                         <input type="submit" class="btn_dm" value="Nhập lại">
                         <a class="btn_dm" href="index.php?act=listdm"><input class="btn_dm"  type="button" value="Danh Sách"></a>
                     </div>

@@ -40,10 +40,13 @@ if (isset($_GET['act'])) {
             break;
         case 'updatedm':
             if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
-                $imgdm = $_POST['imgdm'];
                 $namedm = $_POST['namedm'];
+                $imgdm = $_POST['imgdm'];
                 $id = $_POST['id'];
                 update_danhmuc($id, $namedm, $imgdm);
+                $thongbao = "Thêm thành công"
+            }else {
+                $thongbao = "Có lỗi";
             }
             $listdanhmuc = loadAll_danhmuc();
             include "danhmuc/list.php";
