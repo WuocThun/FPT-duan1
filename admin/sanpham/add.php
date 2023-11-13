@@ -39,17 +39,25 @@
                     ?>
                   </select>
                     <div class="row mb10 text_dm">
-                    Tên Danh Mục<br>
-                    <input type="text" name="namedm">
+                    Tên món ăn<br>
+                    <input type="text" name="namesp">
                     </div>
                     <div class="row mb10 text_dm">
-                        Ảnh Danh mục<br>
-                        <input type="file" name="imgdm">
+                        Giá món ăn<br>
+                        <input type="number" name="pricesp">
+                    </div>
+                    <div class="row mb10 text_dm">
+                        Hình ảnh sản phẩm<br>
+                        <input type="file" name="imgsp">
+                    </div>
+                    <div class="row mb10 text_dm">
+                        Mô tả món ăn <br>
+                        <textarea name="des" id="" cols="83%" rows="10"></textarea>
                     </div>
                     <div class="row mb20 btn_container_dm">
                         <input type="submit" class="btn_dm" name="themmoi" value="Thêm">
-                        <input type="submit" class="btn_dm" value="Nhập lại">
-                        <a class="btn_dm" href="index.php?act=listdm"><input class="btn_dm"  type="button" value="Danh Sách"></a>
+                        <input type="reset" class="btn_dm" value="Nhập lại">
+                        <a class="btn_dm" href="index.php?act=listsp"><input class="btn_dm"  type="button" value="Danh Sách"></a>
                     </div>
                     <?php
                     if(isset($thongbao) && ($thongbao != ""))

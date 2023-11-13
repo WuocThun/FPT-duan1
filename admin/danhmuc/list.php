@@ -1,7 +1,7 @@
 <div class="row">
 
     <div class="row frmtitle">
-        <H1>Danh Sách Loại Hàng Hoá</H1>
+        <H1>Danh Sách Loại danh mục</H1>
     </div>
     <div class="row mb10 frmdsloai">
         <table>

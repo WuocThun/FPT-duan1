@@ -2,8 +2,9 @@
 include("header.php");
 include("../model/pdo.php");
 include("../model/danhmuc.php");
+include("../model/sanpham.php");
 //MVC
-if (isset($_GET['act'])) {
+if (isset($_GET['act'])) {  
     $act = $_GET['act'];
     switch ($act) {
         //DANH MỤC
@@ -66,10 +67,20 @@ if (isset($_GET['act'])) {
 case 'addsp':
      // kiểm tra xem người dùng có add hay không
      if (isset($_POST['themmoi']) && ($_POST['themmoi'])) {
-        if (isset($_POST['namedm']) && $_POST['namedm'] != "") {
-            $namedm = $_POST['namedm'];
-         
-            insert_danhmuc($namedm, $imgdm);
+        if (isset($_POST['namesp']) && $_POST['namesp'] != "") {
+            $iddm = $_POST['iddm'];
+            $namesp = $_POST['namesp'];
+            $pricesp = $_POST['pricesp'];
+            $des = $_POST['des'];
+            $imgsp1 = $_FILES['imgsp']['name'];
+                $target_dir = "../upload/";
+                $target_file = $target_dir . basename($_FILES["imgsp"]["name"]);
+                if (move_uploaded_file($_FILES["imgsp"]["tmp_name"], $target_file)) {
+                    // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                } else {
+                    // echo "Sorry, there was an error uploading your file.";
+                }         
+                insert_sanpham($namesp, $pricesp,$imgsp1,$des,$iddm);
             $thongbao = "Thêm thành công";
         } else {
             $thongbao = "Vui lòng nhập đủ thông tin.";
@@ -78,7 +89,53 @@ case 'addsp':
         $listdanhmuc = loadAll_danhmuc();
     include'sanpham/add.php';
     break;
-
+    case 'listsp':
+        if(isset($_POST['listok']) && ($_POST['listok'])){
+            $kyw = $_POST['kyw'];
+            $iddm = $_POST['iddm'];
+        }else {
+            $kyw = "";
+            $iddm = 0;
+        }
+        $listdanhmuc = loadAll_danhmuc();
+        $listsanpham = loadAll_sanpham($kyw,$iddm);
+        include "sanpham/list.php";
+        break;
+        case 'xoasp':
+            if(isset($_GET['id'])&&($_GET['id']>0)){
+                delete_sanpham($_GET['id']);
+            }
+            $listsanpham = loadAll_sanpham("",0);
+            include "sanpham/list.php";
+            break;
+            case 'suasp':
+                if(isset($_GET['id'])&&($_GET['id']>0)){
+                    $sanpham = loadOne_sanpham($_GET['id']);
+                }
+                $listdanhmuc = loadAll_danhmuc();
+                include "sanpham/update.php";
+                break;
+                case 'updatesp':
+                    if(isset($_POST['capnhat']) && ($_POST['capnhat'])){
+                        $iddm = $_POST['iddm'];
+            $namesp = $_POST['namesp'];
+            $pricesp = $_POST['pricesp'];
+            $des = $_POST['des'];
+            $imgsp1 = $_FILES['imgsp']['name'];
+                $target_dir = "../upload/";
+                $target_file = $target_dir . basename($_FILES["imgsp"]["name"]);
+                if (move_uploaded_file($_FILES["imgsp"]["tmp_name"], $target_file)) {
+                    // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
+                } else {
+                    // echo "Sorry, there was an error uploading your file.";
+                }   
+    
+                        update_sanpham($id,$iddm,$namesp,$pricesp,$imgsp1,$des);
+                    }
+                    $listdanhmuc = loadAll_danhmuc();
+                    $listsanpham = loadAll_sanpham();
+                    include "sanpham/list.php";
+                    break;
         //END SẢN PHẨM
         default:
             include "home.php";

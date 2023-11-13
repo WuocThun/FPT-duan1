@@ -17,7 +17,7 @@
         }
     </style>
             <div class="row frmtitle">
-                <H1>Thêm mới loại hàng hoá</H1>
+                <H1>Thêm mới loại danh mục</H1>
             </div>
                 <style>
                     .formcontent {
