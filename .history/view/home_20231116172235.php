@@ -12,7 +12,7 @@
                 <div class="trai">
                     <!-- <video autoplay loop src="img/pexels-ivan-samkov-8908443 (1080p).mp4"></video> -->
                     <video autoplay loop>
-                        <source src="img/pexels-ivan-samkov-8908443 (1080p).mp4" type="video/mp4">
+                        <source src="/Duanmau-FPT/img/pexels-ivan-samkov-8908443 (1080p).mp4" type="video/mp4">
                         Your browser does not support the video tag.
                       </video>
                 </div>
@@ -83,7 +83,7 @@
             
             <div class="thongtin">
                 <video autoplay loop>
-                    <source src="img/video (2160p).mp4" type="video/mp4">
+                    <source src="/Duanmau-FPT/img/video (2160p).mp4" type="video/mp4">
                   </video>
             </div>
             <div class="tt">

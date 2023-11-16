@@ -83,7 +83,7 @@
             
             <div class="thongtin">
                 <video autoplay loop>
-                    <source src="img/video (2160p).mp4" type="video/mp4">
+                    <source src="/Duanmau-FPT/img/video (2160p).mp4" type="video/mp4">
                   </video>
             </div>
             <div class="tt">

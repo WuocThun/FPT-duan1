@@ -33,10 +33,10 @@
     <div class="container">
         <div class="menu">
             <ul>
-                <li><a href="index.php">Trang chủ</a></li>
-                <li><a href="index.php?act=sanpham">Sản phẩm</a></li>
-                <li><a href="index.php?act=gioithieu">Giới thiệu</a></li>
-                <li><a href="index.php?act=dangnhap">Đăng nhập</a></li>
-                <li><a href="index.php?act=dangky">Đăng ký</a></li>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="sanpham.html">Sản phẩm</a></li>
+                <li><a href="gioithieu.html">Giới thiệu</a></li>
+                <li><a href="dangnhap.html">Đăng nhập</a></li>
+                <li><a href="dangky.html">Đăng ký</a></li>
             </ul>
         </div>

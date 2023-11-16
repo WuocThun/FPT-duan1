@@ -35,8 +35,6 @@
     </div>
 
 </body>
-<script src="view/style/app.js"></script>
-<!-- <script src="style/app.js"></script> -->
-
+<script src="style/app.js"></script>
 
 </html>
