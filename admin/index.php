@@ -118,6 +118,7 @@ case 'addsp':
                 case 'updatesp':
                     if(isset($_POST['capnhat']) && ($_POST['capnhat'])){
                         $iddm = $_POST['iddm'];
+                        $id = $_POST['id'];
             $namesp = $_POST['namesp'];
             $pricesp = $_POST['pricesp'];
             $des = $_POST['des'];

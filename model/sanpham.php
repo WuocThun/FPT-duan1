@@ -29,7 +29,7 @@ function loadOne_sanpham ($id) {
 }
 function  update_sanpham($id, $iddm, $namesp, $pricesp, $imgsp, $des)
 {
-   if ($hinh != "")
+   if ($imgsp != "")
       $sql = "update sanpham set iddm='" . $iddm . "',namesp='" . $namesp . "',pricesp='" . $pricesp . "',imgsp='" . $imgsp . "',des='" . $des . "' where id=" . $id;
    else
       $sql = "update sanpham set iddm='" . $iddm . "',namesp='" . $namesp . "',pricesp='" . $pricesp . "',des='" . $des . "' where id=" . $id;
