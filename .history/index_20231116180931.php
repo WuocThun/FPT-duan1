@@ -9,14 +9,7 @@ switch($act){
         case "gioithieu":
             include"view/gioithieu.php";
             break;
-            case "dangnhap":
-                include"view/dangnhap.php";
-                break;
-                case "dangky":
-                    include"view/dangky.php";
-                    break;
-
-
+            
 }
 }else{
     include "view/home.php";
