@@ -104,7 +104,7 @@
                     </div>
                     <input type="submit" value="Đăng ký">
                     <input type="reset"  value="Nhập lại"><br>
-                    Bạn chưa đã có tài khoản? Vui lòng <a href="dangnhap.html"> đăng nhập</a>
+                    Bạn chưa đã có tài khoản? Vui lòng <a href="dangnhap.php"> đăng nhập</a>
 
                 </form>
             </div>

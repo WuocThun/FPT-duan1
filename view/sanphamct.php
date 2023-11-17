@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../style/stylehtml.css">
+    <link rel="stylesheet" href="style/style1.css">
     <style>
         .spct {
             text-align: center;

@@ -107,5 +107,12 @@
             </div>
 
         </div>
+        </div>
+    <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d6588.720772367863!2d108.21819943235198!3d16.079538652539835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1zMTAgUGhhbiBC4buZaSBDaMOidSwgUS5I4bqjaSBDaMOidSwgVHAuxJDDoCBO4bq1bmc!5e0!3m2!1sen!2sus!4v1694067158572!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
 
 

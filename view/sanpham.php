@@ -5,7 +5,6 @@
 
         </div>
         <div class="ds">
-
             <a class="mon" href="#tile1">
                 <img src="img/sashimi (1).jpg" alt=""> <br>
                 <span>Sashimi</span>
