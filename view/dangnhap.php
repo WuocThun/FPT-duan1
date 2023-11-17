@@ -6,20 +6,22 @@
         }
 
         ._form {
+            margin-top: 1%;
             color: white;
-            margin-top: 5%;
+            padding: 3%;
+            
         }
-
+      
+        
         .fr img {
-            width: 1000px;
+            width: 900px;
             margin-top: 5%;
-
             height: 550px;
         }
 
         #_form input[type="text"],
         input[type="password"] {
-            width: 500px;
+            width: 480px;
             padding: 3%;
             margin-bottom: 10%;
             border-top: none;
@@ -38,18 +40,18 @@
 
         #_form h1 {
             font-size: 40px;
-            margin-bottom: 10%;
         }
 
         #_form {
             text-align: center;
-            margin-left: -15%;
+            margin-left: -5%;
         }
 
         #_form button {
-            width: 25%;
-            margin-left: 3%;
-            padding: 3%;
+            background-color: brown;
+            color: white;
+            border-radius: 50px;
+            box-shadow: 0px 0px 5px black;
 
         }
 
@@ -62,7 +64,7 @@
             width: 30%;
             margin-left: 3%;
             padding: 3%;
-            margin: 5%;
+            margin-bottom: 5%;
             font-size: 15px;
             border-radius: 50px;
             box-shadow: 0px 0px 5px white;
@@ -75,6 +77,10 @@
             border-radius: 50px;
             box-shadow: 0px 0px 5px black;
 
+        }
+        #_form a:hover {
+            color: brown;
+            text-decoration: none;
         }
 
 
@@ -100,7 +106,7 @@
                         <div id="passError" class="error"></div>
                     </div>
                     <input type="submit" value="Đăng nhập"><br>
-                    <a href="#">Quên mật khẩu?</a> <br>
+                    <a href="#">Quên mật khẩu?</a> <br> <br>
                     Bạn chưa có tài khoản? <a href="dangky.html">Đăng ký</a> ngay
 
                 </form>

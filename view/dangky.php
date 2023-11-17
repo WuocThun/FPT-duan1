@@ -6,19 +6,21 @@
         }
 
         ._form {
+            margin-top: 1%;
             color: white;
-            margin-top: 5%;
+            padding: 3%;
+            
         }
 
         .fr img {
-            width: 1000px;
+            width: 900px;
             margin-top: 5%;
             height: 550px;
         }
 
         #_form input[type="text"],
         input[type="password"], input[type="number"] {
-            width: 500px;
+            width: 480px;
             padding: 3%;
             margin-bottom: 5%;
             border-top: none;
@@ -31,26 +33,27 @@
         #_form input::placeholder {
             color: #f0f0f0;
             font-weight: bold;
+            
 
         }
         
 
         #_form h1 {
+            margin-top: -4%;
             font-size: 40px;
-            margin-bottom: 5%;
         }
 
         #_form {
-            margin-top: 20px;
             text-align: center;
-            margin-left: -15%;
+            margin-left: -5%;
         }
 
         #_form input[type="submit"],input[type="reset"]  {
             width: 30%;
             margin-left: 3%;
             padding: 3%;
-            margin: 5%;
+            margin-top: 2%;
+            margin-bottom: 5%;
             font-size: 15px;
             border-radius: 50px;
             box-shadow: 0px 0px 5px white;
@@ -65,8 +68,12 @@
 
 
         }
-
         #_form a {
+            color: white;
+            text-decoration: none;
+        }
+
+        #_form a:hover {
             color: red;
             text-decoration: none;
         }
@@ -104,7 +111,7 @@
                     </div>
                     <input type="submit" value="Đăng ký">
                     <input type="reset"  value="Nhập lại"><br>
-                    Bạn chưa đã có tài khoản? Vui lòng <a href="dangnhap.php"> đăng nhập</a>
+                    Bạn chưa đã có tài khoản? Vui lòng <a href="dangnhap.php"> Đăng nhập</a>
 
                 </form>
             </div>
