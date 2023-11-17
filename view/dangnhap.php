@@ -40,6 +40,8 @@
 
         #_form h1 {
             font-size: 40px;
+            color: rgb(255, 254, 254);
+  text-shadow: 2px 2px 2px #c92727;
         }
 
         #_form {
