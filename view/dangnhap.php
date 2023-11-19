@@ -39,9 +39,9 @@
         }
 
         #_form h1 {
-            font-size: 40px;
+            font-size: 45px;
             color: rgb(255, 254, 254);
-  text-shadow: 2px 2px 2px #c92727;
+            text-shadow: 2px 2px 2px #c92727;
         }
 
         #_form {
@@ -49,13 +49,7 @@
             margin-left: -5%;
         }
 
-        #_form button {
-            background-color: brown;
-            color: white;
-            border-radius: 50px;
-            box-shadow: 0px 0px 5px black;
-
-        }
+    
 
         #_form a {
             color: white;
@@ -65,19 +59,19 @@
         #_form input[type="submit"] {
             width: 30%;
             margin-left: 3%;
-            padding: 3%;
-            margin-bottom: 5%;
+            padding: 2.5%;
+            margin-bottom: 10%;
             font-size: 15px;
-            border-radius: 50px;
-            box-shadow: 0px 0px 5px white;
+            box-shadow: 0px 0px 2px brown;
+            background-color: brown;
+            color: white;
+    
 
         }
 
         #_form input[type="submit"]:hover {
-            background-color: brown;
-            color: white;
-            border-radius: 50px;
-            box-shadow: 0px 0px 5px black;
+            opacity: 0.7; /* Giảm độ mờ khi hover */
+
 
         }
         #_form a:hover {

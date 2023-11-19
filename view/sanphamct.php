@@ -8,64 +8,109 @@
     <link rel="stylesheet" href="style/style1.css">
     <style>
         .spct {
-            text-align: center;
             color: white;
+            display: flex;
+        }
+        .tsp{
+            flex-direction: column;
+        }
+        #tsp{
+            padding-right: 1%;
+            margin-left: 15%;
+            margin-top: 5%;
         }
 
-        .spct img {
-            width: 400px;
+        .tsp img {
+            width: 550px;
+            margin-left: 20%;
         }
-        .spct h1{
+        .tsp h1{
+            padding-bottom: 5%;
+            font-size: 40px;
             color: rgb(255, 254, 254);
   text-shadow: 2px 2px 2px #c92727;
         }
-        .spct strong {
-            margin-right: 25%;
+        .tsp strong {
             color: rgb(245, 113, 113);
         }
 
-        .spct p {
-            width: 40%;
-            height: 20%;
-            margin-left: 30%;
+        .tsp p {
+            line-height: 1.6em;
+            width: 90%;
+            height: 35%;
         }
 
-        .spct button {
-            padding: 10px;
-            width: 200px;
-            margin-left: 20px;
-            box-shadow: 0px 0px 5px white;
-
-        }
-
-        .spct button:hover {
+        .tsp button{
+            border: none;
+            margin-left: 10%;
             background-color: brown;
             color: white;
-            box-shadow: 0px 0px 5px white;
+            margin-top: 5%;
+            padding: 2%;
+            width: 30%;
+            box-shadow: 0px 0px 5px brown;
+            opacity: 1; /* Giảm độ mờ khi hover */
+            transition: opacity 0.3s ease; /* Thêm transition để tạo hiệu ứng mờ mượt */
+        }
+
+        .tsp button:hover,.tableBl button:hover {
+            opacity: 0.7; /* Giảm độ mờ khi hover */
+
+        }
+
+        .tableBl button{
+            border: none;
+            margin-left: 10%;
+            background-color: brown;
+            color: white;
+            margin-top: 5%;
+            padding: 1%;
+            width: 20%;
+            box-shadow: 0px 0px 5px brown;
+            opacity: 1; /* Giảm độ mờ khi hover */
+            transition: opacity 0.3s ease;
+        }
+
+        .tableBl{
+            margin-top: 10%;
+            margin-left: 10%
+        }
+
+        .tableBl table{
+            width: 90%;
+
         }
 
         .bl{
+            flex-direction: row;
             border-collapse: collapse;            
             color: white;
             text-align: center;
-            margin-left: 20%;
             margin-top: 5%;
             margin-bottom: 5%;
         }
         .bl th,td{
             width: 10%;
+            padding: 2%;
             text-align: center;
             
         }
+        .bl th{
+            font-size: 20px;
+            background-color: brown;
+            box-shadow: 0px 0px 5px brown;
+
+        }
         
-        .spct textarea {
+        .tableBl textarea {
+            width: 90%;
             background-color: black;
             box-shadow: 2px 2px 5px #888888;
             color: white;
 
         }
 
-        .spct textarea:hover {
+        .tableBl textarea:hover {
             background-color: white;
             color: black;
         }
@@ -86,19 +131,26 @@
         </div>
 
         <div class="spct">
+            <div class="tsp"> 
+                <img src="/Duanmau-FPT/img/combo.png" alt=""> <br>
+            </div>
+            <div id="tsp" class="tsp">
             <h1>SALAD THỊT DĂM BÔNG SỐNG</h1>
-            <img src="/Duanmau-FPT/img/combo.png" alt=""> <br>
-            <span>Giá:100.000Đ</span> <br>
-            <strong>Mô tả</strong> <br>
+            <span>Giá: 100.000Đ</span> <br>
             <p>
+            <strong>Mô tả:</strong><br>
                 Sushi thường được chấm với mù tạt (wasabi) hoặc nước tương Nhật Bản rồi thưởng thức.
                 Sushi ý chỉ món cơm ngọt nhẹ, nêm với giấm, còn gọi là shari, và được trang trí với neta, tức hải sản,
                 trứng hoặc rau củ, đã được nấu chín hay để sống. Ở nhiều quốc gia, sushi là một món ăn đắt tiền, tinh
                 tế, dùng trong những dịp đặc biệt.
             </p>
-            <button>Mua hàng</button> <button>Thêm vào giỏ hàng</button>
+            <button>Mua ngay</button> <button>Thêm vào giỏ hàng</button>
+            </div>
+        </div>
 
-            <table class="bl">
+        <div class="tableBl">
+
+        <table class="bl">
                 <tr>
                     <th>BÌNH LUẬN</th>
                     <th>USER</th>
@@ -118,9 +170,9 @@
             </table>
 
 
-            <textarea name="" id="" cols="100" rows="15"></textarea><br><br>
+            <textarea name="" id="" cols="100" rows="15" placeholder="Viết bình luận của bạn"></textarea><br><br>
             <button>Gửi bình luận</button>
-        </div>
+            </div>
         <footer class="duoi">
             <div class="cuoi">
                 <h2>SUSHI KOKORO </h2><br><br>
