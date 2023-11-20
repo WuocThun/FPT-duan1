@@ -103,7 +103,7 @@
                     </div>
                     <input type="submit" value="Đăng nhập"><br>
                     <a href="#">Quên mật khẩu?</a> <br> <br>
-                    Bạn chưa có tài khoản? <a href="dangky.html">Đăng ký</a> ngay
+                    Bạn chưa có tài khoản? <a href="dangky.php">Đăng ký</a> ngay
 
                 </form>
             </div>

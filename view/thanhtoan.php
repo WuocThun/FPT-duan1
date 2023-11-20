@@ -82,11 +82,11 @@
     <div class="container">
         <div class="menu">
             <ul>
-                <li><a href="index.html">Trang chủ</a></li>
-                <li><a href="sanpham.html">Sản phẩm</a></li>
-                <li><a href="gioithieu.html">Giới thiệu</a></li>
-                <li><a href="dangnhap.html">Đăng nhập</a></li>
-                <li><a href="dangky.html">Đăng ký</a></li>
+                <li><a href="index.php">Trang chủ</a></li>
+                <li><a href="sanpham.php">Sản phẩm</a></li>
+                <li><a href="gioithieu.php">Giới thiệu</a></li>
+                <li><a href="dangnhap.php">Đăng nhập</a></li>
+                <li><a href="dangky.php">Đăng ký</a></li>
             </ul>
         </div>
         <div class="thanhtoan">
