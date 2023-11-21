@@ -153,7 +153,7 @@
         <table class="bl">
                 <tr>
                     <th>BÌNH LUẬN</th>
-                    <th>USER</th>
+                    <th>TÊN</th>
                     <th>NGÀY</th>
                 </tr>
                 <tr>
