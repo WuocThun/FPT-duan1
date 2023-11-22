@@ -45,7 +45,7 @@
         color: white;
        }
        
-       .container_ button{
+       .container_ input[type="submit"]{
         width: 25%;
             padding: 2%;
             font-size: 15px;
@@ -53,13 +53,20 @@
            border-radius: 50px;
             color: white;
        }
-       .container_ button:hover{
+       
+       .container_  input[type="submit"]:hover{
         opacity: 0.7; /* Giảm độ mờ khi hover */
 
        }
        .container_ button.hidden{
         background-color: transparent;
         border-color: #fff;
+        width: 25%;
+            padding: 2%;
+            font-size: 15px;
+          
+           border-radius: 50px;
+            color: white;
        }
        .container_ form{
         background-color: black;
@@ -73,11 +80,12 @@
        .container_ input{
         background-color: black;
         margin: 8px 0;
-        padding: 10px 15px;
+        
         font-size: 13px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        color: white;
     
         border-bottom: 0.1px solid white;
         margin-bottom: 3%;
@@ -189,38 +197,63 @@
         height: 100%;
     }
     .error {
+      
             text-align: left;
             color: brown;
             display: none;
             margin-top: -10%;
-            padding-bottom: 10px;
-            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-top: 30px;
         }
 
     </style>
 
         <div class="container_" id="container_">
             <div class="form-container_ sign-up">
-                <form action="">
-                    <h1>ĐĂNG KÝ</h1>
+             
+                    <!-- <h1>ĐĂNG KÝ</h1>
                     <input type="text" placeholder="Username">
                     <input type="text"placeholder="Số điện thoại">
                     <input type="email"placeholder="Email">
                     <input type="text"placeholder="Địa chỉ">
                     <input type="password" placeholder="Password" name="" id="">
-                    <button>Đăng ký</button>
+                    <button>Đăng ký</button> -->
+                    
+                <form onsubmit="return dangky()" method="post">
+                <h1>ĐĂNG KÝ</h1>
+                  
+                        <input type="text" id="name" placeholder="Username"><br><br>
+                        <div id="nameError" class="error"></div>
+                   
+                 
+                        <input type="text" id="email" placeholder="Email"><br><br>
+                        <div id="emailError" class="error"></div>
+               
+                        <input type="number" id="phone" placeholder="Phone"><br><br>
+                        <div id="phoneError" class="error"></div>
+                
+              
+                        <input type="text" id="addrr" placeholder="Address"><br><br>
+                        <div id="addressError" class="error"></div>
+                   
+                        <input type="password" id="pass" placeholder="Password"><br><br>
+                        <div id="passwordError" class="error"></div>
+               
+                    <input type="submit" value="Đăng ký">
                 </form>
             </div>
 
             <div class="form-container_ sign-in">
-                <form action="">
+                <form onsubmit="return dangnhap()" method="post">
                     <h1>ĐĂNG NHẬP</h1>
                    
-                    <input type="username"placeholder="Username">
-                    <input type="password" placeholder="Password" name="" id="">
-                   
+                    <input type="username"  placeholder="Username" id="namedn"><br><br>
+                    <div id="namednError" class="error"></div>
+                    <input type="password" placeholder="Password" id="passdn"><br><br>
+                    <div id="passError" class="error"></div>
                     
-                    <button>Đăng nhập</button>
+                   
+                    <input type="submit" value="Đăng Nhập">
                 </form>
             </div>
 
