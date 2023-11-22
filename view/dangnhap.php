@@ -20,14 +20,14 @@
         min-height: 650px;
        }
        .container_ h1{
-        margin-top: -3%;
+        margin-top: -4%;
         color: rgb(228, 226, 226);
         font-size: 50px;
         text-shadow: 2px 2px 2px #ae3d3d;
        }
        .toggle-panel h1{
-        color: #0e0d0d;
-        text-shadow: 0px 0px 2px #050000;
+        color: white;
+        text-shadow: 0px 0px 5px #050000;
 
        }
        .container_ p{
@@ -226,7 +226,7 @@
 
             <div class="toggle-container_">
                 <div class="toggle">
-                    <img src="/FPT-duan1/img/ly.jpg" alt="">
+                    <img src="/FPT-duan1/img/mau.jpg" alt="">
                     <div class="toggle-panel toggle-left">
                         <h1>Welcome Back!</h1>
                         <p>Bạn đã có tài khoản? Đăng nhập ngay.</p>
