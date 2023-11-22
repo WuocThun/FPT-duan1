@@ -37,6 +37,6 @@
                 <li><a href="index.php?act=sanpham">Sản phẩm</a></li>
                 <li><a href="index.php?act=gioithieu">Giới thiệu</a></li>
                 <li><a href="index.php?act=dangnhap">Đăng nhập</a></li>
-                <li><a href="index.php?act=dangky">Đăng ký</a></li>
+                <li><a href="index.php?act=giohang">Giỏ hàng</a></li>
             </ul>
         </div>

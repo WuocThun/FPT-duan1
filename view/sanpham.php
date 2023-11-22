@@ -38,65 +38,65 @@
         <hr>
 
         <div class="tong2">
-            <div class="phu2">
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sashimia.jpg" alt=""><br>
               Sashimi bạch tuộc  <br>
              120.000đ/Phần <br>
                 <p>180.000đ</p> 
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sashimib.png" alt=""><br>
                 Sashimi cá ngừ (Maguro)  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sashimic.jpeg" alt=""><br>
                Sashimi cá tráp (Tai) <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sashimid.jpg" alt=""><br>
                 Sashimi cá hồi (Sake)  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
+            </a>
         </div>
 
         <div class="tong2">
-            <div class="phu2">
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sashimiaa.jpg" alt=""><br>
                 Sashimi cá thu (Saba)  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sashimibb.png" alt=""><br>
                 Sashimi cá cam (Kanpachi) <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sashimicc.jpg" alt=""><br>
                 Sashimi Sò điệp (Hotate)  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sashimidd.jpg" alt=""><br>
                 Sashimi cầu gai (Uni) <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
+            </a>
         </div>
 
         <div id="tile2" class="muc2">
@@ -107,64 +107,64 @@
             <hr>
         </div>
         <div class="tong2">
-            <div class="phu2">
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sushia.jpg" alt=""><br>
                Nigiri Sushi  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sushib.png" alt=""><br>
                Inari sushi  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sushic.jpg" alt=""><br>
                Gunkanmaki sushi  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sushid.png" alt=""><br>
                Temari sushi  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
+            </a>
         </div>
         <div class="tong2">
-            <div class="phu2">
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sushiaa.jpg" alt=""><br>
                Futomaki sushi  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sushibb.jpg" alt=""><br>
                Hosomaki sushi  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sushicc.png" alt=""><br>
                Temaki sushi  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/sushidd.JPG" alt=""><br>
                Oshi sushi  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
+            </a>
         </div>
 
 
@@ -176,64 +176,64 @@
             <hr>
         </div>
         <div class="tong2">
-            <div class="phu2">
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/mia.png" alt=""><br>
                Mì Soba  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/mib.png" alt=""><br>
                Mì Udon  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/mic.png" alt=""><br>
                Mì Ramen  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/mid.png" alt=""><br>
                Mì Shirataki  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
+            </a>
         </div>
         <div class="tong2">
-            <div class="phu2">
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/miaa.png" alt=""><br>
                Mì Yakisoba   <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/mibb.png" alt=""><br>
                Mì Hiyashi Chuka  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/micc.png" alt=""><br>
                Mì Somen  <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/midd.png" alt=""><br>
                Mì Harusame <br>
                 120.000đ/Phần<br>
                 <p>180.000đ</p><br>
                 <button>Mua Ngay</button>
-            </div>
+            </a>
         </div>
 
       
@@ -245,64 +245,64 @@
             <hr>
         </div>
         <div class="tong2">
-            <div class="phu2">
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/salada.png" alt=""><br>
                 Salad wakame<br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/saladb.png" alt=""><br>
                 Salad thịt gà<br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/saladc.png" alt=""><br>
                 Salad đậu phụ <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/saladd.png" alt=""><br>
                 Salad hải sản<br>
                 120.000đ/Phần<br>
                 <p>180.000đ</p><br>
                 <button>Mua Ngay</button>
-            </div>
+            </a>
         </div>
         <div class="tong2">
-            <div class="phu2">
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/saladaa.png" alt=""><br>
                 Salad thịt giăm bông sống<br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/saladbb.png" alt=""><br>
                 Sốt mè rang <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/saladcc.png" alt=""><br>
                 Sốt kiểu Nhật <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/saladdd.png" alt=""><br>
                 Sốt kiểu Pháp <br>
                 120.000đ/Phần<br>
                 <p>180.000đ</p><br>
                 <button>Mua Ngay</button>
-            </div>
+            </a>
         </div>
 
 
@@ -314,65 +314,65 @@
             <hr>
         </div>
         <div class="tong2">
-            <div class="phu2">
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/seta.png" alt=""><br>
                 Combo sushi sashimi cỡ vừa<br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/setb.png" alt=""><br>
                 Combo sushi cỡ nhỏ<br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/setc.png" alt=""><br>
                Combo sashimi 1 người (bạch tuộc, cá hồi) <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/setd.png" alt=""><br>
                 Combo sushi cỡ lớn <br>
                 120.000đ/Phần<br>  
                 <!-- phần này bỏ trong div chia div ra xong cho div này max-width:100px cho nó bóp lại-->
                 <p>180.000đ</p><br>
                 <button>Mua Ngay</button>
-            </div>
+            </a>
         </div>
         <div class="tong2">
-            <div class="phu2">
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/setaa.png" alt=""><br>
                <span> Salad + nước sốt mè rang<br>
                 120.000đ/Phần <br></span>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/setbb.png" alt=""><br>
                 Salad bơ thanh cua + nước sốt mè rang <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/setcc.png" alt=""><br>
                 Mì Udon (Combo 2 người) <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/setdd.png" alt=""><br>
                 Combo sushi cá hồi<br>
                 120.000đ/Phần<br>
                 <p>180.000đ</p><br>
                 <button>Mua Ngay</button>
-            </div>
+            </a>
         </div>
 
 
@@ -384,34 +384,34 @@
             <hr>
         </div>
         <div class="tong2">
-            <div class="phu2">
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/ruoua.png" alt=""><br>
                 Rượu Sake Nhật (Nihonshu)<br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/ruoub.png" alt=""><br>
                 Rượu Shochu Nhật<br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/ruouc.png" alt=""><br>
                 Rượu Whisky Nhật                <br>
                 120.000đ/Phần <br>
                 <p>180.000đ</p>
                 <button>Mua Ngay</button>
-            </div>
-            <div class="phu2">
+            </a>
+            <a class="phu2" href="index.php?act=sanphamct">
                 <img src="img/ruoud.png" alt=""><br>
                 Rượu mơ Nhật Bản (Umeshu)<br>
                 120.000đ/Phần<br>
                 <p>180.000đ</p><br>
                 <button>Mua Ngay</button>
-            </div>
+            </a>
         
         </div>
        <br>

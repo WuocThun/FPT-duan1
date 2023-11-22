@@ -1,150 +1,80 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style/style1.css">
     <style>
-        .thanhtoan {
+        
+        .thanhtoan video{
+            width: 100%;
+            margin-top: -6%;
+        }
+        .tongtt{
+            background-color: rgba(11, 11, 11, 0.3); /* Màu nền cho thẻ nav */
+            transform: translate(50%, -117%); /* Để căn giữa thẻ nav chính xác */
             color: white;
-            margin-top: 3%;
+             width: 43%;
+             margin-left: 30%;
             text-align: center;
-        }
-
-        .thanhtoan h1 {
-            margin-bottom: 3%;
-            text-align: center;
-            color: rgb(255, 254, 254);
-  text-shadow: 2px 2px 2px #c92727;        }
-
-
-        .tongtt tr td {
-            width: 10%;
-            border: 1px solid #ddd;
-        }
-
-        .tongtt table {
-            margin-left: 10%;
-            margin-right: 10%;
-
-        }
-
-        .tongtt table tr td img {
-            width: 70%;
-            height: 30%;
-
-        }
-
-        .tongtt table tr td:nth-child(2) {
-            width: 30%;
-            text-align: left;
             padding: 3%;
-            /* Đặt kích thước cho td thứ hai */
+            border-radius: 50px;
+            box-shadow: 0px 0px 5px black;
+            margin-bottom: -40%;
         }
-
-        .tongtt table tr td:nth-child(3) {
-            width: 5%;
-            /* Đặt kích thước cho td thứ ba (nhỏ hơn td thứ hai) */
+        .tongtt h1{
+            margin-bottom: 10%;
+            font-size: 33px;
+            color: rgb(255, 254, 254);
+            text-shadow: 2px 2px 2px #c92727;
         }
-
-        .tongtt table tr td button{
-            width: 60%;
-            padding: 5%;
-            box-shadow: 0px 0px 5px white;
+        #hoten{
+            width: 47%;
+            margin-right: 2%;
         }
-
-        .tongtt table tr td button:hover {
-            background-color: brown;
-            color: aliceblue;
-            box-shadow: 0px 0px 5px white;
-        }
-
-        .tongtt button{
-            width: 10%;
+       
+        .tongtt input{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background: none;
+            color: white;
             padding: 1%;
-            box-shadow: 0px 0px 5px white;
+            margin-bottom: 5%;
         }
-
-        .tongtt button:hover {
+        .tongtt input::placeholder {
+            color: white;
+            font-weight: bold;}
+            
+        .tongtt input[type="text"]{
+            width: 100%;
+        }
+       .tongtt button{
+        width: 35%;
+            padding: 2.5%;
+            margin-top: 5%;
+            font-size: 15px;
+            box-shadow: 0px 0px 2px brown;
             background-color: brown;
-            color: aliceblue;
-            box-shadow: 0px 0px 5px white;
-        }
-        .tongtt span, button{
-            margin: 5%;
-        }
+           border-radius: 50px;
+            color: white;
+       }
+       .tongtt button:hover{
+        opacity: 0.7; /* Giảm độ mờ khi hover */
+
+
+       }
     </style>
 </head>
-
-<body>
-    <div class="container">
-        <div class="menu">
-            <ul>
-                <li><a href="index.php">Trang chủ</a></li>
-                <li><a href="sanpham.php">Sản phẩm</a></li>
-                <li><a href="gioithieu.php">Giới thiệu</a></li>
-                <li><a href="dangnhap.php">Đăng nhập</a></li>
-                <li><a href="dangky.php">Đăng ký</a></li>
-            </ul>
-        </div>
         <div class="thanhtoan">
-            <h1>THANH TOÁN</h1>
+            <video loop autoplay src="/FPT-duan1/img/ssvd.mp4"></video>
+
             <div class="tongtt">
-                <table>
-                    <tr>
-                        <td><img src="/Duanmau-FPT/img/mid.png" alt=""></td>
-                        <td> Salad thịt giăm bông sống<br>
-                        </td>
-                        <td><button>Xóa</button></td>
-                    </tr>
-                    <tr>
-                        <td><img src="/Duanmau-FPT/img/mid.png" alt=""></td>
-                        <td> Salad thịt giăm bông sống<br>
-                        </td>
-                        <td><button>Xóa</button></td>
-                    </tr>
-                    <tr>
-                        <td><img src="/Duanmau-FPT/img/mid.png" alt=""></td>
-                        <td> Salad thịt giăm bông sống<br>
-                        </td>
-                        <td><button>Xóa</button></td>
-                    </tr>
-                </table>
-                <span>Tổng tiền:####</span> <button>Thanh toán</button>
+                <h1>THÔNG TIN KHÁCH HÀNG</h1> 
+            <form action="">
+                <input id="hoten" type="text" placeholder="Họ"> <input id="hoten" type="text" placeholder="Tên"> <br>
+                <br><input type="text" placeholder="Tên tài khoản"> <br>
+                <br><input type="text" placeholder="Số điện thoại" maxlength="10"> <br>
+                 <br><input type="text" placeholder="Địa chỉ"> <br>
+                <input type="checkbox">Thanh toán sau khi nhận hàng <br>
+                <button>Thanh toán</button>
+            </form>
             </div>
-
-
+           
         </div>
-
-        <footer class="duoi">
-            <div class="cuoi">
-                <h2>SUSHI KOKORO </h2><br><br>
-
-                Hotline: + 84972220532 - + 84972220456 <br> <br>
-
-                Email: cuahangsushikokoro@gmai.com <br><br>
-
-                Website: http://cuahangsushikokoro@gmai.com
-
-
-
-            </div>
-            <div id="cuoi" class="cuoi">
-                <h2>Địa chỉ cửa hàng</h2> <br> <br>
-
-                Cơ sở 1 (chính): 10 Phan Bội Châu, Q.Hải Châu, Tp.Đà Nẵng <br>
-                <br> <br>
-                Cơ sở 2: 230 Nguyễn Thị Thập, Q.Liên Chiểu, Tp.Đà Nẵng <br>
-
-                <br> <br>
-                Cơ sở 3: 116 Phùng Hưng, Q.Liên Chiểu, Tp.Đà Nẵng <br>
-
-            </div>
-
-        </footer>
-    </div>
-</body>
-
-</html>
+    

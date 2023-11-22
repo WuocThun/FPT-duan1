@@ -6,15 +6,23 @@ switch($act){
     case "sanpham":
         include"view/sanpham.php";
         break;
-        case "gioithieu":
-            include"view/gioithieu.php";
-            break;
-            case "dangnhap":
-                include"view/dangnhap.php";
-                break;
-                case "dangky":
-                    include"view/dangky.php";
-                    break;
+    case "gioithieu":
+        include"view/gioithieu.php";
+        break;
+    case "dangnhap":
+        include"view/dangnhap.php";
+        break;
+    case "sanphamct":
+        include"view/sanphamct.php";
+        break;
+    case "thanhtoan":
+        include"view/thanhtoan.php";
+        break;
+    case "giohang":
+        include"view/giohang.php";
+        break;    
+
+                        
 
 
 }

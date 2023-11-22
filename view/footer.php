@@ -3,9 +3,11 @@
         <div class="cuoi">
             <h2>SUSHI KOKORO </h2><br><br>
 
-            Hotline: + 84972220532 - + 84972220456 <br> <br>
+            Hotline: + 84972220532 - + 84972220456 <br>
+            <br> <br>
 
-            Email: cuahangsushikokoro@gmai.com <br><br>
+            Email: cuahangsushikokoro@gmai.com <br>
+            <br> <br>
 
             Website: http://cuahangsushikokoro@gmai.com
 

@@ -25,16 +25,18 @@
 }
 
 #gtphai i {
-    margin-left: 80%;
+    margin-left: 70%;
 }
 
 #gtphai h1 {
     color: rgb(228, 115, 115);
     font-size: 35px;
-    margin-top: -3%;
+    margin-top: -2%;
+    margin-bottom: 5%;
 }
 
 #gtphai p {
+    
     line-height: 1.5;
 }
 
@@ -104,10 +106,6 @@
                     nhật đã biết cách ủ cá, tôm, hải sản vào nắm cơm để giữ được mùi vị thơm ngon. Khi ủ, cơm thường
                     được trộn với một chút giấm cho chua chua ngọt ngọt. Mà cũng chính vì thế mà cá ủ trong cơm được
                     chuyển hóa thành sushi.
-                    Thứ cơm trộn giấm đẻ làm sushi được gọi là sumeshi hay sushimeshi, loại giấm để nấu thứ cơm này mà
-                    không phải là giấm thông thường mà là giấm có pha chút muối, đường, rượi ngọt Mirin, vì thế gọi là
-                    giấm hỗn hợp awasesu.
-
                     Cơm nấu xong (nấu không chín hoàn toàn nhưu cơm bình thường) được đổ ra một cái chậu gỗ rồi trộn
                     giấm vào. Vừa trộn vừa dùng quạt tay quạt cho hơi nóng thoát bớt ra để giữ hương vị của giấm. <br>
                     Sushi thường được chấm với mù tạt (wasabi) hoặc nước tương Nhật Bản rồi thưởng thức. <br>
@@ -150,8 +148,7 @@
         <div class="tonggt3">
             <div class="gttt">
                 <h2>SASHIMI</h2>
-                <p> Sushi là một món ăn Nhật Bản bao gồm cơm trộn giấm kết hợp với các nguyên liệu khác. Từ xưa, người
-                    nhật đã biết cách ủ cá, tôm, hải sản</p>
+                <p> Sashimi là một món ăn đặc trưng của ẩm thực Nhật Bản, bao gồm các lát cá hoặc hải sản sống mỏng được cắt thành từng miếng mỏng.</p>
             </div>
             <div class="gttt">
                 <h2>SUSHI</h2>
@@ -161,14 +158,12 @@
 
             <div class="gttt">
                 <h2>NOODLE</h2>
-                <p> Sushi là một món ăn Nhật Bản bao gồm cơm trộn giấm kết hợp với các nguyên liệu khác. Từ xưa, người
-                    nhật đã biết cách ủ cá, tôm, hải sản .</p>
+                <p> Mì (noodle) đóng vai trò quan trọng và có nhiều loại khác nhau được sử dụng trong các món ăn truyền thống và đương đại.</p>
             </div>
 
             <div class="gttt">
                 <h2>SALAD</h2>
-                <p> Sushi là một món ăn Nhật Bản bao gồm cơm trộn giấm kết hợp với các nguyên liệu khác. Từ xưa, người
-                    nhật đã biết cách ủ cá, tôm, hải sản</p>
+                <p>Salad Nhật Bản thường mang đến sự tươi mới và ngon miệng, kết hợp giữa rau sống, hải sản, và các thành phần khác. </p>
             </div>
 
 

@@ -39,18 +39,18 @@
 
             <br>
             <div class="sptong">
-                <a class="sp" href="sanpham.php#tile1">
+                <a class="sp" href="index.php?act=sanpham#tile1">
                     <img src="img/sashimi.jpg" alt=""><br>
                     <h4>SASHIMI</h4> <br>
 
                 </a>
-                <a class="sp" href="sanpham.php#tile2">
+                <a class="sp" href="index.php?act=sanpham#tile2">
                     <img src="img/sshi.jpg" alt=""><br>
                     <h4>SUSHI</h4> <br>
 
 
                 </a>
-                <a class="sp" href="sanpham.php#tile3">
+                <a class="sp" href="index.php?act=sanpham#tile3">
                     <img src="img/mi.jpg" alt=""><br>
                     <h4>RICE/NOODLE <br> (Cơm/Mì)</h4> <br>
 
@@ -59,18 +59,18 @@
 
 
 
-                <a class="sp" href="sanpham.php#tile4">
+                <a class="sp" href="index.php?act=sanpham#tile4">
                     <img src="img/h1.jpg" alt=""><br>
                     <h4>SALAD </h4> <br>
 
 
                 </a>
-                <a class="sp" href="sanpham.php#tile5">
+                <a class="sp" href="index.php?act=sanpham#tile5">
                     <img src="img/combo.png" alt=""><br>
                     <h4>COMBO <br> (Sashimi/Sushi)</h4> <br>
 
                 </a>
-                <a class="sp" href="sanpham.php#tile6">
+                <a class="sp" href="index.php?act=sanpham#tile6">
                     <img src="img/ruoua.png" alt=""><br>
                     <h4>OTHERS <br>(Món khác)</h4> <br>
 
