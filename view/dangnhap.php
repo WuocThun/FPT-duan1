@@ -46,6 +46,7 @@
        }
        
        .container_ button{
+        margin-top: 1%;
         width: 25%;
             padding: 2%;
             font-size: 15px;
@@ -81,7 +82,7 @@
     
         border-bottom: 0.1px solid white;
         margin-bottom: 3%;
-        width: 60%;
+        width: 65%;
         outline: none;
        }
        .form-container_{
