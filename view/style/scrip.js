@@ -141,3 +141,52 @@ if (hasError) {
 alert ("đăng nhập thành công");
 return true;
 }
+function thanhtoan(){
+    var namett = document.getElementById("hoten").value;
+    var acctt = document.getElementById("namett").value;
+    var teltt = document.getElementById("teltt").value;
+    var addtt = document.getElementById("addtt").value;
+    
+    
+     // Đặt các thẻ div lỗi ban đầu thành rỗng và ẩn đi
+     var errorContainers = document.querySelectorAll(".error");
+     errorContainers.forEach(function (errorContainer) {
+     errorContainer.textContent = "";
+     errorContainer.style.display = "none";
+ });
+
+ var hasError = false;
+ 
+ if (namett === "") {
+    var namettError = document.getElementById("namettError");
+    namettError.textContent = "Vui lòng nhập họ tên người dùng.";
+    namettError.style.display = "block";
+    hasError = true;
+}
+if (acctt === "") {
+    var accError = document.getElementById("accError");
+    accError.textContent = "Vui lòng nhập tên người dùng.";
+    accError.style.display = "block";
+    hasError = true;
+}
+if (teltt.length !== 10 || /^[1-9]\d{9}$/.test(teltt)) {
+    var telError = document.getElementById("telError");
+    telError.textContent = "Số điện thoại phải có đúng 10 số và bắt đầu bằng số 0.";
+    telError.style.display = "block";
+    hasError = true;
+}
+if (addtt === "") {
+    var addError = document.getElementById("addError");
+    addError.textContent = "Vui lòng nhập địa chỉ.";
+    addError.style.display = "block";
+    hasError = true;
+}
+if (hasError) {
+   
+    return false;
+   
+}
+alert ("Thanh toán thành công");
+return true;
+}
+
