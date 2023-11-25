@@ -21,13 +21,13 @@ switch($act){
         include"view/dangnhap.php";
         break;
     case "sanphamct":
-     if(isset($_GET['idsp'])&& ($_GET['idsp']>0)) {
-        $id = $_GET['idsp'];
-        $onesp = loadAll_sanpham($id);
-        include"view/sanphamct.php";
-     }else  {
-        include 'view/home.php';
-     }
+        if (isset($_GET['idsp'])&&($_GET['idsp'>0])) {
+            $onesp = loadAll_sanpham($_GET['idsp']);
+            include"view/sanphamct.php";
+        }else{
+            // include "view/home.php";
+            echo    'lấy id sai';
+        }
         break;
     case "thanhtoan":
         include"view/thanhtoan.php";

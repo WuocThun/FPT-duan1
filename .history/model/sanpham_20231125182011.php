@@ -30,7 +30,7 @@ function loadAll_sanpham($kyw = "",$iddm = 0) {
 function loadOne_sanpham ($id) {
     $sql = "select * from sanpham where id=".$id;
     $sp = pdo_query_one($sql);
-    return $sp; 
+    return $dm; 
 }
 function  update_sanpham($id, $iddm,$namesp, $newpricesp, $pricesp, $imgsp, $des)
 {

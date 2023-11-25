@@ -26,7 +26,7 @@ switch($act){
         $onesp = loadAll_sanpham($id);
         include"view/sanphamct.php";
      }else  {
-        include 'view/home.php';
+
      }
         break;
     case "thanhtoan":
