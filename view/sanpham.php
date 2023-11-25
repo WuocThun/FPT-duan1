@@ -8,7 +8,7 @@
     <?php
     foreach ($dsdm as $dm) {
         extract($dm);
-        $hinh = $img_path.$img;
+        $hinh = $img_path.$imgdm;
         $linkdm = "index.php?act=sanpham&idddm".$id ;
         echo '
             <a class="mon" href="'.$linkdm.'">
