@@ -17,7 +17,7 @@ switch($act){
         case "sanpham1":
             if(isset($_GET['iddm'])&&($_GET['iddm']>0)){
             $iddm= $_GET['iddm'];
-            $dssp= loadAll_sanpham("",$iddm); 
+            $dssp= loadAll_sanpham($iddm); 
             $tendm = load_ten_danhmuc($iddm);
             include"view/sanpham1.php";
 

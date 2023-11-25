@@ -32,7 +32,7 @@ function load_ten_danhmuc($iddm)
     $sql = "select * from danhmuc where id=" .$iddm;
     $dm =pdo_query($sql);
     extract($dm);
-    return $namedm;
+    return '$namedm';
 }
 function loadOne_sanpham ($id) {
     $sql = "select * from sanpham where id=".$id;

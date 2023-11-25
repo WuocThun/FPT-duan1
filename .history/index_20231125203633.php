@@ -16,14 +16,11 @@ switch($act){
         break;
         case "sanpham1":
             if(isset($_GET['iddm'])&&($_GET['iddm']>0)){
-            $iddm= $_GET['iddm'];
-            $dssp= loadAll_sanpham("",$iddm); 
-            $tendm = load_ten_danhmuc($iddm);
-            include"view/sanpham1.php";
 
             }else{
-                include 'view/home.php';
+                
             }
+            include"view/sanpham1.php";
             break;
     case "gioithieu":
         include"view/gioithieu.php";
