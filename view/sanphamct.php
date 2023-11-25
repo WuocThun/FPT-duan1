@@ -108,20 +108,28 @@
         }
     </style>
 </head>
+<?php
+extract($onesp);
+$img = $img_path . $imgsp;
 
+?>
         <div class="spct">
             <div class="tsp"> 
-                <img src="/Duanmau-FPT/img/combo.png" alt=""> <br>
+                <!-- <img src="/Duanmau-FPT/img/combo.png" alt=""> <br> -->
+            <?php 
+            echo '<img src="'.$img.'">';
+            ?> <br>
             </div>
             <div id="tsp" class="tsp">
-            <h1>SALAD THỊT DĂM BÔNG SỐNG</h1>
-            <span>Giá: 100.000Đ</span> <br>
+            <h1><?=$namesp ?></h1>
+            <span>Giá: <?=$newpricesp?>,000Đ</span> <br>
             <p>
             <strong>Mô tả:</strong><br>
-                Sushi thường được chấm với mù tạt (wasabi) hoặc nước tương Nhật Bản rồi thưởng thức.
+                <!-- Sushi thường được chấm với mù tạt (wasabi) hoặc nước tương Nhật Bản rồi thưởng thức.
                 Sushi ý chỉ món cơm ngọt nhẹ, nêm với giấm, còn gọi là shari, và được trang trí với neta, tức hải sản,
                 trứng hoặc rau củ, đã được nấu chín hay để sống. Ở nhiều quốc gia, sushi là một món ăn đắt tiền, tinh
-                tế, dùng trong những dịp đặc biệt.
+                tế, dùng trong những dịp đặc biệt. -->
+                <?=$des?>
             </p>
            <a href="index.php?act=thanhtoan"><button>Mua ngay</button></a>  <button>Thêm vào giỏ hàng</button>
             </div>

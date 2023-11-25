@@ -9,8 +9,9 @@
     foreach ($dsdm as $dm) {
         extract($dm);
         $hinh = $img_path.$img;
+        $linkdm = "index.php?act=sanpham&idddm".$id ;
         echo '
-            <a class="mon" href="#tile1">
+            <a class="mon" href="'.$linkdm.'">
             <img src="'.$hinh.'" height="100px" alt=""> <br>
             <span>'.$namedm.'</span>
     </a>
@@ -44,8 +45,9 @@
                 foreach ($spnew as $sp ){
                     extract($sp);
                     $hinh = $img_path.$img;
+                    $linksp = "index.php?act=sanphamct&idsp=".$id;
                     echo '
-                    <a class="phu2" href="index.php?act=sanphamct">
+                    <a class="phu2" href="'.$linksp.'">
                     <img src="'.$hinh.'" alt=""><br>
                         '.$namesp.'  <br>
                         '.$newpricesp.'.000đ/Phần <br>
