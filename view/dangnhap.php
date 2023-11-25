@@ -76,10 +76,9 @@
         margin: 8px 0;
         padding: 10px 15px;
         font-size: 13px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    
+        border-top: none;
+        border-left: none;
+        border-right: none;
         border-bottom: 0.1px solid white;
         margin-bottom: 3%;
         width: 65%;
@@ -120,8 +119,6 @@
 
         }
        }
-   
-
        .toggle-container_{
         position: absolute;
         top: 0;
@@ -233,16 +230,12 @@
                         <p>Bạn đã có tài khoản? Đăng nhập ngay.</p>
                         <button class="hidden" id="login">Đăng nhập</button>
                     </div>
-                    
-                    <div class="toggle-panel toggle-right">
+                    <div style="background-image: url(img/mau.jpg) ; background-size: cover;" class="toggle-panel toggle-right">
                         <h1>Hello!!</h1> <br>
                         <a href="#">Quên mật khẩu?</a>
                         <p>Bạn chưa có tài khoản? Đăng ký ngay.</p>
                         <button class="hidden" id="register">Đăng ký</button>
                     </div>
-                    
-
-
                 </div>
             </div>
            

@@ -45,7 +45,7 @@
             width: 100%;
         }
        .tongtt button{
-        width: 35%;
+            width: 35%;
             padding: 2.5%;
             margin-top: 5%;
             font-size: 15px;
