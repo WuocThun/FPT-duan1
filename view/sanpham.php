@@ -44,7 +44,7 @@
         <?php
                 foreach ($spnew as $sp ){
                     extract($sp);
-                    $hinh = $img_path.$img;
+                    $hinh = $img_path.$imgsp;
                     $linksp = "index.php?act=sanphamct&idsp=".$id;
                     echo '
                     <a class="phu2" href="'.$linksp.'">

@@ -82,7 +82,7 @@ if (isset($_GET['act'])) {
                     } else {
                         // echo "Sorry, there was an error uploading your file.";
                     }
-                    insert_sanpham($namesp, $pricesp,$imgsp,$des,$iddm,$newpricesp);
+                    insert_sanpham($namesp, $pricesp,$imgsp1,$des,$iddm,$newpricesp);
                     $thongbao = "Thêm thành công";
                 } else {
                     $thongbao = "Vui lòng nhập đủ thông tin.";
