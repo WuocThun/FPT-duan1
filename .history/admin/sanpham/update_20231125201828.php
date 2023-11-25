@@ -45,8 +45,6 @@
                                 ?>
                             </select>
                         </div>
-                        <p style="color: green;">Nhớ chọn danh mục sản phẩm nhé</p>
-
                         <div class="row mb10">
                             Tên sản phẩm<br>
                             <input type="text" name="namesp" value="<?=$namesp?>">
@@ -73,6 +71,7 @@
                             <input type="submit" name="capnhat" value="Cập Nhật">
                             <input type="submit" value="Nhập lại">
                             <a href="index.php?act=listsp"><input type="button" value="Danh Sách"></a>
+                            <p style="color: green;">Nhớ chọn danh mục sản phẩm nhé</p>
                         </div>
                         <?php 
                         if(isset($thongbao) && ($thongbao != "")) echo $thongbao;
