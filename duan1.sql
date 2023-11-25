@@ -82,6 +82,7 @@ CREATE TABLE `donhang` (
 CREATE TABLE `sanpham` (
   `id` int(11) NOT NULL,
   `namesp` varchar(255) NOT NULL,
+  `newpricesp` double NOT NULL DEFAULT 0,  
   `pricesp` double NOT NULL DEFAULT 0,
   `imgsp` varchar(255) DEFAULT NULL,
   `des` text DEFAULT NULL,
