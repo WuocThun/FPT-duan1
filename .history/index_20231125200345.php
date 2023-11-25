@@ -22,7 +22,7 @@ switch($act){
         break;
     case "sanphamct":
      if(isset($_GET['idsp'])&& ($_GET['idsp']>0)) {
-        $onesp = loadOne_sanpham($_GET['idsp']);
+        $onesp = loadAll_sanpham($_GET['idsp']);
         include"view/sanphamct.php";
      }else  {
         include 'view/home.php';

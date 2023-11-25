@@ -110,7 +110,7 @@
 </head>
 <?php
 extract($onesp);
-    $img = $img_path. $imgsp;
+$img = $img_path . $imgsp;
 ?>
         <div class="spct">
             <div class="tsp"> 
