@@ -20,6 +20,7 @@ switch($act){
             $dssp= loadAll_sanpham("",$iddm); 
             $tendm = load_ten_dm($iddm);
             include"view/sanpham1.php";
+
             }else{
                 include 'view/home.php';
             }

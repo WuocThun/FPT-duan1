@@ -27,7 +27,7 @@ function load_ten_dm($iddm)
     $sql = "select * from danhmuc where id=" .$iddm;
     $dm =pdo_query($sql);
     extract($dm);
-    return $namedm;
+    return $id;
 }
 function loadOne_danhmuc($id)
 {

@@ -4,6 +4,7 @@
 
 </div>
 <div class="ds">
+    <h1><?=$tendm?></h1>
     <?php
     foreach ($dsdm as $dm) {
         extract($dm);
@@ -20,9 +21,8 @@
 </div>
 <div>
     <div id="tile1" class="muc">
-        <?=$tendm
-        ?>
-       
+        <h1> <?=$tendm ?>
+        </h1>
     </div>
     <hr>
     <style>

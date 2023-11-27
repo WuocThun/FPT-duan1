@@ -20,7 +20,14 @@
 </div>
 <div>
     <div id="tile1" class="muc">
-        <?=$tendm
+        <?php
+        extract ($tendm);
+        foreach ($tendm as $tendm1) {
+            echo   ' <h1>
+                '.$tendm1.'
+            </h1>';
+
+        }
         ?>
        
     </div>

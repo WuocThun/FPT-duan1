@@ -27,6 +27,13 @@ function loadAll_sanpham($kyw = "",$iddm = 0) {
     $listsanpham = pdo_query($sql);
     return $listsanpham;
 }
+function load_ten_dm($iddm)
+ {
+    $sql = "select * from danhmuc where id=" .$iddm;
+    $dm =pdo_query($sql);
+    extract($dm);
+    return $namedm;
+}
 function loadOne_sanpham ($id) {
     $sql = "select * from sanpham where id=".$id;
     $sp = pdo_query_one($sql);

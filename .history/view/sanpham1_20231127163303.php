@@ -20,9 +20,8 @@
 </div>
 <div>
     <div id="tile1" class="muc">
-        <?=$tendm
-        ?>
-       
+        <h1> <?=$tendm ?>
+        </h1>
     </div>
     <hr>
     <style>

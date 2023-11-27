@@ -20,9 +20,11 @@
 </div>
 <div>
     <div id="tile1" class="muc">
-        <?=$tendm
+        <?php
+        extract ($tendm);
         ?>
-       
+        <h1>
+        </h1>
     </div>
     <hr>
     <style>

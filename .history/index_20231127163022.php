@@ -18,7 +18,11 @@ switch($act){
             if(isset($_GET['iddm'])&&($_GET['iddm']>0)){
             $iddm= $_GET['iddm'];
             $dssp= loadAll_sanpham("",$iddm); 
-            $tendm = load_ten_dm($iddm);
+            // $tendm = load_ten_dm($iddm);
+            $sql = "select * from danhmuc where id=" .$iddm;
+    $dm =pdo_query($sql);
+    extract($dm);
+    $tendm= return $namedm;
             include"view/sanpham1.php";
             }else{
                 include 'view/home.php';

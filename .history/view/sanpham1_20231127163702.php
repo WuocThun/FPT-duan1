@@ -20,7 +20,10 @@
 </div>
 <div>
     <div id="tile1" class="muc">
-        <?=$tendm
+        <?php
+            echo   ' <h1>
+                '.$tendm.'
+            </h1>';
         ?>
        
     </div>
