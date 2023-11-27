@@ -75,6 +75,13 @@
 
         </a>
     </div> -->
+    <style>
+        .radius-img > img{
+            border-radius: 50%;
+            box-shadow: 0px 0px 5px white;
+            width: 130pt;
+        }
+    </style>
     <div class="sptong">
     <?php
     foreach ($dsdm as $dm) {
@@ -82,7 +89,7 @@
         $hinh = $img_path.$imgdm;
         $linkdm = "index.php?act=sanpham1&iddm=".$id ;
         echo '
-            <a class="mon" href="'.$linkdm.'">
+            <a class="sp radius-img" href="'.$linkdm.'">
             <img src="'.$hinh.'" height="100px" alt=""> <br>
             <span>'.$namedm.'</span>
     </a>
