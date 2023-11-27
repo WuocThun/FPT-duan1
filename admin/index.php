@@ -72,6 +72,7 @@ if (isset($_GET['act'])) {
                     $iddm = $_POST['iddm'];
                     $namesp = $_POST['namesp'];
                     $pricesp = $_POST['pricesp'];
+                    $newpricesp= $_POST['newpricesp'];
                     $des = $_POST['des'];
                     $imgsp1 = $_FILES['imgsp']['name'];
                     $target_dir = "../upload/";
@@ -81,7 +82,7 @@ if (isset($_GET['act'])) {
                     } else {
                         // echo "Sorry, there was an error uploading your file.";
                     }
-                    insert_sanpham($namesp, $pricesp, $imgsp1, $des, $iddm);
+                    insert_sanpham($namesp, $pricesp,$imgsp1,$des,$iddm,$newpricesp);
                     $thongbao = "Thêm thành công";
                 } else {
                     $thongbao = "Vui lòng nhập đủ thông tin.";
@@ -121,6 +122,7 @@ if (isset($_GET['act'])) {
                 $iddm = $_POST['iddm'];
                 $id = $_POST['id'];
                 $namesp = $_POST['namesp'];
+                $newpricesp = $_POST['newpricesp'];
                 $pricesp = $_POST['pricesp'];
                 $des = $_POST['des'];
                 $imgsp1 = $_FILES['imgsp']['name'];
@@ -131,8 +133,7 @@ if (isset($_GET['act'])) {
                 } else {
                     // echo "Sorry, there was an error uploading your file.";
                 }
-
-                update_sanpham($id, $iddm, $namesp, $pricesp, $imgsp1, $des);
+                update_sanpham($id, $iddm,$namesp, $newpricesp, $pricesp, $imgsp1, $des);
             }
             $listdanhmuc = loadAll_danhmuc();
             $listsanpham = loadAll_sanpham();

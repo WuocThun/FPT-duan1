@@ -20,14 +20,14 @@
         min-height: 650px;
        }
        .container_ h1{
-        margin-top: -3%;
+        margin-top: -4%;
         color: rgb(228, 226, 226);
         font-size: 50px;
         text-shadow: 2px 2px 2px #ae3d3d;
        }
        .toggle-panel h1{
-        color: #0e0d0d;
-        text-shadow: 0px 0px 2px #050000;
+        color: white;
+        text-shadow: 0px 0px 5px #050000;
 
        }
        .container_ p{
@@ -82,14 +82,13 @@
         margin: 8px 0;
         
         font-size: 13px;
-        border-top: none;
-        border-left: none;
-        border-right: none;
-        color: white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
     
         border-bottom: 0.1px solid white;
         margin-bottom: 3%;
-        width: 60%;
+        width: 65%;
         outline: none;
        }
        .form-container_{
@@ -127,8 +126,6 @@
 
         }
        }
-   
-
        .toggle-container_{
         position: absolute;
         top: 0;
@@ -259,22 +256,18 @@
 
             <div class="toggle-container_">
                 <div class="toggle">
-                    <img src="/FPT-duan1/img/ly.jpg" alt="">
+                    <img src="/FPT-duan1/img/mau.jpg" alt="">
                     <div class="toggle-panel toggle-left">
                         <h1>Welcome Back!</h1>
                         <p>Bạn đã có tài khoản? Đăng nhập ngay.</p>
                         <button class="hidden" id="login">Đăng nhập</button>
                     </div>
-                    
-                    <div class="toggle-panel toggle-right">
+                    <div style="background-image: url(img/mau.jpg) ; background-size: cover;" class="toggle-panel toggle-right">
                         <h1>Hello!!</h1> <br>
                         <a href="#">Quên mật khẩu?</a>
                         <p>Bạn chưa có tài khoản? Đăng ký ngay.</p>
                         <button class="hidden" id="register">Đăng ký</button>
                     </div>
-                    
-
-
                 </div>
             </div>
            

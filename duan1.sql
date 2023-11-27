@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th10 16, 2023 lúc 10:24 AM
+-- Thời gian đã tạo: Th10 25, 2023 lúc 01:33 PM
 -- Phiên bản máy phục vụ: 10.4.28-MariaDB
--- Phiên bản PHP: 8.2.4
+-- Phiên bản PHP: 8.1.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -52,8 +52,8 @@ CREATE TABLE `danhmuc` (
 --
 
 INSERT INTO `danhmuc` (`id`, `namedm`, `imgdm`) VALUES
-(21, 'ss', 'fr1.png'),
-(32, 'nnl', 'midd.png');
+(33, 'Thịt', 'th.jpg'),
+(34, 'Rau', 'teaser_image_meo_bao_quan_rau_cu-1188506.jpg');
 
 -- --------------------------------------------------------
 
@@ -82,6 +82,7 @@ CREATE TABLE `donhang` (
 CREATE TABLE `sanpham` (
   `id` int(11) NOT NULL,
   `namesp` varchar(255) NOT NULL,
+  `newpricesp` double NOT NULL DEFAULT 0,
   `pricesp` double NOT NULL DEFAULT 0,
   `imgsp` varchar(255) DEFAULT NULL,
   `des` text DEFAULT NULL,
@@ -93,9 +94,9 @@ CREATE TABLE `sanpham` (
 -- Đang đổ dữ liệu cho bảng `sanpham`
 --
 
-INSERT INTO `sanpham` (`id`, `namesp`, `pricesp`, `imgsp`, `des`, `view`, `iddm`) VALUES
-(46, 'THỊT HEo', 213123, '11111111', 'bn.png', 0, 32),
-(49, 'sushi', 1313, 'pexels-cottonbro-studio-5900504.jpg', 'sushi ngn lăm nhe\r\n', 0, 32);
+INSERT INTO `sanpham` (`id`, `namesp`, `newpricesp`, `pricesp`, `imgsp`, `des`, `view`, `iddm`) VALUES
+(51, 'Thịt heo', 119, 239, 'thitheo.jpg', 'Thịt heo chứa nhiều mỡ nma lại ngon, ai ăn k đc thì do ngta bị khờ hững hờ', 0, 33),
+(52, 'Rau cải ngót', 19, 25, 'rau1.jpg', 'Đây là loại rau chứa nhiều chất xơ qtrong cho cơ thể nhât là chất sơ gan sơ vú :)))', 0, 34);
 
 -- --------------------------------------------------------
 
@@ -162,7 +163,7 @@ ALTER TABLE `binhluan`
 -- AUTO_INCREMENT cho bảng `danhmuc`
 --
 ALTER TABLE `danhmuc`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT cho bảng `donhang`
@@ -174,7 +175,7 @@ ALTER TABLE `donhang`
 -- AUTO_INCREMENT cho bảng `sanpham`
 --
 ALTER TABLE `sanpham`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=50;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
 
 --
 -- AUTO_INCREMENT cho bảng `taikhoan`

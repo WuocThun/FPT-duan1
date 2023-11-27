@@ -99,19 +99,19 @@ font-size: 40px;     }
             <div class="tonggh">
                 <table>
                     <tr>
-                        <td><img src="/Duanmau-FPT/img/mid.png" alt=""></td>
+                        <td><img src="/FPT-duan1/img/mid.png" alt=""></td>
                         <td> Salad thịt giăm bông sống<br>
                         </td>
                         <td><button>Xóa</button></td>
                     </tr>
                     <tr>
-                        <td><img src="/Duanmau-FPT/img/mid.png" alt=""></td>
+                        <td><img src="/FPT-duan1/img/mid.png" alt=""></td>
                         <td> Salad thịt giăm bông sống<br>
                         </td>
                         <td><button>Xóa</button></td>
                     </tr>
                     <tr>
-                        <td><img src="/Duanmau-FPT/img/mid.png" alt=""></td>
+                        <td><img src="/FPT-duan1/img/mid.png" alt=""></td>
                         <td> Salad thịt giăm bông sống<br>
                         </td>
                         <td><button>Xóa</button></td>
