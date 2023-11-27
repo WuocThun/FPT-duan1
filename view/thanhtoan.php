@@ -87,7 +87,7 @@
             <br><input type="text" placeholder="Địa chỉ" id="addtt"> <br>
             <div id="addError" class="error"></div>
             <input type="checkbox">Thanh toán sau khi nhận hàng <br>
-            <input type="submit" value="Thanh Toán">
+            <input type="submit" value="Thanh Toán"`>
         </form>
        
     </div>
