@@ -32,24 +32,19 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")) {
             include "view/dangnhap.php";
             break;
         case "dangky":
-            if((isset($_POST['email'])) && (isset($_POST['email'])) 
-                && ($_POST['user'] != "")&& ($_POST['user'] != "")
-                && (isset($_POST['pass']))&& ($_POST['pass'] != "")
-                && (isset($_POST['addr']))&& ($_POST['addr'] != "")
-                && (isset($_POST['tel']))&& ($_POST['tel'] != "")
-                ){
-                    if(isset($_POST['dangky'])&&($_POST['dangky']>0)){
+            if (( && ($_POST['user'] != "") && ($_POST['addr'] != "")
+            && ($_POST['pass'] != "") && ($_POST['tel'] != "")
+            && ($_POST['email'] != "")){
+
+                isset($_POST['dangky']) && ($_POST['dangky'])
+            ) {
                 $user = $_POST['user'];
                 $pass = $_POST['pass'];
                 $email = $_POST['email'];
                 $addr = $_POST['addr'];
                 $tel = $_POST['tel'];
                 insert_taikhoan($user, $pass, $email, $addr, $tel);
-                $thongbao = "Đã đăng ký thành công. Vui lòng đăng nhập";
             }
-        }else{
-            $thongbao = 'Đăng ký thật bại, vui lòng đăng ký lại';
-        }
             include 'view/bodangky.php';
             break;
         case "sanphamct":

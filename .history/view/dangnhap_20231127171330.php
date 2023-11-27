@@ -265,7 +265,7 @@
                     <div style="background-image: url(img/mau.jpg) ; background-size: cover;" class="toggle-panel toggle-right">
                         <h1>Hello!!</h1> <br>
                         <a href="#">Quên mật khẩu?</a>
-                        <p>Bạn chưa có tài khoản? <a href="index.php?act=dangky">Đăng ký ngay.</a></p>
+                        <p>Bạn chưa có tài khoản? <a href="#">Đăng ký ngay.</a></p>
                         <button class="hidden" id="register">Đăng ký</button>
                     </div>
                 </div>

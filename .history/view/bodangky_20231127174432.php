@@ -102,7 +102,7 @@
     <div class="fr"><img id="image" onclick="changeImage1()" src="img/fr2.png" alt=""></div>
     <div id="_form" class="_form">
         <h1>ĐĂNG KÝ</h1>
-        <form onsubmit="" method="post">
+        <form onsubmit="return dangky()" method="post">
             <div class="mb">
                 <input type="text" name="user" id="name" placeholder="Username"><br>
                 <div id="nameError" class="error"></div>
@@ -116,7 +116,7 @@
                 <div id="emailError" class="error"></div>
             </div>
             <div class="mb">
-                <input type="text" id="addr" name="addr" placeholder="Address"><br>
+                <input type="text" id="addrr" name="addr" placeholder="Address"><br>
                 <div id="addressError" class="error"></div>
             </div>
             <div class="mb">
@@ -124,81 +124,11 @@
                 <div id="phoneError" class="error"></div>
             </div>
            
-            <input type="submit" onsubmit="dangky()" name="dangky" value="Đăng ký">
+            <input type="submit" name="dangky" value="Đăng ký">
             <input type="reset" value="Nhập lại"><br>
             Bạn chưa đã có tài khoản? Vui lòng <a href="index.php?act=dangnhap"> Đăng nhập</a>
 
         </form>
-        <?php
-        if(isset($thongbao) && ($thongbao!="")){
-                                echo '<h3 style="color:red;margin:20px">'.$thongbao.'</h3>';
-                            }?> 
     </div>
 </div>
-<script>
-    function dangky() {
-    var name = document.getElementById("name").value;
-    var email = document.getElementById("email").value;
-    var phone = document.getElementById("phone").value;
-    var password = document.getElementById("pass").value;
-    var address = document.getElementById("addr").value;
-
-    // Đặt các thẻ div lỗi ban đầu thành rỗng và ẩn đi
-        var errorContainers = document.querySelectorAll(".error");
-        errorContainers.forEach(function (errorContainer) {
-        errorContainer.textContent = "";
-        errorContainer.style.display = "none";
-    });
-
-    var hasError = false;
-
-    // Kiểm tra xem ô input 'name' không được để trống
-    if (name === "") {
-        var nameError = document.getElementById("nameError");
-        nameError.textContent = "Vui lòng nhập tên người dùng.";
-        nameError.style.display = "block";
-        hasError = true;
-    }
-
-    // Kiểm tra định dạng email
-    var emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
-    if (!emailPattern.test(email)) {
-        var emailError = document.getElementById("emailError");
-        emailError.textContent = "Email không hợp lệ.";
-        emailError.style.display = "block";
-        hasError = true;
-    }
-    if (phone.length !== 10 || /^[1-9]\d{9}$/.test(phone)) {
-        var phoneError = document.getElementById("phoneError");
-        phoneError.textContent = "Số điện thoại phải có đúng 10 số và bắt đầu bằng số 0.";
-        phoneError.style.display = "block";
-        hasError = true;
-    }
-    
-      if (address === "") {
-        var addressError = document.getElementById("addressError");
-        addressError.textContent = "Vui lòng nhập địa chỉ.";
-        addressError.style.display = "block";
-        hasError = true;
-    }
-
-    // Kiểm tra ô input 'password' có ít nhất 3 ký tự
-    if (password.length < 3) {
-        var passwordError = document.getElementById("passwordError");
-        passwordError.textContent = "Mật khẩu phải có ít nhất 3 ký tự.";
-        passwordError.style.display = "block";
-        hasError = true;
-    }
-    
-
-    if (hasError) {
-        return false;
-    }
-    alert ("đăng ký thành công thành công");
-
-    return true;
-}
-</script>
-
 <!-- <script src="../view//style/scrip.js"></script> -->
-<!-- <script src="/FPT-duan1/view/style/scrip.js">   </script> -->

@@ -37,6 +37,7 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")) {
                 && (isset($_POST['pass']))&& ($_POST['pass'] != "")
                 && (isset($_POST['addr']))&& ($_POST['addr'] != "")
                 && (isset($_POST['tel']))&& ($_POST['tel'] != "")
+
                 ){
                     if(isset($_POST['dangky'])&&($_POST['dangky']>0)){
                 $user = $_POST['user'];
@@ -45,10 +46,7 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")) {
                 $addr = $_POST['addr'];
                 $tel = $_POST['tel'];
                 insert_taikhoan($user, $pass, $email, $addr, $tel);
-                $thongbao = "Đã đăng ký thành công. Vui lòng đăng nhập";
             }
-        }else{
-            $thongbao = 'Đăng ký thật bại, vui lòng đăng ký lại';
         }
             include 'view/bodangky.php';
             break;

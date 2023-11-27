@@ -102,7 +102,7 @@
     <div class="fr"><img id="image" onclick="changeImage1()" src="img/fr2.png" alt=""></div>
     <div id="_form" class="_form">
         <h1>ĐĂNG KÝ</h1>
-        <form onsubmit="" method="post">
+        <form onsubmit="dangky()" method="post">
             <div class="mb">
                 <input type="text" name="user" id="name" placeholder="Username"><br>
                 <div id="nameError" class="error"></div>
@@ -116,7 +116,7 @@
                 <div id="emailError" class="error"></div>
             </div>
             <div class="mb">
-                <input type="text" id="addr" name="addr" placeholder="Address"><br>
+                <input type="text" id="addrr" name="addr" placeholder="Address"><br>
                 <div id="addressError" class="error"></div>
             </div>
             <div class="mb">
@@ -124,7 +124,7 @@
                 <div id="phoneError" class="error"></div>
             </div>
            
-            <input type="submit" onsubmit="dangky()" name="dangky" value="Đăng ký">
+            <input type="submit" name="dangky" value="Đăng ký">
             <input type="reset" value="Nhập lại"><br>
             Bạn chưa đã có tài khoản? Vui lòng <a href="index.php?act=dangnhap"> Đăng nhập</a>
 
@@ -141,7 +141,7 @@
     var email = document.getElementById("email").value;
     var phone = document.getElementById("phone").value;
     var password = document.getElementById("pass").value;
-    var address = document.getElementById("addr").value;
+    var address = document.getElementById("addrr").value;
 
     // Đặt các thẻ div lỗi ban đầu thành rỗng và ẩn đi
         var errorContainers = document.querySelectorAll(".error");

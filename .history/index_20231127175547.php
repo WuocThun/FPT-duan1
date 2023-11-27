@@ -45,10 +45,10 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")) {
                 $addr = $_POST['addr'];
                 $tel = $_POST['tel'];
                 insert_taikhoan($user, $pass, $email, $addr, $tel);
-                $thongbao = "Đã đăng ký thành công. Vui lòng đăng nhập";
-            }
-        }else{
-            $thongbao = 'Đăng ký thật bại, vui lòng đăng ký lại';
+                $thongbaodk = "Đã đăng ký thành công. Vui lòng đăng nhập";
+            }else{
+                $thongbaodk = 'Đăng ký thật bại, vui lòng đăng ký lại';
+        }
         }
             include 'view/bodangky.php';
             break;

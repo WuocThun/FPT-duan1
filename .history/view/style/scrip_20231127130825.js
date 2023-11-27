@@ -43,6 +43,8 @@ setInterval(changeImage1,2000);
 
 
 
+
+
 function dangky() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
