@@ -37,7 +37,7 @@
 
 
     <br>
-    <!-- <div class="sptong">
+    <div class="sptong">
         <a class="sp" href="index.php?act=sanpham#tile1">
             <img src="img/sashimi.jpg" alt=""><br>
             <h4>SASHIMI</h4> <br>
@@ -74,7 +74,7 @@
 
 
         </a>
-    </div> -->
+    </div>
     <div class="sptong">
     <?php
     foreach ($dsdm as $dm) {

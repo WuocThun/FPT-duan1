@@ -37,7 +37,7 @@
 
 
     <br>
-    <!-- <div class="sptong">
+    <div class="sptong">
         <a class="sp" href="index.php?act=sanpham#tile1">
             <img src="img/sashimi.jpg" alt=""><br>
             <h4>SASHIMI</h4> <br>
@@ -74,21 +74,6 @@
 
 
         </a>
-    </div> -->
-    <div class="sptong">
-    <?php
-    foreach ($dsdm as $dm) {
-        extract($dm);
-        $hinh = $img_path.$imgdm;
-        $linkdm = "index.php?act=sanpham1&iddm=".$id ;
-        echo '
-            <a class="mon" href="'.$linkdm.'">
-            <img src="'.$hinh.'" height="100px" alt=""> <br>
-            <span>'.$namedm.'</span>
-    </a>
-        ';
-    }
-    ?>
     </div>
 
 </div>
