@@ -5,24 +5,23 @@
             display: flex;
         }
         .tsp{
+            width: 50%;
             flex-direction: column;
         }
         #tsp{
             width:50%;
-            padding-right: 1%;
-            margin-left: 12%;
-            margin-top: 5%;
+           
         }
 
         .tsp img {
-            width: 550px;
+            width: 70%;
             margin-left: 20%;
         }
         .tsp h1{
             padding-bottom: 5%;
             font-size: 40px;
             color: rgb(255, 254, 254);
-  text-shadow: 2px 2px 2px #c92727;
+            text-shadow: 2px 2px 2px #c92727;
         }
         .tsp strong {
             color: rgb(245, 113, 113);
@@ -32,33 +31,33 @@
             line-height: 1.6em;
             width: 90%;
             height: 35%;
+            max-height: 35%;
         }
 
-        .tsp button{
+        .tsp button,.tsp a button{
+            margin-top: 10%;
             border: none;
-            margin-left: 10%;
             background-color: brown;
             color: white;
-            /* margin-top: 5%;
-            padding: 2%;
-            width: 60%; */
             box-shadow: 0px 0px 5px brown;
-            opacity: 1; /* Giảm độ mờ khi hover */
-            border-radius: 30%;
-            height: 30px;
+            opacity: 1; /* Giảm độ mờ khi hover */ 
+            width: 200px;   
+            margin-left: 5%;
+            padding: 15px;
         }
+         .tsp a button{
+            margin-top: 37%;
+        }
+        
+        
+       
 
         .tsp button:hover,.tableBl button:hover {
             opacity: 0.7; /* Giảm độ mờ khi hover */
             
 
         }
-        #btn1{
-            width: 100px;
-        }
-        #btn2{
-            margin-left: 3%;
-        }
+    
         .tableBl button{
             border: none;
             background-color: brown;
@@ -144,7 +143,7 @@ extract($onesp);
             </p>
             <div class="row-flex">
            <a href="index.php?act=thanhtoan">
-            <button id="btn1">Mua ngay</button></a> <button id="btn2">Thêm vào giỏ hàng</button>
+            <button >Mua ngay</button></a> <button>Thêm vào giỏ hàng</button>
             </div>
             </div>
         </div>
