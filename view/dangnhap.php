@@ -64,11 +64,11 @@
         width: 25%;
             padding: 2%;
             font-size: 15px;
-          
            border-radius: 50px;
             color: white;
        }
        .container_ form{
+       
         background-color: black;
         display: flex;
         align-items: center;
@@ -80,7 +80,7 @@
        .container_ input{
         background-color: black;
         margin: 8px 0;
-        
+        color: white;
         font-size: 13px;
     border-top: none;
     border-left: none;
@@ -194,14 +194,13 @@
         height: 100%;
     }
     .error {
-      
-            text-align: left;
-            color: brown;
+             color: brown;
             display: none;
             margin-top: -10%;
             padding-bottom: 20px;
             padding-top: 30px;
-        }
+    }
+   
 
     </style>
 
@@ -235,7 +234,6 @@
                    
                         <input type="password" id="pass" placeholder="Password"><br><br>
                         <div id="passwordError" class="error"></div>
-               
                     <input type="submit" value="Đăng ký">
                 </form>
             </div>

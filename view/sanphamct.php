@@ -8,6 +8,7 @@
             flex-direction: column;
         }
         #tsp{
+            width:50%;
             padding-right: 1%;
             margin-left: 12%;
             margin-top: 5%;

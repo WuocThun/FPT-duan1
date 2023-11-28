@@ -80,6 +80,7 @@
             border-radius: 50%;
             box-shadow: 0px 0px 5px white;
             width: 130pt;
+            margin-left: -2%;
         }
     </style>
     <div class="sptong">

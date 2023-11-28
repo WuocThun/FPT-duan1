@@ -50,7 +50,7 @@
          
     </div>
 
-    <div class="tong2">
+    <!-- <div class="tong2">
         <a class="phu2" href="index.php?act=sanphamct">
             <img src="img/sashimiaa.jpg" alt=""><br>
             Sashimi cá thu (Saba) <br>
@@ -58,7 +58,7 @@
             <p>180.000đ</p>
             <button>Mua Ngay</button>
             </a>
-    </div>
+    </div> -->
 </div>
 </div>
 <br>
