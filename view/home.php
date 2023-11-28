@@ -90,7 +90,11 @@
         $hinh = $img_path.$imgdm;
         $linkdm = "index.php?act=sanpham1&iddm=".$id ;
         echo '
+
+        
+            <a class="sp" href="'.$linkdm.'">
             <a class="sp radius-img" href="'.$linkdm.'">
+
             <img src="'.$hinh.'" height="100px" alt=""> <br>
             <span>'.$namedm.'</span>
     </a>

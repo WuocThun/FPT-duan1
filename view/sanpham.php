@@ -21,7 +21,7 @@
 </div>
 <div>
 <div id="tile1" class="muc">
-        <h1>TOP 10</h1>
+        <h1>NHỮNG MÓN ĂN MỚI</h1>
     </div>
     <hr>
 <style>

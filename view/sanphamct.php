@@ -39,19 +39,26 @@
             margin-left: 10%;
             background-color: brown;
             color: white;
-            margin-top: 5%;
+            /* margin-top: 5%;
             padding: 2%;
-            width: 30%;
+            width: 60%; */
             box-shadow: 0px 0px 5px brown;
             opacity: 1; /* Giảm độ mờ khi hover */
-            transition: opacity 0.3s ease; /* Thêm transition để tạo hiệu ứng mờ mượt */
+            border-radius: 30%;
+            height: 30px;
         }
 
         .tsp button:hover,.tableBl button:hover {
             opacity: 0.7; /* Giảm độ mờ khi hover */
+            
 
         }
-
+        #btn1{
+            width: 100px;
+        }
+        #btn2{
+            margin-left: 3%;
+        }
         .tableBl button{
             border: none;
             background-color: brown;
@@ -61,6 +68,7 @@
             box-shadow: 0px 0px 5px brown;
             opacity: 1; /* Giảm độ mờ khi hover */
             transition: opacity 0.3s ease;
+            
         }
 
         .tableBl{
@@ -102,7 +110,10 @@
             color: white;
 
         }
-
+        .row-flex{
+            display: flex;
+            flex-direction: row;
+        }
         .tableBl textarea:hover {
             background-color: white;
             color: black;
@@ -131,7 +142,10 @@ extract($onesp);
                 tế, dùng trong những dịp đặc biệt. -->
                 <?=$des?>
             </p>
-           <a href="index.php?act=thanhtoan"><button>Mua ngay</button></a>  <button>Thêm vào giỏ hàng</button>
+            <div class="row-flex">
+           <a href="index.php?act=thanhtoan">
+            <button id="btn1">Mua ngay</button></a> <button id="btn2">Thêm vào giỏ hàng</button>
+            </div>
             </div>
         </div>
 
