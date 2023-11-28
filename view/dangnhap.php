@@ -79,15 +79,15 @@
        }
        .container_ input{
         background-color: black;
-        margin: 8px 0;
+        margin: 5px 0;
         color: white;
-        font-size: 13px;
+        font-size: 12px;
     border-top: none;
     border-left: none;
     border-right: none;
     
         border-bottom: 0.1px solid white;
-        margin-bottom: 3%;
+        margin-bottom: 2%;
         width: 65%;
         outline: none;
        }
@@ -241,13 +241,11 @@
             <div class="form-container_ sign-in">
                 <form onsubmit="return dangnhap()" method="post">
                     <h1>ĐĂNG NHẬP</h1>
-                   
                     <input type="username"  placeholder="Username" id="namedn"><br><br>
                     <div id="namednError" class="error"></div>
                     <input type="password" placeholder="Password" id="passdn"><br><br>
                     <div id="passError" class="error"></div>
-                    
-                   
+  
                     <input type="submit" value="Đăng Nhập">
                 </form>
             </div>
