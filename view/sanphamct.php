@@ -44,6 +44,7 @@
             width: 200px;   
             margin-left: 5%;
             padding: 15px;
+            font-size: 15px;
         }
          .tsp a button{
             margin-top: 37%;
@@ -118,8 +119,8 @@
             color: black;
         }
         .rating {
-  display: inline-block;
-}
+        display: inline-block;
+        }
 
 .rating input {
   display: none;

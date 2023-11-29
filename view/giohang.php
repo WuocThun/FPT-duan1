@@ -57,6 +57,7 @@ font-size: 40px;     }
         .tonggh
          table tr td button{
             width: 60%;
+            font-size: 15px;
             padding: 5%;
         }
 
