@@ -60,10 +60,10 @@
        }
        .container_ button.hidden{
         background-color: transparent;
-        border-color: #fff;
+        border: 0.5px solid #fff;   
         width: 25%;
             padding: 2%;
-            font-size: 15px;
+            font-size: 16px;
            border-radius: 50px;
             color: white;
        }
