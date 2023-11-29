@@ -1,5 +1,5 @@
 
-    <style>
+<style>
         
         .thanhtoan video{
             width: 100%;
@@ -7,13 +7,13 @@
         }
         .tongtt{
             background-color: rgba(11, 11, 11, 0.3); /* Màu nền cho thẻ nav */
-            transform: translate(50%, -117%); /* Để căn giữa thẻ nav chính xác */
+            transform: translate(60%, -121%); /* Để căn giữa thẻ nav chính xác */
             color: white;
-             width: 43%;
+             width: 37%;
              margin-left: 30%;
             text-align: center;
             padding: 3%;
-            border-radius: 50px;
+            border-radius: 100px;
             box-shadow: 0px 0px 5px black;
             margin-bottom: -40%;
         }
@@ -27,6 +27,7 @@
             width: 47%;
             margin-right: 2%;
         }
+       
        
         .tongtt input{
             border-top: none;
@@ -58,16 +59,14 @@
         opacity: 0.7; /* Giảm độ mờ khi hover */
 
 
-    }
+        }
+    
 
     .error {
-
         text-align: left;
         color: brown;
         display: none;
-        margin-top: -10%;
-        padding-bottom: 20px;
-        padding-top: 30px;
+        margin-top: -20px;
     }
 </style>
 
@@ -85,7 +84,7 @@
             <br><input type="text" placeholder="Số điện thoại" maxlength="10" id="teltt"> <br>
             <div id="telError" class="error"></div>
             <br><input type="text" placeholder="Địa chỉ" id="addtt"> <br>
-            <div id="addError" class="error"></div>
+            <div id="addError" class="error"></div><br>
             <input type="checkbox">Thanh toán sau khi nhận hàng <br>
             <input type="submit" value="Thanh Toán"`>
         </form>
