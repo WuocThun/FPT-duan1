@@ -102,7 +102,7 @@
     <div class="fr"><img id="image" onclick="changeImage1()" src="img/fr2.png" alt=""></div>
     <div id="_form" class="_form">
         <h1>ĐĂNG KÝ</h1>
-        <form onsubmit="" action="" method="post">
+        <form onsubmit="" method="post">
             <div class="mb">
                 <input type="text" name="user" id="name" placeholder="Username"><br>
                 <div id="nameError" class="error"></div>
