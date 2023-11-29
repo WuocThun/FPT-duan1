@@ -157,10 +157,10 @@
                 <div id="addressError" class="error"></div>
             </div>
             <div class="mb">
-                <input value="<?php echo (!empty($_POST['tel']))? $_POST['tel']:false?>" type="number" id="phone" name="tel" placeholder="Phone"><br>
+                <input type="number" id="phone" name="tel" placeholder="Phone"><br>
                 <?php
-                  echo (!empty($error['tel']['require'])) ? '
-                  <span style="color:red">' . $error['tel']['require'] . ' </span>
+                  echo (!empty($error['addr']['require'])) ? '
+                  <span style="color:red">' . $error['addr']['require'] . ' </span>
                   ' : false;
                 ?>
                 <br>

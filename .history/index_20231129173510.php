@@ -80,21 +80,9 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")) {
                         if(!filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL)){
                          $error['email']['invald'] = 'Email không hợp lệ';
                         }
-                    }
-                    if(empty($_POST['addr'])){
+                    }if(empty($_POST['addr'])){
                         $error['addr']['require'] = 'Địa chỉ không được để trống';
                     }
-                    if(empty($_POST['tel'])){
-                        $error['tel']['require'] = 'Số điện thoại không được để trống';
-                    }else {
-                        if (strlen(trim($_POST['tel'])) <10) {
-
-                            $error['tel']['require'] = 'Số điện thoại phải có 10 ký tự';
-                        }
-                    }
-
-
-
                     
                 }
             }

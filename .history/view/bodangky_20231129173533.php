@@ -147,23 +147,15 @@
                 <div id="emailError" class="error"></div>
             </div>
             <div class="mb">
-                <input value="<?php echo (!empty($_POST['addr']))? $_POST['addr']:false?>" type="text" id="addr" name="addr" placeholder="Address"><br>
+                <input type="text" id="addr" name="addr" placeholder="Address"><br>
                 <?php
-                  echo (!empty($error['addr']['require'])) ? '
-                  <span style="color:red">' . $error['addr']['require'] . ' </span>
-                  ' : false;
+                
                 ?>
                 <br>
                 <div id="addressError" class="error"></div>
             </div>
             <div class="mb">
-                <input value="<?php echo (!empty($_POST['tel']))? $_POST['tel']:false?>" type="number" id="phone" name="tel" placeholder="Phone"><br>
-                <?php
-                  echo (!empty($error['tel']['require'])) ? '
-                  <span style="color:red">' . $error['tel']['require'] . ' </span>
-                  ' : false;
-                ?>
-                <br>
+                <input type="number" id="phone" name="tel" placeholder="Phone"><br>
                 <div id="phoneError" class="error"></div>
             </div>
            

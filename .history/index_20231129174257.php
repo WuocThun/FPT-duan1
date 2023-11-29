@@ -90,6 +90,10 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")) {
                         if (strlen(trim($_POST['tel'])) <10) {
 
                             $error['tel']['require'] = 'Số điện thoại phải có 10 ký tự';
+                        } else {
+                            if (strlen(trim($_POST['tel'])) >11) {
+
+                                $error['tel']['invaild'] = 'Số điện thoại phải có 10 ký tự';
                         }
                     }
 

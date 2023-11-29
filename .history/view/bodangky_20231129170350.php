@@ -97,73 +97,32 @@
     }
 </style>
 </head>
-<!-- <?
-// if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-//     $error = [];
-//     if (empty($_POST['user'])) {
-//         $error['user']['require'] = 'Tên đăng nhập không được để trống';
-//     }
-//     else {
-//         if (strlen(trim($_POST['user'])) < 5) {
-//             $error['user']['require'] = 'Tên phải hơn 5 ký tự';
-//         }
-//     }
-// }
-?> -->
+<?
+
+?>
 <div class="tongfr">
     <div class="fr"><img id="image" onclick="changeImage1()" src="img/fr2.png" alt=""></div>
     <div id="_form" class="_form">
         <h1>ĐĂNG KÝ</h1>
         <form onsubmit="" action="" method="post">
             <div class="mb">
-                <input value="<?php echo (!empty($_POST['user']))? $_POST['user']:false?>" type="text" name="user" id="name" placeholder="Username"><br>
-                 <?php
-                    echo (!empty($error['user']['require'])) ? '
-                    <span style="color:red">' . $error['user']['require'] . ' </span>
-                    ' : false;
-                 ?> 
-                <br>
+                <input type="text" name="user" id="name" placeholder="Username"><br>
                 <div id="nameError" class="error"></div>
             </div>
             <div class="mb">
-                <input value="<?php echo (!empty($_POST['pass']))? $_POST['pass']:false?>" type="text" id="pass" name="pass" placeholder="Password"> <br>
-                <?php
-                    echo (!empty($error['pass']['require'])) ? '
-                    <span style="color:red">' . $error['pass']['require'] . ' </span>
-                    ' : false;
-                 ?> <br>
+                <input type="password" id="pass" name="pass" placeholder="Password">
                 <div id="passwordError" class="error"></div>
             </div>
             <div class="mb">
-                <input value="<?php echo (!empty($_POST['email']))? $_POST['email']:false?>" type="text" id="email" name="email" placeholder="Email"><br>
-                <?php
-                    echo (!empty($error['email']['require'])) ? '
-                    <span style="color:red">' . $error['email']['require'] . ' </span>
-                    ' : false;
-                    echo (!empty($error['email']['invald'])) ? '
-                    <span style="color:red">' . $error['email']['invald'] . ' </span>
-                    ' : false;
-                 ?> <br>
+                <input type="text" id="email" name="email" placeholder="Email"><br>
                 <div id="emailError" class="error"></div>
             </div>
             <div class="mb">
-                <input value="<?php echo (!empty($_POST['addr']))? $_POST['addr']:false?>" type="text" id="addr" name="addr" placeholder="Address"><br>
-                <?php
-                  echo (!empty($error['addr']['require'])) ? '
-                  <span style="color:red">' . $error['addr']['require'] . ' </span>
-                  ' : false;
-                ?>
-                <br>
+                <input type="text" id="addr" name="addr" placeholder="Address"><br>
                 <div id="addressError" class="error"></div>
             </div>
             <div class="mb">
-                <input value="<?php echo (!empty($_POST['tel']))? $_POST['tel']:false?>" type="number" id="phone" name="tel" placeholder="Phone"><br>
-                <?php
-                  echo (!empty($error['tel']['require'])) ? '
-                  <span style="color:red">' . $error['tel']['require'] . ' </span>
-                  ' : false;
-                ?>
-                <br>
+                <input type="number" id="phone" name="tel" placeholder="Phone"><br>
                 <div id="phoneError" class="error"></div>
             </div>
            

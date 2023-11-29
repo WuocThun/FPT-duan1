@@ -57,15 +57,13 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")) {
             if (isset($_POST['dangky']) && ($_POST['dangky'] > 0)) {
                 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     $error = [];
-                    //validate USER
                     if (empty($_POST['user'])) {
-                        $error['user']['require'] = 'Tên đăng nhập không được để trống';
+                        $error['user']['require'] = 'Tên không được để trống';
                     } else {
                         if (strlen(trim($_POST['user'])) < 5) {
-                            $error['user']['require'] = 'Tên đăng nhập phải hơn 5 ký tự';
+                            $error['user']['require'] = 'Tên phải hơn 5 ký tự';
                         }
                     }
-                    //validate PASS
                     if(empty($_POST['pass'])){
                         $error['pass']['require'] = 'Mật khẩu không được để trống';
                     }else {
@@ -73,29 +71,10 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")) {
                             $error['pass']['require'] = 'Mật khẩu phải hơn 3 ký tự';
                         }
                     }
-                    //validate EMAIL
                     if(empty($_POST['email'])){
-                        $error['email']['require'] = 'Email không được để trống';
-                    }else {
-                        if(!filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL)){
-                         $error['email']['invald'] = 'Email không hợp lệ';
-                        }
+                        $error['email']['require'] = 'Email không được để trống'
                     }
-                    if(empty($_POST['addr'])){
-                        $error['addr']['require'] = 'Địa chỉ không được để trống';
-                    }
-                    if(empty($_POST['tel'])){
-                        $error['tel']['require'] = 'Số điện thoại không được để trống';
-                    }else {
-                        if (strlen(trim($_POST['tel'])) <10) {
-
-                            $error['tel']['require'] = 'Số điện thoại phải có 10 ký tự';
-                        }
-                    }
-
-
-
-                    
+                    // if(!filter_var(trim($_POST['age']), FILTER_VALIDATE_EMAILL))
                 }
             }
             include 'view/bodangky.php';
