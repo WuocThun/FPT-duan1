@@ -28,6 +28,12 @@
             }
             
         }
+        @media only screen and (max-width: 600px) {
+            .menu{
+                display: none;
+            }
+        }
+
        
     </style>
 </head>
