@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="view/style/style1.css">
+
     <style>
         .fade {
             animation: blurSlide 8s ease-in-out infinite;
@@ -25,7 +26,9 @@
                 filter: blur(3px);
                 transform: translateY(-10px);
             }
+            
         }
+       
     </style>
 </head>
 
@@ -38,5 +41,6 @@
                 <li><a href="index.php?act=gioithieu">Giới thiệu</a></li>
                 <li><a href="index.php?act=dangnhap">Đăng nhập</a></li>
                 <li><a href="index.php?act=giohang">Giỏ hàng</a></li>
+
             </ul>
         </div>

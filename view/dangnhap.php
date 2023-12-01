@@ -54,7 +54,7 @@
             color: white;
        }
        
-       .container_  input[type="submit"]:hover{
+       .container_ input[type="submit"]:hover{
         opacity: 0.7; /* Giảm độ mờ khi hover */
 
        }
@@ -62,10 +62,14 @@
         background-color: transparent;
         border: 0.5px solid #fff;   
         width: 25%;
-            padding: 2%;
-            font-size: 16px;
-           border-radius: 50px;
-            color: white;
+         padding: 2%;
+        font-size: 16px;
+        border-radius: 50px;
+         color: white;
+       }
+       .container_ button.hidden:hover{
+        opacity: 0.7; /* Giảm độ mờ khi hover */
+
        }
        .container_ form{
        
@@ -82,10 +86,9 @@
         margin: 5px 0;
         color: white;
         font-size: 12px;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    
+        border-top: none;
+        border-left: none;
+        border-right: none;
         border-bottom: 0.1px solid white;
         margin-bottom: 2%;
         width: 65%;

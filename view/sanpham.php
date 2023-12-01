@@ -25,10 +25,32 @@
     </div>
     <hr>
 <style>
-    .scr_hv{
-  overflow: auto;
-  white-space: nowrap;
+   .scr_hv{
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  margin-bottom: 5%;
+  margin-top: 2%;
+  margin-left: -0.3%;
+
+  /* overflow: auto; */
 }
+.phu2 > img {
+  width: 200px;
+  height: 200px;
+}
+
+.phu2{
+    margin: 5%;
+  text-align: center;
+  box-shadow: 0px 0px 5px white;
+}
+  .phu2 > p {
+  text-decoration: line-through;
+}
+
+
 .btn{
     background-color: black;
  display: inline-block;
