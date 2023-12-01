@@ -252,7 +252,7 @@
 
             <div class="toggle-container_">
                 <div class="toggle">
-                    <img src="/FPT-duan1/img/mau.jpg" alt="">
+                    <img src="img/mau.jpg" alt="">
                     <div class="toggle-panel toggle-left">
                         <h1>Welcome Back!</h1>
                         <p>Bạn đã có tài khoản? Đăng nhập ngay.</p>
@@ -271,7 +271,7 @@
            
         </div>
     </div>
-    <script src="/FPT-duan1/view/style/scrip.js">   </script>
+    <script src="view/style/scrip.js">   </script>
     <!-- <script src="../view/tyle/scrip.js"></script> -->
 </body>
 </html>
