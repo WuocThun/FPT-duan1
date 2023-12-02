@@ -17,6 +17,7 @@ if (isset($_GET['act'])) {
                     $target_dir = "../upload/";
                     $target_file = $target_dir . basename($_FILES["imgdm"]["name"]);
                     if (move_uploaded_file($_FILES["imgdm"]["tmp_name"], $target_file)) {
+                        // echo "The file ". htmlspecialchars( basename( $_FILES["hinh"]["name"])). " has been uploaded.";
                     }
                     insert_danhmuc($namedm, $imgdm1);
                     $thongbao = "Thêm thành công";
