@@ -16,12 +16,15 @@
             gap: 10px;
         }
         .formcontent {
-                        width: 50% !important;
-                    }
-                    .form_dm {
-                        width: 100%;
-                        margin: auto;
-                    }
+      width: 50% !important;
+        }
+         .form_dm {
+             width: 100%;
+            margin: auto;
+         }
+         .form_dm input[type="number"]{
+            
+         }
     </style>
             <div class="row frmtitle">
                 <H1>Thêm mới loại hàng hoá</H1>
@@ -43,7 +46,7 @@
                     <input type="text" name="namesp">
                     </div>
                     <div class="row mb10 text_dm">
-                        Giá mới<br>
+                        Giá mới
                         <input placeholder="ex: 190.000" type="number" name="newpricesp">
                     </div>
                     <div class="row mb10 text_dm">

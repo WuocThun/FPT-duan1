@@ -31,7 +31,7 @@
     </div>
     <hr>
     <style>
-        .scr_hv{
+    .scr_hv{
   width: 100%;
   height: auto;
   display: grid;
@@ -54,39 +54,51 @@
 }
   .phu2 > p {
   text-decoration: line-through;
+  color: white;
 }
 
-        .btn{
-         background-color: black;
-        display: inline-block;
-        padding: 0.4rem 1.0rem;
-        font-size: 15px;
-        font-weight: 700;
-        color: rgb(231, 218, 218);
-        border: 3px solid brown;
-        cursor: pointer;
-        position: relative;
-        text-decoration: none;
-        overflow: hidden;
-        z-index: 1;
-        font-family: inherit;
-        }
+.phu2 span{
+    text-decoration: none;
+    color: white;
+}
+.phu2 {
+    text-decoration: none;
+}
 
-        .btn::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgb(197, 4, 49);
-        transform: translateX(-100%);
-        transition: all .3s;
-        z-index: -1;
-        }
 
-        .btn:hover::before {
-        transform: translateX(0);
+.btn{
+ background-color: black;
+ display: inline-block;
+ padding: 0.4rem 1.0rem;
+ font-size: 15px;
+ font-weight: 700;
+ color: rgb(231, 218, 218);
+ border: 3px solid brown;
+ cursor: pointer;
+ position: relative;
+ text-decoration: none;
+ overflow: hidden;
+ z-index: 1;
+ font-family: inherit;
+ margin-bottom: 5%;
+ width: 50%;
+}
+
+.btn::before {
+ content: "";
+ position: absolute;
+ left: 0;
+ top: 0;
+ width: 100%;
+ height: 100%;
+ background-color: rgb(197, 4, 49);
+ transform: translateX(-100%);
+ transition: all .3s;
+ z-index: -1;
+}
+
+.btn:hover::before {
+ transform: translateX(0);
 }
     </style>
     <div class="tong2 scr_hv">
@@ -98,8 +110,8 @@
             echo '
                     <a class="phu2" href="' . $linksp . '">
                     <img src="' . $hinh . '" alt=""><br>
-                        ' . $namesp . '  <br>
-                        ' . $newpricesp . '.000đ/Phần <br>
+                      <span>' . $namesp . ' </span>  <br>
+                       <span>' . $newpricesp . '.000đ/Phần </span> <br>
                     <p>' . $pricesp . '.000</p> 
                     <button class="btn">Mua Ngay</button>
                 </a> 

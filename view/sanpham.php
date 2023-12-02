@@ -50,9 +50,19 @@
   text-decoration: line-through;
 }
 
+.phu2 {    
+    color: white;
+    text-decoration: none;
+}
+.phu2:hover{
+    color: black;
+    background-color: white;
+    transform: scale(1.1); /* Phóng to ảnh lên 1.2 lần kích thước ban đầu */
+    
+}
 
 .btn{
-    background-color: black;
+ background-color: black;
  display: inline-block;
  padding: 0.4rem 1.0rem;
  font-size: 15px;
@@ -65,6 +75,8 @@
  overflow: hidden;
  z-index: 1;
  font-family: inherit;
+ margin-bottom: 5%;
+ width: 50%;
 }
 
 .btn::before {
@@ -94,8 +106,8 @@
                     echo '
                     <a class="phu2" href="'.$linksp.'">
                     <img src="'.$hinh.'" alt=""><br>
-                        '.$namesp.'  <br>
-                        '.$newpricesp.'.000đ/Phần <br>
+                    <span> '.$namesp.'</span>  <br>
+                      <span>'.$newpricesp.'.000đ/Phần </span><br>
                     <p>'.$pricesp.'.000đ/Phần</p> 
                     <button class="btn">Mua Ngay</button>
                 </a> 
