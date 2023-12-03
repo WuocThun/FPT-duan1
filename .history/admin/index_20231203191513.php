@@ -3,7 +3,6 @@ include("header.php");
 include("../model/pdo.php");
 include("../model/danhmuc.php");
 include("../model/sanpham.php");
-include ("../model/taikhoan.php");
 //MVC
 if (isset($_GET['act'])) {
     $act = $_GET['act'];
@@ -140,7 +139,7 @@ if (isset($_GET['act'])) {
             //END SẢN PHẨM
             //KHÁCH HÀNG
             case "dskh":
-                $listtaikhoan= loadall_TK();
+                $listtk= 
                 include 'taikhoan/list.php';
                 break;
             //END KHÁCH HÀNG

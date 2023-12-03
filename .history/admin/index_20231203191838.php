@@ -140,7 +140,7 @@ if (isset($_GET['act'])) {
             //END SẢN PHẨM
             //KHÁCH HÀNG
             case "dskh":
-                $listtaikhoan= loadall_TK();
+                $listtk= loadall_TK();
                 include 'taikhoan/list.php';
                 break;
             //END KHÁCH HÀNG

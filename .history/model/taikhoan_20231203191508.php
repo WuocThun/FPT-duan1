@@ -18,9 +18,3 @@ function checkemail($email) {
     $sp = pdo_query_one($sql);
     return $sp; 
 }
-function loadall_TK()
-{
-    $sql = "select * from taikhoan order by id desc";
-    $listtaikhoan = pdo_query($sql);
-    return $listtaikhoan;
-}

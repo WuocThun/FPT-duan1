@@ -108,10 +108,8 @@ extract($_SESSION['userdn']);
 </h1>
 <div class="backgr-w">
 <a href="index.php?act=edit_taikhoan">Chỉnh sửa tài khoản</a> <br>
-<?php 
-if ($role ==1) { ?>
+
 <a href="admin/index.php">Đăng nhập Admin</a> <br>
-<?php }?>
 <a href="index.php?act=quenmk">Quên Mật khẩu</a> <br>
 <a href="index.php?act=thoat">Thoát</a> <br>
 </div>

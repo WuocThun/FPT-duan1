@@ -4,7 +4,6 @@ include 'model/pdo.php';
 include 'model/sanpham.php';
 include 'model/danhmuc.php';
 include 'model/taikhoan.php';
-include 'model/binhluan.php';
 include "view/header.php";
 include 'global.php';
 
@@ -200,14 +199,7 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")) {
         case "sanphamct":
             if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
                 $onesp = loadOne_sanpham($_GET['idsp']);
-                // if(isset($_POST['guibinhluan'])&&($_POST['guibinhluan'])){
-                //     $listbl= doadAll_bl();
-                //     $comment = $_POST['comment'];
-                //     $idpro = $_POST['idpro'];
-                //     $iduser = $_SESSION['userdn']['id'];
-                //     $daycomment = date('h:i:sa d/m/y');
-                //     insert_Bl($comment, $iduser, $idpro, $daycomment);
-                // }
+                
                 include "view/sanphamct.php";
             } else {
                 include 'view/home.php';

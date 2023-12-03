@@ -200,14 +200,12 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")) {
         case "sanphamct":
             if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
                 $onesp = loadOne_sanpham($_GET['idsp']);
-                // if(isset($_POST['guibinhluan'])&&($_POST['guibinhluan'])){
-                //     $listbl= doadAll_bl();
-                //     $comment = $_POST['comment'];
-                //     $idpro = $_POST['idpro'];
-                //     $iduser = $_SESSION['userdn']['id'];
-                //     $daycomment = date('h:i:sa d/m/y');
-                //     insert_Bl($comment, $iduser, $idpro, $daycomment);
-                // }
+                if(isset($_POST['guibinhluan'])&&($_POST['guibinhluan'])){
+                    $listbl= doadAll_bl();
+                    $comment = $_POST['comment'];
+                    $idpro = $_POST['idpro'];
+                    $comment = $_POST['comment'];
+                }
                 include "view/sanphamct.php";
             } else {
                 include 'view/home.php';

@@ -20,7 +20,7 @@ function checkemail($email) {
 }
 function loadall_TK()
 {
-    $sql = "select * from taikhoan order by id desc";
-    $listtaikhoan = pdo_query($sql);
-    return $listtaikhoan;
+    $sql = "select * from danhmuc order by id desc";
+    $listdanhmuc = pdo_query($sql);
+    return $listdanhmuc;
 }

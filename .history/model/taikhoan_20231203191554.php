@@ -21,6 +21,6 @@ function checkemail($email) {
 function loadall_TK()
 {
     $sql = "select * from taikhoan order by id desc";
-    $listtaikhoan = pdo_query($sql);
-    return $listtaikhoan;
+    $listdanhmuc = pdo_query($sql);
+    return $listdanhmuc;
 }
