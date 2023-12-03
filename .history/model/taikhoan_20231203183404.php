@@ -14,7 +14,7 @@ function  update_taikhoan($id, $user,$pass, $email, $tel, $addr)
    pdo_execute($sql);
 } 
 function checkemail($email) {
-    $sql = "select * from taikhoan where email = '".$email."'";
+    $sql = "select * from taikhoan where pass = '".$email."'";
     $sp = pdo_query_one($sql);
     return $sp; 
 }

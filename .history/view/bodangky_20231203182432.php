@@ -114,7 +114,7 @@
                 <div id="nameError" class="error"></div>
             </div>
             <div class="mb">
-                <input value="<?php echo (!empty($_POST['pass']))? $_POST['pass']:false?>" type="password" id="pass" name="pass" placeholder="Password"> <br>
+                <input value="<?php echo (!empty($_POST['pass']))? $_POST['pass']:false?>" type="text" id="pass" name="pass" placeholder="Password"> <br>
                 <?php
                     echo (!empty($error['pass']['require'])) ? '
                     <span style="color:red">' . $error['pass']['require'] . ' </span>

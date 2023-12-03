@@ -233,7 +233,13 @@
 <div class="container_" id="container_">
     <div class="form-container_ sign-up">
 
-
+        <!-- <h1>ĐĂNG KÝ</h1>
+                    <input type="text" placeholder="Username">
+                    <input type="text"placeholder="Số điện thoại">
+                    <input type="email"placeholder="Email">
+                    <input type="text"placeholder="Địa chỉ">
+                    <input type="password" placeholder="Password" name="" id="">
+                    <button>Đăng ký</button> -->
 
         <form onsubmit="return dangky()" method="post">
             <h1>ĐĂNG KÝ</h1>

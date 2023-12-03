@@ -13,8 +13,8 @@ function  update_taikhoan($id, $user,$pass, $email, $tel, $addr)
       $sql = "update taikhoan set user='" . $user . "',pass='" . $pass . "', email='" . $email . "',tel='" . $tel . "',addr='" . $addr . "' where id=" . $id;  
    pdo_execute($sql);
 } 
-function checkemail($email) {
-    $sql = "select * from taikhoan where email = '".$email."'";
+function checkemail($passdn) {
+    $sql = "select * from taikhoan where pass = '".$passdn."'";
     $sp = pdo_query_one($sql);
     return $sp; 
 }
