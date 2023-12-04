@@ -31,6 +31,103 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")) {
             include "view/gioithieu.php";
             break;
         case "dangnhap":
+            if (isset($_POST['dangky']) && ($_POST['dangky'] > 0)) {
+                if (
+                    isset($_POST['user']) && $_POST['user'] != "" &&
+                    isset($_POST['pass']) && $_POST['pass'] != "" &&
+                    isset($_POST['email']) && $_POST['email'] != "" &&
+                    isset($_POST['addr']) && $_POST['addr'] != "" &&
+                    isset($_POST['tel']) && $_POST['tel'] != ""  &&
+                    $_SERVER['REQUEST_METHOD'] == 'POST'
+
+                ) {
+                    $error = [];
+                    //validate USER
+                    if (empty($_POST['user']) && isset($_POST['user'])) {
+                        $error['user']['require'] = 'Tên đăng nhập không được để trống';
+                    } else {
+                        if (strlen(trim($_POST['user'])) < 5) {
+                            $error['user']['require'] = 'Tên đăng nhập phải hơn 5 ký tự';
+                        }
+                    }
+                    //validate PASS
+                    if (empty($_POST['pass'])) {
+                        $error['pass']['require'] = 'Mật khẩu không được để trống';
+                    } else {
+                        if (strlen(trim($_POST['pass'])) < 3) {
+                            $error['pass']['require'] = 'Mật khẩu phải hơn 3 ký tự';
+                        }
+                    }
+                    //validate EMAIL
+                    if (empty($_POST['email'])) {
+                        $error['email']['require'] = 'Email không được để trống';
+                    } else {
+                        if (!filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL)) {
+                            $error['email']['invald'] = 'Email không hợp lệ';
+                        }
+                    }
+                    if (empty($_POST['addr'])) {
+                        $error['addr']['require'] = 'Địa chỉ không được để trống';
+                    }
+                    if (empty($_POST['tel'])) {
+                        $error['tel']['require'] = 'Số điện thoại không được để trống';
+                    } else {
+                        if (strlen(trim($_POST['tel'])) < 10) {
+
+                            $error['tel']['require'] = 'Số điện thoại phải có 10 ký tự';
+                        }
+                    }
+                    // if (
+                    //     $_SERVER['REQUEST_METHOD'] == 'POST'
+                    // ) {
+                    //     $error = [];
+                    //     //validate USER
+                    //     if (empty($_POST['user']) && isset($_POST['user'])) {
+                    //         $error['user']['require'] = 'Tên đăng nhập không được để trống';
+                    //     } else {
+                    //         if (strlen(trim($_POST['user'])) < 5) {
+                    //             $error['user']['require'] = 'Tên đăng nhập phải hơn 5 ký tự';
+                    //         }
+                    //     }
+                    //     //validate PASS
+                    //     if (empty($_POST['pass'])) {
+                    //         $error['pass']['require'] = 'Mật khẩu không được để trống';
+                    //     } else {
+                    //         if (strlen(trim($_POST['pass'])) < 3) {
+                    //             $error['pass']['require'] = 'Mật khẩu phải hơn 3 ký tự';
+                    //         }
+                    //     }
+                    //     //validate EMAIL
+                    //     if (empty($_POST['email'])) {
+                    //         $error['email']['require'] = 'Email không được để trống';
+                    //     } else {
+                    //         if (!filter_var(trim($_POST['email']), FILTER_VALIDATE_EMAIL)) {
+                    //             $error['email']['invald'] = 'Email không hợp lệ';
+                    //         }
+                    //     }
+                    //     if (empty($_POST['addr'])) {
+                    //         $error['addr']['require'] = 'Địa chỉ không được để trống';
+                    //     }
+                    //     if (empty($_POST['tel'])) {
+                    //         $error['tel']['require'] = 'Số điện thoại không được để trống';
+                    //     } else {
+                    //         if (strlen(trim($_POST['tel'])) < 10) {
+
+                    //             $error['tel']['require'] = 'Số điện thoại phải có 10 ký tự';
+                    //         }
+                    //     }
+                    //     // $user = $_POST['user'];
+                    //     // $pass = $_POST['pass'];
+                    //     // $email = $_POST['email'];
+                    //     // $addr = $_POST['addr'];
+                    //     // $tel = $_POST['tel'];
+                    // }
+                    $thongbao = "Bạn đã đăng ký thành công";
+                    insert_taikhoan($_POST['user'], $_POST['pass'], $_POST['email'], $_POST['addr'], $_POST['tel']);
+                } else {
+                    $thongbao = "Đăng ký thất bại, vui lòng đăng ký lại.";
+                }
+            }
             if (isset($_POST['dangnhap']) && ($_POST['dangnhap'])) {
                 $userdn = $_POST['userdn'];
                 $passdn = $_POST['passdn'];
