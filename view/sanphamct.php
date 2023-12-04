@@ -14,6 +14,7 @@
         }
 
         .tsp img {
+        margin-top: 7%;
             width: 70%;
             margin-left: 20%;
         }
