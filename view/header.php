@@ -8,6 +8,75 @@
     <link rel="stylesheet" href="view/style/style1.css">
 
     <style>
+        .paste-button {
+        display: none;
+        position: relative;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .button {
+        background-color: black;
+        color: white;
+        padding: 10px 15px;
+        font-size: 15px;
+        font-weight: bold;
+        border: 2px solid transparent;
+        border-radius: 15px;
+        cursor: pointer;
+        }
+
+        .dropdown-content {
+        display: none;
+        font-size: 13px;
+        position: absolute;
+        z-index: 1;
+        min-width: 200px;
+        background-color: #212121;
+        border: 2px solid black;
+        border-radius: 0px 15px 15px 15px;
+        box-shadow: 0px 8px 16px 0px black;
+        }
+
+        .dropdown-content a {
+        color: white;
+        padding: 8px 10px;
+        text-decoration: none;
+        display: block;
+        transition: 0.1s;
+        }
+
+        .dropdown-content a:hover {
+        background-color: white;
+        color: #212121;
+        }
+
+        .dropdown-content a:focus {
+        background-color: #212121;
+        color: #4CAF50;
+        }
+
+        .dropdown-content #top:hover {
+        border-radius: 0px 13px 0px 0px;
+        }
+
+        .dropdown-content #bottom:hover {
+        border-radius: 0px 0px 13px 13px;
+        }
+
+        .paste-button:hover button {
+        border-radius: 15px 15px 0px 0px;
+        }
+
+        .paste-button:hover .dropdown-content {
+        display: block;
+        }
+
+        .menu > ul {
+  padding-left: 50%;
+}
+
+
+
         .fade {
             animation: blurSlide 8s ease-in-out infinite;
         }
@@ -29,9 +98,14 @@
             
         }
         @media only screen and (max-width: 600px) {
-            .menu{
+            .menu ul li{
                 display: none;
+
             }
+            .paste-button{
+                display: block;
+            }
+
         }
 
        
@@ -51,6 +125,19 @@ if(isset($_SESSION['userdn'])){
                 <li><a href="index.php?act=giohang">Giỏ hàng</a></li>
                 <li><a href="index.php?act=giohang1">Xin chào|<b><?=$user?></b>|</a></li>
             </ul>
+
+            <div class="paste-button">
+        <button class="button">Menu &nbsp; ▼</button>
+        <div class="dropdown-content">
+            <a id="top" href="index.php">Trang chủ</a>
+            <a id="middle" href="index.php?act=sanpham">Sản phẩm</a>
+            <a id="bottom" href="index.php?act=gioithieu">Giới thiệu</a>
+            <a id="bottom" href="index.php?act=giohang">Giỏ hàng</a>
+            <a id="bottom" href="index.php?act=giohang1">Đăng nhập</a>
+        </div>
+        </div>
+       
+
         </div>
 <?php
 }else{

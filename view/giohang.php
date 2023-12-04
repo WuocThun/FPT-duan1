@@ -22,6 +22,7 @@ font-size: 40px;     }
 
         .tonggh
          table {
+            table-layout: fixed;
             margin-left: 10%;
             margin-right: 10%;
 

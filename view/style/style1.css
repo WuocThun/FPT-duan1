@@ -23,9 +23,7 @@ body {
   background-color: rgba(0, 0, 0, 0.615); /* Màu nền cho thẻ nav */
   padding: 20px; /* Khoảng cách bên trong thẻ nav */
 }
-.menu > ul {
-  padding-left: 55%;
-}
+
 .menu > ul > li {
   display: inline;
   padding: 20px;
