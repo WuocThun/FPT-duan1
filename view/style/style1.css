@@ -24,6 +24,7 @@ body {
   padding: 20px; /* Khoảng cách bên trong thẻ nav */
 }
 
+
 .menu > ul > li {
   display: inline;
   padding: 20px;
@@ -31,6 +32,7 @@ body {
 .menu > ul > li > a {
   color: white;
   text-decoration: none;
+
 }
 .menu a:hover{
   border-bottom: 1px solid white;

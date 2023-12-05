@@ -72,8 +72,8 @@
         }
 
         .menu > ul {
-  padding-left: 50%;
-}
+        padding-left: 50%;
+        }
 
 
 
@@ -97,8 +97,8 @@
             }
             
         }
-        @media only screen and (max-width: 600px) {
-            .menu ul li{
+        @media screen and (max-width: 600px) {
+            .menu ul {
                 display: none;
 
             }
@@ -151,7 +151,6 @@ if(isset($_SESSION['userdn'])){
                 <li><a href="index.php?act=gioithieu">Giới thiệu</a></li>
                 <li><a href="index.php?act=giohang">Giỏ hàng</a></li>
                 <li><a href="index.php?act=dangnhap">Đăng nhập</a></li>
-
             </ul>
         </div>
 
