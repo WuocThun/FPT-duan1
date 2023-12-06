@@ -88,7 +88,7 @@ $dsbl = doadAll_bl($idpro);
 
     }
 
-    .tableBl button {
+    .tableBl input[type="submit"] {
         border: none;
         background-color: brown;
         color: white;
@@ -135,12 +135,13 @@ $dsbl = doadAll_bl($idpro);
 
     }
 
-    .tableBl textarea {
+    .tableBl input[type="text"] {
         padding: 2%;
         width: 90%;
         background-color: black;
         box-shadow: 2px 2px 5px #888888;
         color: white;
+       
 
     }
 
@@ -173,8 +174,7 @@ $dsbl = doadAll_bl($idpro);
         content: '\2605';
         font-size: 20px;
     }
-
-    .rating input:checked~label,
+.rating input:checked~label,
     .rating label:hover,
     .rating label:hover~label {
         color: brown;
@@ -189,8 +189,7 @@ $dsbl = doadAll_bl($idpro);
             <th>NGÀY</th>
         </tr>
         <?php
-        echo $iduser; 
-        echo $idpro; 
+        
         foreach ($dsbl as $bl) {
             extract($bl);
                 echo '
