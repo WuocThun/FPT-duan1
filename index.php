@@ -144,35 +144,6 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")) {
             };
             include "view/dangnhap.php";
             break;
-        case "edit_taikhoan":
-            if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
-                $id = $_POST['id'];
-                $user = $_POST['user'];
-                $pass = $_POST['pass'];
-                $email = $_POST['email'];
-                $tel = $_POST['tel'];
-                $addr = $_POST['addr'];
-                update_taikhoan($id, $user, $pass, $email, $tel, $addr);
-                $_SESSION['userdn'] = check_user($user, $pass);
-                // header ('location: view/edit_taikhoan.php');
-            }
-            include 'view/edit_taikhoan.php';
-            break;
-        case "quenmk":
-            if (isset($_POST['quenmk']) && ($_POST['quenmk'])) {
-                $email = $_POST['email'];
-                $checkemail = checkemail($email);
-                if (is_array($checkemail)) {
-                    $thongbao = "Mật khẩu của bạn là: " . $checkemail['pass'];
-                } else {
-                    $thongbao = "Không tìm thấy Email";
-                }
-            }
-            include 'view/quenmk.php';
-            break;
-        case "thoat":
-            session_unset();
-            header('location: index.php');
             // case "dangky":
             //     if((isset($_POST['email'])) && (isset($_POST['email'])) 
             //         && ($_POST['user'] != "")&& ($_POST['user'] != "")
@@ -314,9 +285,49 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")) {
         case "thanhtoan":
             include "view/thanhtoan.php";
             break;
+            case "edit_taikhoan":
+                if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
+                    $id = $_POST['id'];
+                    $user = $_POST['user'];
+                    $pass = $_POST['pass'];
+                    $email = $_POST['email'];
+                    $tel = $_POST['tel'];
+                    $addr = $_POST['addr'];
+                    update_taikhoan($id, $user, $pass, $email, $tel, $addr);
+                    $_SESSION['userdn'] = check_user($user, $pass);
+                    // header ('location: view/edit_taikhoan.php');
+                }  include 'view/edit_taikhoan.php';
+                break;
         case "giohang":
             include "view/giohang.php";
             break;
+            case "quenmk":
+                if (isset($_POST['quenmk']) && ($_POST['quenmk'])) {
+                    $email = $_POST['email'];
+                    $checkemail = checkemail($email);
+                    if (is_array($checkemail)) {
+                        $thongbao = "Mật khẩu của bạn là: " . $checkemail['pass'];
+                    } else {
+                        $thongbao = "Không tìm thấy Email";
+                    }
+                }
+                include 'view/quenmk.php';
+                break;
+            case "quenmk":
+                if (isset($_POST['quenmk']) && ($_POST['quenmk'])) {
+                    $email = $_POST['email'];
+                    $checkemail = checkemail($email);
+                    if (is_array($checkemail)) {
+                        $thongbao = "Mật khẩu của bạn là: " . $checkemail['pass'];
+                    } else {
+                        $thongbao = "Không tìm thấy Email";
+                    }
+                }
+                include 'view/quenmk.php';
+                break;
+            case "thoat":
+                session_unset();
+                header('location: index.php');
         case "giohang1":
             include "view/giohang1.php";
             break;

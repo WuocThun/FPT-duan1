@@ -102,7 +102,7 @@
     <div class="fr"><img id="image" onclick="changeImage1()" src="img/fr2.png" alt=""></div>
     <div id="_form" class="_form">
         <h1>ĐĂNG KÝ</h1>
-        <form onsubmit="" action="" method="post">
+        <form onsubmit="" action="index.php?act=dangnhap" method="post">
             <div class="mb">
                 <input value="<?php echo (!empty($_POST['user']))? $_POST['user']:false?>" type="text" name="user" id="name" placeholder="Username"><br>
                  <?php

@@ -190,21 +190,29 @@ $dsbl = doadAll_bl($idpro);
         </tr>
         <?php
         echo $iduser; 
+        echo $idpro; 
         foreach ($dsbl as $bl) {
             extract($bl);
                 echo '
-                <tr> '.$iduser.'
+                <tr> 
                 <td>'.$comment.'</td>
-                <td>'.$idpro.'</td>
+                <td>'.$iduser.'</td>
                 <td>'.$daycomment.'</td>
             </tr>
-            ';
+            '
+            // echo "
+        // <tr>
+        //     <td>$comment</td>
+        //     <td>$iduser</td>
+        //     <td>$daycomment</td>
+        // </tr>"
+            ;
         }
                 ?>
     </table>
     <div>
     <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
-        <input type="hidden" name="idpro" value="<?$idpro?>">
+        <input type="hidden" name="idpro" value="<?=$idpro?>">
         <input type="text" height="5000px" name="comment" id="" cols="100%" rows="5" placeholder="Viết bình luận của bạn"></input><br><br>
         <input type="submit" value="Gửi bình luận" name="guibinhluan">
         </div>
@@ -214,7 +222,7 @@ if(isset($_POST['guibinhluan'])&&($_POST['guibinhluan'])){
     $comment = $_POST['comment'];
     $idpro = $_POST['idpro'];
     $iduser = $_SESSION['userdn']['id'];
-    $daycomment = date("h:i:sa d/m/Y");
+    $daycomment = date("d/m/Y");
     insert_Bl($comment, $iduser, $idpro, $daycomment);
     header("location: ".$_SERVER['HTTP_REFERER']);
 }

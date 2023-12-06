@@ -72,7 +72,7 @@
 
 </head>
 <div class="thanhtoan">
-    <video loop autoplay src="/FPT-duan1/img/ssvd.mp4"></video>
+    <video loop autoplay src="img/ssvd.mp4"></video>
 
     <div class="tongtt">
         <h1>THÔNG TIN KHÁCH HÀNG</h1>
