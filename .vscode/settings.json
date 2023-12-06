@@ -26,5 +26,6 @@
             "database": "duan1",
             "username": "root"
         }
-    ]
+    ],
+    "php.version": "8.3"
 }

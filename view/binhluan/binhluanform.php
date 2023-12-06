@@ -4,7 +4,7 @@ include "../../model/pdo.php";
 include "../../model/binhluan.php";
 
 $idpro =$_REQUEST['idpro'];
-$dsbl = loadAll_danhmucbinhluan($idpro);
+$dsbl = doadAll_bl($idpro);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,7 +27,7 @@ echo "<tr>
         </tr>
         <tr>
             <td>$comment</td>
-            <td>$idpro</td>
+            <td>$iduser</td>
             <td>$daycomment</td>
         </tr>"
         ?>
@@ -42,7 +42,7 @@ echo "<tr>
    <?php
    if(isset($_POST['guibinhluan'])&&($_POST['guibinhluan'])){
     $comment=$_POST['comment'];
-    $iduser=$_SESSION['user']['id'];
+    $iduser=$_SESSION['userdn']['id'];
     $idpro=$_POST['idpro'];
     $daycomment=date('h:i:sa  d/m/Y');
     insert_binhluan($comment, $iduser,$idpro,$daycomment);

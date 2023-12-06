@@ -6,10 +6,14 @@ function insert_binhluan($comment, $iduser,$idpro,$daycomment)
 }
 
 
-function loadAll_danhmucbinhluan($idpro)
+function doadAll_bl($idpro)
 {
     $sql = "select * from binhluan where idpro ='".$idpro."' order by id desc";
     $listbl = pdo_query($sql);
     return $listbl;
 }
-?>
+function insert_Bl($comment, $iduser, $idpro, $daycomment){
+    $sql = "insert into binhluan(comment,iduser,idpro,daycomment) values ('$comment', '$iduser', '$idpro', '$daycomment') ";   
+    pdo_execute ($sql);
+}
+

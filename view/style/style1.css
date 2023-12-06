@@ -137,7 +137,7 @@ body {
   color: rgb(255, 255, 255);
   box-shadow: 0px 0px 10px rgb(8, 8, 8);
   background-color: rgba(11, 11, 11, 0.3); /* Màu nền cho thẻ nav */
-  transform: translate(-40%, -170%); /* Để căn giữa thẻ nav chính xác */
+  transform: translate(-40%, -170%); 
 }
 .tt > p {
   font-size: 17px;
@@ -235,54 +235,8 @@ body {
   color: rgb(255, 254, 254);
   text-shadow: 2px 2px 2px #c92727;
 }
-.tong2 {
-  margin-left: 2%;
-  display: flex;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  height: 60%;
-}
-.phu2 > img {
-  width: 350px;
-  height: 250px;
-}
 
-.phu2 {
-  margin: 1.5%;
-  text-align: center;
-  padding: 20px;
-  box-shadow: 0px 0px 5px white;
-}
-.phu2 > p {
-  text-decoration: line-through;
-}
-.phu2 {
-  text-decoration: none;
-  color: white;
-}
-.phu2 > button {
-   opacity: 0.9; 
-  transition: opacity 0.3s ease; 
-  width: 200px;
-  padding: 10px;
-  background-color: rgb(252, 251, 251);
-  color: rgb(5, 5, 5);
-  border-radius: 50px;
-  box-shadow: 0px 0px 2px rgb(255, 255, 255);
-}
-.phu2 > button:hover {
-  color: white;
-  background-color: brown;
-  opacity: 1; /* Giảm độ mờ khi hover */
-  box-shadow: 0px 0px 2px rgb(102, 11, 11);
 
-}
-.phu2:hover {
-  background-color: white;
-  color: black;
-    transform: scale(1.1); /* Tăng kích thước khi hover */
-
-}
 .duoi {
   display: flex;
   color: white;
