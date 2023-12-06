@@ -189,6 +189,8 @@ $dsbl = doadAll_bl($idpro);
             <th>NGÀY</th>
         </tr>
         <?php
+        echo $iduser; 
+        echo $idpro; 
         foreach ($dsbl as $bl) {
             extract($bl);
                 echo '

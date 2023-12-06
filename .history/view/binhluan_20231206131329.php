@@ -189,6 +189,8 @@ $dsbl = doadAll_bl($idpro);
             <th>NGÀY</th>
         </tr>
         <?php
+        echo $iduser; 
+        echo $idpro; 
         foreach ($dsbl as $bl) {
             extract($bl);
                 echo '
@@ -209,30 +211,12 @@ $dsbl = doadAll_bl($idpro);
                 ?>
     </table>
     <div>
-    <?php
-if(isset($_SESSION['userdn'])){
-    extract($_SESSION['userdn']);
-    ?>
-    <form style="text-align:center;" action="<?=$_SERVER['PHP_SELF']?>" method="post">
+    <form action="<?=$_SERVER['PHP_SELF']?>" method="post">
         <input type="hidden" name="idpro" value="<?=$idpro?>">
         <input type="text" height="5000px" name="comment" id="" cols="100%" rows="5" placeholder="Viết bình luận của bạn"></input><br><br>
         <input type="submit" value="Gửi bình luận" name="guibinhluan">
         </div>
     </form>
-    <?php
-}else{
-?>
- <form style="text-align:center;" action="<?=$_SERVER['PHP_SELF']?>" method="post">
-        <input type="hidden" name="idpro" value="<?=$idpro?>">
-        <!-- <input type="text" height="5000px" name="comment" id="" cols="100%" rows="5" placeholder="Viết bình luận của bạn"></input><br><br> -->
-        <!-- <input type="submit" value="Gửi bình luận" name="guibinhluan"> -->
-        <h1>Bạn cần đăng nhập để bình luận</h1>
-        </div>
-    </form>
-
-<?php
-}
-?>
     <?php
 if(isset($_POST['guibinhluan'])&&($_POST['guibinhluan'])){
     $comment = $_POST['comment'];
