@@ -100,7 +100,16 @@ font-size: 40px;     }
             <h1>GIỎ HÀNG</h1>
             <div class="tonggh">
                 <table>
-                    <tr>
+                <tr>
+                        <td><img src="'.$hinhsp.'" alt=""></td>
+                        <td>'.$cart[1].'<br>
+                        <td>'.$cart[3].'<br>
+                        <td>'.$cart[4].'<br>
+                        <td>'.$ttien.'<br>
+                        </td>
+                        <td><button>Xóa</button></td>
+                    </tr>
+                    <!-- <tr>
                         <td><img src="/FPT-duan1/img/mid.png" alt=""></td>
                         <td> Salad thịt giăm bông sống<br>
                         </td>
@@ -111,13 +120,7 @@ font-size: 40px;     }
                         <td> Salad thịt giăm bông sống<br>
                         </td>
                         <td><button>Xóa</button></td>
-                    </tr>
-                    <tr>
-                        <td><img src="/FPT-duan1/img/mid.png" alt=""></td>
-                        <td> Salad thịt giăm bông sống<br>
-                        </td>
-                        <td><button>Xóa</button></td>
-                    </tr>
+                    </tr> -->
                 </table>
                 <span>Tổng tiền:####</span>  <a href="index.php?act=thanhtoan"><button>Thanh toán</button></a>
             </div>

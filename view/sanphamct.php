@@ -1,20 +1,23 @@
+<?php
+session_start();
+?>
+<style>
+            .spct {
+                color: white;
+                display: flex;
+            }
 
-    <style>
-        .spct {
-            color: white;
-            display: flex;
-        }
-        .tsp{
-            width: 50%;
-            flex-direction: column;
-        }
-        #tsp{
-            width:50%;
-           
-        }
+            .tsp {
+                width: 50%;
+                flex-direction: column;
+            }
+
+            #tsp {
+                width: 50%;
+
+            }
 
         .tsp img {
-        margin-top: 7%;
             width: 70%;
             margin-left: 20%;
         }
@@ -28,195 +31,231 @@
             color: rgb(245, 113, 113);
         }
 
-        .tsp p {
-            line-height: 1.6em;
-            width: 90%;
-            height: 35%;
-            max-height: 35%;
-        }
+            .tsp p {
+                line-height: 1.6em;
+                width: 90%;
+                height: 35%;
+                max-height: 35%;
+            }
 
-        .tsp button,.tsp a button{
-            margin-top: 10%;
-            border: none;
-            background-color: brown;
-            color: white;
-            box-shadow: 0px 0px 5px brown;
-            opacity: 1; /* Giảm độ mờ khi hover */ 
-            width: 200px;   
-            margin-left: 5%;
-            padding: 15px;
-            font-size: 15px;
-        }
-         .tsp a button{
-            margin-top: 37%;
-        }
-        
-        
-       
-
-        .tsp button:hover,.tableBl button:hover {
-            opacity: 0.7; /* Giảm độ mờ khi hover */
+            .tsp button,
+            .tsp a button,#_button{
+                margin-top: 10%;
+                border: none;
+                background-color: brown;
+                color: white;
+                box-shadow: 0px 0px 5px brown;
+                opacity: 1;
+                /* Giảm độ mờ khi hover */
+                width: 200px;
+                padding: 15px;
+                font-size: 15px;
+               
+            }
             
 
-        }
-    
-        .tableBl button{
-            border: none;
-            background-color: brown;
-            color: white;
-            padding: 1%;
-            width: 15%;
-            box-shadow: 0px 0px 5px brown;
-            opacity: 1; /* Giảm độ mờ khi hover */
-            transition: opacity 0.3s ease;
-            
-        }
+            #_button{
+                margin-left: 10%;
+                margin-top: 37%;
+            }
 
-        .tableBl{
-            margin-top: 10%;
-            margin-left: 10%
-        }
 
-        .tableBl table{
-            width: 90%;
 
-        }
+            .tsp button:hover,
+            .tableBl button:hover,#_button:hover {
+                opacity: 0.7;
+                /* Giảm độ mờ khi hover */
 
-        .bl{
-            flex-direction: row;
-            border-collapse: collapse;            
-            color: white;
-            text-align: center;
-            margin-top: 5%;
-            margin-bottom: 5%;
-        }
-        .bl th,td{
-            width: 10%;
-            padding: 2%;
-            text-align: center;
-            
-        }
-        .bl th{
-            font-size: 20px;
-            background-color: brown;
-            box-shadow: 0px 0px 5px brown;
 
-        }
-        
-        .tableBl textarea {
-            padding: 2%;
-            width: 90%;
-            background-color: black;
-            box-shadow: 2px 2px 5px #888888;
-            color: white;
+            }
 
-        }
-        .row-flex{
-            display: flex;
-            flex-direction: row;
-        }
-        .tableBl textarea:hover {
-            background-color: white;
-            color: black;
-        }
-        .rating {
-        display: inline-block;
-        }
+            .tableBl button{
+                border: none;
+                background-color: brown;
+                color: white;
+                padding: 1%;
+                width: 15%;
+                box-shadow: 0px 0px 5px brown;
+                opacity: 1;
+                /* Giảm độ mờ khi hover */
+                transition: opacity 0.3s ease;
 
-.rating input {
-  display: none;
-}
+            }
 
-.rating label {
-  float: right;
-  cursor: pointer;
-  color: #ccc;
-  transition: color 0.3s;
-}
+            .tableBl {
+                margin-top: 10%;
+                margin-left: 10%
+            }
 
-.rating label:before {
-  content: '\2605';
-  font-size: 20px;
-}
+            .tableBl table {
+                width: 100%;
 
-.rating input:checked ~ label,
-.rating label:hover,
-.rating label:hover ~ label {
-  color: brown;
-  transition: color 0.3s;
-}
+            }
 
-    </style>
-</head>
-<?php
-extract($onesp);
-    $img = $img_path. $imgsp;
-?>
-        <div class="spct">
-            <div class="tsp"> 
-                <!-- <img src="/Duanmau-FPT/img/combo.png" alt=""> <br> -->
-            <?php 
-            echo '<img src="'.$img.'">';
-            ?> <br>
-            </div>
-            <div id="tsp" class="tsp">
-            <h1><?=$namesp ?></h1>
-            <span>Giá: <?=$newpricesp?>,000Đ</span> <br>
-            <p>
-            <strong>Mô tả:</strong><br>
-                <!-- Sushi thường được chấm với mù tạt (wasabi) hoặc nước tương Nhật Bản rồi thưởng thức.
-                Sushi ý chỉ món cơm ngọt nhẹ, nêm với giấm, còn gọi là shari, và được trang trí với neta, tức hải sản,
-                trứng hoặc rau củ, đã được nấu chín hay để sống. Ở nhiều quốc gia, sushi là một món ăn đắt tiền, tinh
-                tế, dùng trong những dịp đặc biệt. -->
-                <?=$des?>
-            </p>
-            <div class="rating">
-  <input value="5" name="rating" id="star5" type="radio">
-  <label for="star5"></label>
-  <input value="4" name="rating" id="star4" type="radio">
-  <label for="star4"></label>
-  <input value="3" name="rating" id="star3" type="radio">
-  <label for="star3"></label>
-  <input value="2" name="rating" id="star2" type="radio">
-  <label for="star2"></label>
-  <input value="1" name="rating" id="star1" type="radio">
-  <label for="star1"></label>
-</div>
+            .bl {
+                flex-direction: row;
+                border-collapse: collapse;
+                color: white;
+                text-align: center;
+                margin-top: 5%;
+                margin-bottom: 5%;
+                margin-left: 5%;
+            }
+
+            .bl th,
+            td {
+                width: 10%;
+                padding: 2%;
+                text-align: center;
+
+            }
+
+            .bl th {
+                margin-left: 10%;
+                font-size: 20px;
+                background-color: brown;
+                box-shadow: 0px 0px 5px brown;
+
+            }
+
+            .tableBl textarea {
+                padding: 2%;
+                width: 90%;
+                background-color: black;
+                box-shadow: 2px 2px 5px #888888;
+                color: white;
+
+            }
+
+            .row-flex {
+                display: flex;
+                flex-direction: row;
+            }
+            .row-flex a{
+                margin-left: 3%;
+            }
+
+            .tableBl textarea:hover {
+                background-color: white;
+                color: black;
+            }
+
+            .rating {
+                display: inline-block;
+            }
+
+            .rating input {
+                display: none;
+            }
+
+            .rating label {
+                float: right;
+                cursor: pointer;
+                color: #ccc;
+                transition: color 0.3s;
+            }
+
+            .rating label:before {
+                content: '\2605';
+                font-size: 20px;
+            }
+
+            .rating input:checked~label,
+            .rating label:hover,
+            .rating label:hover~label {
+                color: brown;
+                transition: color 0.3s;
+            }
+            .binhl{
+                margin-left:-10%;
+            }
+ </style>
+                </head>
+                <?php
+            extract($onesp);
+            $img = $img_path . $imgsp;
+            ?>
+                <div class="spct">
+                    <div class="tsp">
+                        <!-- <img src="/Duanmau-FPT/img/caombo.png" alt=""> <br> -->
+                        <?php 
+                        echo '<img src="'.$img.'">';
+                        ?> <br>
+                    </div>
+                    <div id="tsp" class="tsp">
+                        <h1><?=$namesp ?></h1>
+                        <span>Giá: <?=$newpricesp?>,000Đ</span> <br>
+                        <p>
+                            <strong>Mô tả:</strong><br>
+                            <?=$des?>
+                        </p>
+                        <!-- <input type="text" name="id" value="<?=$id?>" >
+                        <input type="text" name="namesp"  value="<?=$namesp?>" >
+                        <input type="text" name="imgsp"  value="<?=$imgsp?>" >
+                        <input type="text" name="newpricesp"  value="<?=$newpricesp?>'" > -->
+                        <!-- <div class="rating">
+                            <input value="5" name="rating" id="star5" type="radio">
+                            <label for="star5"></label>
+                            <input value="4" name="rating" id="star4" type="radio">
+                            <label for="star4"></label>
+                            <input value="3" name="rating" id="star3" type="radio">
+                            <label for="star3"></label>
+                            <input value="2" name="rating" id="star2" type="radio">
+                            <label for="star2"></label>
+                            <input value="1" name="rating" id="star1" type="radio">
+                            <label for="star1"></label>
+                        </div> -->
 
             <div class="row-flex">
-           <a href="index.php?act=thanhtoan">
-            <button >Mua ngay</button></a> <button>Thêm vào giỏ hàng</button>
-            </div>
-            </div>
+                <a href="index.php?act=thanhtoan">
+                    <button>Mua ngay</button></a> 
+                    <?php
+                    $sesi = $_SESSION['userdn'];
+                        if(isset($sesi)){
+                            
+                        echo '
+                        <form action="index.php?act=giohang1" method="post">
+                        <input type="hidden" name="id" value="'.$id.'" >
+                        <input type="hidden" name="namesp"  value="'.$namesp.'" >
+                        <input type="hidden" name="imgsp"  value="'.$imgsp.'" >
+                        <input type="hidden" name="newpricesp"  value="'.$newpricesp.'" >
+                        <!-- <a href="index.php?act=giohang1"> -->
+                        <a>
+                            <input id="_button" type="submit" name="addtocard" value="Thêm vào giỏ hàng"></a>
+                            <!-- </a> -->
+                        </form>';
+
+                        }
+                        else{
+                            ?>
+                    <a href="index.php?act=dangnhap"><button>
+                    Cần đăng nhập 
+                    </button></a>
+
+                    <?php }; ?>
+
+
+                    
+                    </div>
+                    
         </div>
+        
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <div class="binhl">
+   <script>
+$(document).ready(function() {
+    $("#binhluan").load("view/binhluan.php", {
+        idpro: <?=$id?>
+    });
+});
+    </script>
+    <div class="tableBl">
 
-        <div class="tableBl">
-
-        <table class="bl">
-                <tr>
-                    <th>BÌNH LUẬN</th>
-                    <th>USER</th>
-                    <th>NGÀY</th>
-                </tr>
-                <tr>
-                    <td>Món này rất ngon, sau này sẽ ủng hộ lại.</td>
-                    <td>Nguyễn Xinh</td>
-                    <td>08/ 12/ 2023</td>
-                </tr>
-                <tr>
-                    <td>Sản phẩm tươi ngon! Đáng mua.</td>
-                    <td>Quốc</td>
-                    <td>03/ 11/ 2023</td>
-                </tr>
-                <tr>
-                    <td>Đồ ăn ngon miệng, sạch sẽ, ăn hoài không ngán.</td>
-                    <td>Như Ly</td>
-                    <td>20/ 10/ 2023</td>
-                </tr>
-
-            </table>
+        <table class="bl" id="binhluan">
 
 
-            <textarea name="" id="" cols="100" rows="5" placeholder="Viết bình luận của bạn"></textarea><br><br>
-            <button>Gửi bình luận</button>
-            </div>
+        </table>
+    </div>
+   </div>
+    
