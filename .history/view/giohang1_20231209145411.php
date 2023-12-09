@@ -138,7 +138,7 @@ if ($role ==1) { ?>
                         $hinhsp = $img_path.$cart[2];
                         $ttien = $cart[3] * $cart[4];
                         $tong += $ttien;
-                        $xoasp= '<a href="index.php?act=delcart&idcart='.$i.'"><input type="button" value="Xoá"></a>';
+                        $xoasp= '<a href="index.php?act=delcart&idcart='.$i.'"><input type="button" value="Xoá"> </a>';
                         echo '
                         <tr>
                         <td><img src="'.$hinhsp.'" height="80px" alt=""></td>

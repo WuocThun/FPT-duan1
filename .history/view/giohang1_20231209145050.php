@@ -138,10 +138,10 @@ if ($role ==1) { ?>
                         $hinhsp = $img_path.$cart[2];
                         $ttien = $cart[3] * $cart[4];
                         $tong += $ttien;
-                        $xoasp= '<a href="index.php?act=delcart&idcart='.$i.'"><input type="button" value="Xoá"></a>';
+                        $xoasp= '<a href="index.php?act=delcart&idcart='.$i.'"><input type="button" value="Xoá"> </a>';
                         echo '
                         <tr>
-                        <td><img src="'.$hinhsp.'" height="80px" alt=""></td>
+                        <td><img src="'.$hinhsp.'" alt=""></td>
                         <td>'.$cart[1].'<br>
                         <td>'.$cart[3].',000<br>
                         <td>'.$cart[4].'<br>
@@ -152,7 +152,7 @@ if ($role ==1) { ?>
                     </tr>
 
                     ';
-                    $i+=1;
+                    $i +=1;
                 }
                     ?>
         </table>

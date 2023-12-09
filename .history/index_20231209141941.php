@@ -291,16 +291,15 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
 
             include "view/giohang1.php";
             break;
-            case "delcart":
+            case "delecart":
                 if(isset($_GET['idcart']))
                 {
-                    $idcart = $_GET['idcart'];
-                 //xoá mảng()
-                    array_slice( $_SESSION['mycart'],$idcart,1);
+                    //xoá mảng()
+                    array_slice($_SESSION['mycart'],$_GET['idcart'],1);
                 }else{
                     $_SESSION['mycart']=[];
                 }
-                header('location: index.php?act=giohang1');
+                header('location: view/giohang1.php');
                 break;
         default:
             include "view/home.php";

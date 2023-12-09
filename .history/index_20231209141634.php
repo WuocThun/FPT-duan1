@@ -260,18 +260,18 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                 }
                 include 'view/quenmk.php';
                 break;
-            // case "quenmk":
-            //     if (isset($_POST['quenmk']) && ($_POST['quenmk'])) {
-            //         $email = $_POST['email'];
-            //         $checkemail = checkemail($email);
-            //         if (is_array($checkemail)) {
-            //             $thongbao = "Mật khẩu của bạn là: " . $checkemail['pass'];
-            //         } else {
-            //             $thongbao = "Không tìm thấy Email";
-            //         }
-            //     }
-            //     include 'view/quenmk.php';
-            //     break;
+            case "quenmk":
+                if (isset($_POST['quenmk']) && ($_POST['quenmk'])) {
+                    $email = $_POST['email'];
+                    $checkemail = checkemail($email);
+                    if (is_array($checkemail)) {
+                        $thongbao = "Mật khẩu của bạn là: " . $checkemail['pass'];
+                    } else {
+                        $thongbao = "Không tìm thấy Email";
+                    }
+                }
+                include 'view/quenmk.php';
+                break;
             case "thoat":
                 session_unset();
                 header('location: index.php');
@@ -286,21 +286,14 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                 $thanhtien = $soluong * $newpricesp;
                 $spadd= [$id, $namesp,$img,$newpricesp,$soluong,$thanhtien];
                 //đẩy mảng con vô mảng 3
+
                 array_push($_SESSION['mycart'],$spadd);
             };
 
             include "view/giohang1.php";
             break;
-            case "delcart":
-                if(isset($_GET['idcart']))
-                {
-                    $idcart = $_GET['idcart'];
-                 //xoá mảng()
-                    array_slice( $_SESSION['mycart'],$idcart,1);
-                }else{
-                    $_SESSION['mycart']=[];
-                }
-                header('location: index.php?act=giohang1');
+            case "delecart":
+                header('location: view/giohang1.php');
                 break;
         default:
             include "view/home.php";

@@ -296,7 +296,7 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                 {
                     $idcart = $_GET['idcart'];
                  //xoá mảng()
-                    array_slice( $_SESSION['mycart'],$idcart,1);
+                    array_slice($_SESSION['mycart'],$idcart,1);
                 }else{
                     $_SESSION['mycart']=[];
                 }

@@ -122,15 +122,6 @@ if ($role ==1) { ?>
                         </td>
                         <td><button>Xóa</button></td>
                     </tr> -->
-            <tr>
-                <td>Ảnh món ăn</td>
-                <td>Tên món ăn<br>
-                <td>Giá<br>
-                <td>Số lượng<br>
-                <td>Thành tiền<br>
-                </td>
-                <td></td>
-            </tr>
             <?php
                     $tong = 0;
                     $i= 0;
@@ -138,27 +129,29 @@ if ($role ==1) { ?>
                         $hinhsp = $img_path.$cart[2];
                         $ttien = $cart[3] * $cart[4];
                         $tong += $ttien;
-                        $xoasp= '<a href="index.php?act=delcart&idcart='.$i.'"><input type="button" value="Xoá"></a>';
+                        $xoasp= '<a href="index.php?act=delecart&idcart='.$i.'"><input type="submit" value="Xoá"> </a>';
                         echo '
                         <tr>
-                        <td><img src="'.$hinhsp.'" height="80px" alt=""></td>
+                        <td><img src="'.$hinhsp.'" alt=""></td>
                         <td>'.$cart[1].'<br>
-                        <td>'.$cart[3].',000<br>
+                        <td>'.$cart[3].'<br>
                         <td>'.$cart[4].'<br>
-                        <td>'.$ttien.',000<br>
+                        <td>'.$ttien.'<br>
                         </td>
-                         <td>'.$xoasp.'</td>
+                         <td><button>'.$xoasp.'</button></td>
                           <!--  <td><button>Xóa</button></td> -->
                     </tr>
 
                     ';
-                    $i+=1;
+                    $i +=1;
+
                 }
+                    
                     ?>
         </table>
         <?php
                 echo '
-                <span>Tổng tiền:'.$tong.',000</span>  <a href="index.php?act=thanhtoan"><button>Thanh toán</button></a>
+                <span>Tổng tiền:'.$tong.'</span>  <a href="index.php?act=thanhtoan"><button>Thanh toán</button></a>
                 ';
                 ?>
     </div>
