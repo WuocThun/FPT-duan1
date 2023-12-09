@@ -124,10 +124,10 @@ if ($role ==1) { ?>
                     </tr> -->
             <tr>
                 <td>Ảnh món ăn</td>
-                <td>Tên món ăn<br>
-                <td>Giá<br>
-                <td>Số lượng<br>
-                <td>Thành tiền<br>
+                <td>Tên món ăn</td>
+                <td>Giá</td>
+                <td>Số lượng</td>
+                <td>Thành tiền</td>
                 </td>
                 <td></td>
             </tr>
@@ -139,19 +139,14 @@ if ($role ==1) { ?>
                         $ttien = $cart[3] * $cart[4];
                         $tong += $ttien;
                         $xoasp= '<a href="index.php?act=delcart&idcart='.$i.'"><input type="button" value="Xoá"></a>';
-                        echo '
-                        <tr>
+                        echo '<tr>
                         <td><img src="'.$hinhsp.'" height="80px" alt=""></td>
-                        <td>'.$cart[1].'<br>
-                        <td>'.$cart[3].',000<br>
-                        <td>'.$cart[4].'<br>
-                        <td>'.$ttien.',000<br>
-                        </td>
-                         <td>'.$xoasp.'</td>
-                          <!--  <td><button>Xóa</button></td> -->
-                    </tr>
-
-                    ';
+                        <td>'.$cart[1].'</td>
+                        <td>'.$cart[3].',000</td>
+                        <td>'.$cart[4].'</td>
+                        <td>'.$ttien.',000</td>
+                         <td>'.$xoasp.'</td>        
+                    </tr>';
                     $i+=1;
                 }
                     ?>
