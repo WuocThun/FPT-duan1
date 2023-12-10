@@ -122,6 +122,11 @@ if ($role ==1) { ?>
                         </td>
                         <td><button>Xóa</button></td>
                     </tr> -->
+
+    
+            <?php
+                view_cart();
+
             <tr>
                 <td>Ảnh món ăn</td>
                 <td>Tên món ăn</td>
@@ -149,12 +154,11 @@ if ($role ==1) { ?>
                     </tr>';
                     $i+=1;
                 }
+
                     ?>
         </table>
         <?php
-                echo '
-                <span>Tổng tiền:'.$tong.',000</span>  <a href="index.php?act=thanhtoan"><button>Thanh toán</button></a>
-                ';
+             
                 ?>
     </div>
 
