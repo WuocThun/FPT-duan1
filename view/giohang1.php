@@ -116,47 +116,9 @@ if ($role ==1) { ?>
     <h1>GIỎ HÀNG</h1>
     <div class="tonggh">
         <table>
-            <!-- <tr>
-                        <td><img src="/FPT-duan1/img/mid.png" alt=""></td>
-                        <td> Salad thịt giăm bông sống<br>
-                        </td>
-                        <td><button>Xóa</button></td>
-                    </tr> -->
-
-    
             <?php
-                view_cart1();
-
-            // <tr>
-            //     <td>Ảnh món ăn</td>
-            //     <td>Tên món ăn</td>
-            //     <td>Giá</td>
-            //     <td>Số lượng</td>
-            //     <td>Thành tiền</td>
-            //     </td>
-            //     <td></td>
-            // </tr>
+                view_cart1();    
             ?>
-            <?php
-                    $tong = 0;
-                    $i= 0;
-                    foreach ($_SESSION['mycart'] as $cart){
-                        $hinhsp = $img_path.$cart[2];
-                        $ttien = $cart[3] * $cart[4];
-                        $tong += $ttien;
-                        $xoasp= '<a href="index.php?act=delcart&idcart='.$i.'"><input type="button" value="Xoá"></a>';
-                        echo '<tr>
-                        <td><img src="'.$hinhsp.'" height="80px" alt=""></td>
-                        <td>'.$cart[1].'</td>
-                        <td>'.$cart[3].',000</td>
-                        <td>'.$cart[4].'</td>
-                        <td>'.$ttien.',000</td>
-                         <td>'.$xoasp.'</td>        
-                    </tr>';
-                    $i+=1;
-                }
-
-                    ?>
         </table>
         <?php
              

@@ -7,13 +7,13 @@
 .tongtt {
     background-color: rgba(11, 11, 11, 0.3);
     /* Màu nền cho thẻ nav */
-    transform: translate(60%, -121%);
+    transform: translate(60%, -116%);
     /* Để căn giữa thẻ nav chính xác */
     color: white;
     width: 37%;
     margin-left: 30%;
     text-align: center;
-    padding: 3%;
+    padding: 2%;
     border-radius: 100px;
     box-shadow: 0px 0px 5px black;
     margin-bottom: -40%;
@@ -48,7 +48,7 @@
 }
 
 .tongtt input[type="text"] {
-    width: 100%;
+    width: 95%;
 }
 
 .tongtt input[type="submit"] {
@@ -67,6 +67,19 @@
     /* Giảm độ mờ khi hover */
 
 
+}
+.tongtt_2{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.tongtt_2 tr td{
+    width: 150px;
+    text-align: center;
+   height: 50px; 
+}
+.tongtt_2 td:nth-child(1){
+    width: 40%;
 }
 
 
@@ -125,8 +138,7 @@ if(isset($_SESSION['userdn'])){
     </div>
 </div>
 <div class="thanhtoan">
-    <video loop autoplay src="img/sushi1.mp4"></video>
-    <div class="tongtt">
+    <div class="tongtt_2">
             <table>
             <?php
         view_cart_noPay();
