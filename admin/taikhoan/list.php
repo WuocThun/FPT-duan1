@@ -22,12 +22,12 @@
                         extract($taikhoan);
                         $suakh = "index.php?act=suakh&id=".$id;
                         $xoakh = "index.php?act=xoakh&id=".$id;
-                        $hinhpath = "../upload/".$imgsp;
-                        if(is_file($hinhpath)) {
-                            $hinh ="<img src='".$hinhpath."' height='80'>";
-                        }else {
-                            $hinh = "No photo";
-                        }
+                        // $hinhpath = "../upload/".$imgsp;
+                        // if(is_file($hinhpath)) {
+                        //     $hinh ="<img src='".$hinhpath."' height='80'>";
+                        // }else {
+                        //     $hinh = "No photo";
+                        // }
 if($role >=1){
     $role = "admin";
 }else {
@@ -58,10 +58,10 @@ if($role >=1){
 
     </div>
     <div class="row mb20 row_form_btn">
-        <input type="button" value="Chọn tất cả">
+        <!-- <input type="button" value="Chọn tất cả">
         <input type="button" value="Bỏ chọn tất cả">
-        <input type="button" value="Xoá các mục đã chọn">
-        <a href="index.php?act=addsp"><input type="button" value="Nhập thêm"></a>
+        <input type="button" value="Xoá các mục đã chọn"> -->
+        <!-- <a href="index.php?act=addsp"><input type="button" value="Nhập thêm"></a> -->
     </div>
     <div class="row formcontent">
     </div>

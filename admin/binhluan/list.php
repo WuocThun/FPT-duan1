@@ -26,12 +26,12 @@ extract($ses);
             extract($binhluan);
             $suabl = "index.php?act=suabl&id=".$id;
             $xoabl = "index.php?act=xoabl&id=".$id;
-            $imgpath= "../upload/".$imgdm;
-            if(is_file($imgpath)){
-                $hinh = "<img src='".$imgpath."' height='80'>";
-            }else{
-                $hinh = "No photo";
-            }
+            // $imgpath= "../upload/".$imgdm;
+            // if(is_file($imgpath)){
+            //     $hinh = "<img src='".$imgpath."' height='80'>";
+            // }else{
+            //     $hinh = "No photo";
+            // }
             echo ' <tr>
                     <td><input type="checkbox" name="" id=""></td>
                     <td>' . $id . '</td>
@@ -53,9 +53,9 @@ extract($ses);
 
 </div>
 <div class="row mb20 row_form_btn">
-    <input type="button" value="Chọn tất cả">
+    <!-- <input type="button" value="Chọn tất cả">
     <input type="button" value="Bỏ chọn tất cả">
-    <input type="button" value="Xoá các mục đã chọn">
+    <input type="button" value="Xoá các mục đã chọn"> -->
 </div>
 <div class="row formcontent">
 </div>
