@@ -46,7 +46,6 @@ if (is_array($dm)){
     <div class="row frmtitle">
         <h1>Cập nhật danh mục</h1>
     </div>
-
     <div class="row formcontent">
         <form class="form_dm" action="index.php?act=updatedm" enctype="multipart/form-data" method="post" class="box_dm">
             <div class="row mb10 text_dm">

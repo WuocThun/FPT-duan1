@@ -93,7 +93,7 @@ if(isset($_SESSION['userdn'])){
     $name= "";
     $addr= "";
     $tel= "";
-    $name= "";
+    $id= "";
 };
 
 ?>

@@ -29,10 +29,17 @@ function loadall_TK()
 }
 function loalone_TK($id)
 {
-    $sql = "select * from taikhoan where id=".$id;
-    $oneTK = pdo_query($sql);
+    $sql = "select * from taikhoan where id=".$id ;
+    $oneTK = pdo_query_one($sql);
     return $oneTK;
 }
+
+function update_TK($id,$user,$pass,$email,$tel,$addr,$role,$nameuser)
+{
+    $sql = "update taikhoan set user='" . $user . "',pass='" . $pass . "'
+     ,email='" . $email . "',tel='" . $tel . "',addr='" . $addr . "',role='" . $role . "',nameuser='" . $nameuser . "'
+     where id=" . $id;
+    pdo_execute($sql);}
 function delete_taikhoan($id)
 {
     $sql = "delete from taikhoan where id=" . $_GET['id'];

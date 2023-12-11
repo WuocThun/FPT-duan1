@@ -173,10 +173,11 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                     $id = $_POST['id'];
                     $user = $_POST['user'];
                     $pass = $_POST['pass'];
+                    $nameuser = $_POST['nameuser'];
                     $email = $_POST['email'];
                     $tel = $_POST['tel'];
                     $addr = $_POST['addr'];
-                    update_taikhoan($id, $user, $nameuser,$pass, $email, $tel, $addr);
+                    update_taikhoan($id, $user, $nameuser ,$pass, $email, $tel, $addr);
                     $_SESSION['userdn'] = check_user($user, $pass);
                     // header ('location: view/edit_taikhoan.php');
                 }  include 'view/edit_taikhoan.php';
@@ -220,11 +221,10 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                 $newpricesp= $_POST['newpricesp'];
                 $soluong =1;
                 $thanhtien = $soluong * $newpricesp;
-                $spadd= [$id, $namesp,$img,$newpricesp,$soluong,$thanhtien];
+                $spadd= [$id, $namesp,$imgsp,$newpricesp,$soluong,$thanhtien];
                 //đẩy mảng con vô mảng 3
                 array_push($_SESSION['mycart'],$spadd);
             };
-
             include "view/giohang1.php";
             break;
             case "delcart":
@@ -250,9 +250,8 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                     //insert into cart : $_SESSION['mycart'] & idbill
                     foreach ($_SESSION['mycart'] as $cart){
                         // insert_cart($_SESSION['userdn']['id'],$cart[2],$cart[1],$cart[3],$cart[4],$cart[5],$idbill);
-                        insert_cart($_SESSION['userdn']['id'],$cart[0],$cart[2],$cart[1],$cart[4],$cart[5],$idbill);
+                        insert_cart($_SESSION['éeuserdn']['id'],$cart[0],$cart[2],$cart[1],$cart[4],$cart[5],$idbill);
                     }
-
                     ///xoá session cart 
                     $_SESSION['cart']=[];
 

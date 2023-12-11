@@ -153,10 +153,25 @@ if (isset($_GET['act'])) {
                 break;
                 case "suakh":
                     if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                        $doaloneTk = loalone_TK($_GET['id']);
+                        $tk = loalone_TK($_GET['id']);
                     }
-                    $listTK= loadall_TK();
                 include 'taikhoan/update.php';
+                break;
+            case "updatekh":
+                if (isset($_POST['id']) && ($_POST['id'] > 0)){
+                    $id = $_POST['id'];
+                    $user = $_POST['user'];
+                    $pass = $_POST['pass'];
+                    $email = $_POST['email'];
+                    $tel = $_POST['tel'];
+                    $addr = $_POST['addr'];
+                    $role = $_POST['role'];
+                    $nameuser = $_POST['nameuser'];
+                    update_TK($id,$user,$pass,$email,$tel,$addr,$role,$nameuser);
+
+                }
+                $listtaikhoan= loadall_TK();
+                include "taikhoan/list.php";
                 break;
             //END KHÁCH HÀNG
             // BÌNH LUẬN

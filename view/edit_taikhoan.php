@@ -334,6 +334,8 @@ if (isset($_SESSION['userdn'])&& (is_array($_SESSION['userdn']))) {
                         <input type="text" id="name" name="user" value="<?=$user?>" ><br><br>
                         <p>Mật khẩu</p>
                         <input type="text" id="pass" name="pass" value="<?=$pass?>"><br><br>
+                        <p>Tên người dùng</p>
+                        <input type="text" id="pass" name="nameuser" value="<?=$nameuser?>"><br><br>
                         <p>Email</p>
                         <input type="text" id="email" name="email" value="<?=$email?>"><br><br>
                         <p>Số điện thoại</p>

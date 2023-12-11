@@ -19,7 +19,7 @@
                 $xoadm = "index.php?act=xoadm&id=".$id;
                 $imgpath= "../upload/".$imgdm;
                 if(is_file($imgpath)){
-                    $hinh = "<img src='".$imgpath."' height='80'>";
+                    $hinh = "<img src='".$imgpath."' height='80px'>";
                 }else{
                     $hinh = "No photo";
                 }

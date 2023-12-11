@@ -51,7 +51,8 @@
             <input type="hidden" name="id" value="<?php if(isset($id)&& ($id >0)) echo $id ?>">
             <input type="submit" class="btn_dm" name="capnhat" value="Cập nhật">
             <a class="btn_dm" href="index.php?act=dsbl">
-                <input class="btn_dm" type="button" value="Danh Sách"></a>
+                <input class="btn_dm" type="button" value="Danh Sách">
+            </a>
         </form>
     </div>
 </div>

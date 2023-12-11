@@ -1,5 +1,7 @@
 <?php
-extract($doaloneTk);
+if(is_array($tk)) {
+        extract($tk);
+    };
 ?>
 <div class="row container_dm">
     <style>
@@ -32,7 +34,7 @@ extract($doaloneTk);
 
     .imgpath {
         width: 100px;
-        height: 70;
+        height: 70px;
 
     }
     </style>
@@ -45,6 +47,10 @@ extract($doaloneTk);
             <div class="row mb10 text_dm">
                 Tên tài khoản<br>
                 <input type="text" name="user" value="<?=$user?>">
+            </div>
+            <div class="row mb10 text_dm">
+                Họ và tên <br>
+                <input type="text" name="nameuser" value="<?=$nameuser?>">
             </div>
             <div class="row mb10 text_dm">
                 Pass <br>
@@ -62,16 +68,20 @@ extract($doaloneTk);
                 Địa chỉ <br>
                 <input type="text" name="addr" value="<?=$addr?>">
             </div>
+
             <div class="row mb10 text_dm">
                 Phân quyền <br>
-                <select name="role" id="">
-                    <option aria-valuemin="1" type="radio" name="addr" value="<?=$role?>">
-                </select>
+                <table>
+                    <td>
+                    <td><input type="radio" name="role" id="" value="1" checked>Admin</td>
+                     <td><input type="radio" name="role" id="" value="0" >Người dùng </td>
+                    </td>
+                </table>
             </div>
 
 
             <div class="row mb20 btn_container_dm">
-                <input type="hidden" name="id" value="<?php if(isset($id)&& ($id >0)) echo $id ?>">
+                <br> <input type="text" name="id" value="<?php if(isset($id)&& ($id >0)) echo $id ?>">
                 <input type="submit" class="btn_dm" name="capnhat" value="Cập nhật">
                 <input type="submit" class="btn_dm" value="Nhập lại">
                 <a class="btn_dm" href="index.php?act=dskh">

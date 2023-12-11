@@ -23,7 +23,6 @@ function view_cart(){
         $xoasp= '<a href="index.php?act=delcart&idcart='.$i.'"><input type="button" value="Xoá"></a>';
        
         echo '
-        
         <tr>
         <td><img src="'.$hinhsp.'" height="80px" alt=""></td>
         <td>'.$cart[1].'<br>
@@ -32,9 +31,7 @@ function view_cart(){
         <td>'.$ttien.',000<br>
         </td>
          <td>'.$xoasp.'</td>
-          <!--  <td><button>Xóa</button></td> -->
     </tr>
-
     ';
     $i+=1;
 
