@@ -14,20 +14,19 @@ if(isset($bill)&&(is_array($bill))){
     - tổng đơn hàng <?=$bill['total']?>,000
 </li>
 <?php
-if($bill['bill_pttt']!=1)
+if($bill['bill_pttt']=1)
 {
-    echo '
-    <li>
-        - phương thức thanh toán: Thanh toán Online
-    </li>
-    ';
-}else{
-    echo '
+echo '
 <li>
     - phương thức thanh toán: Thanh toán sau khi nhận hàng
 </li>
 ';
- 
+}elseif($bill['bill_pttt']=2){
+    echo '
+<li>
+    - phương thức thanh toán: Thanh toán Online
+</li>
+';
 }
 ?>
 
@@ -35,12 +34,12 @@ if($bill['bill_pttt']!=1)
 <div>
 <table>
     <tr>
-        <td>Người đặt hàng: </td>
+        <td>Người đặt hàng</td>
         <td><?=$bill['bill_name']?>
         </td>
     </tr>
     <tr>
-        <td>số điện thoại: </td>
+        <td>số điện thoại</td>
         <td><?=$bill['bill_tel']?>
         </td>
     </tr>

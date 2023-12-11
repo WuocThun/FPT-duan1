@@ -29,7 +29,7 @@ function loadall_TK()
 }
 function loalone_TK($id)
 {
-    $sql = "select * from taikhoan where id=".$id ;
+    $sql = "select * from taikhoan where id=".$id;
     $oneTK = pdo_query_one($sql);
     return $oneTK;
 }

@@ -254,12 +254,6 @@ function loadall_cart($idbill)
     $bill = pdo_query($sql);
     return $bill;
 }
-function loadall_cart_cout($idbill)
-{
-    $sql = "select * from cart where idbill=" .$idbill;
-    $bill = pdo_query($sql);
-    return sizeof($bill);
-}
 function loadall_bill($iduser)
 {
     $sql = "select * from bill where iduser=" .$iduser;
@@ -268,18 +262,11 @@ function loadall_bill($iduser)
 }
 function get_ttdh($n) {
     switch($n){
-        case "0":
-            $tt = "Đơn hàng mới";
+        case "":
             break;
-        case "1":
-            $tt = "Đang xử lí";
+        case "":
             break;
-        case "2":
-            $tt = "Đang giao hàng";
-            break;
-        case "3":
-            $tt = "Đã giao hàng";
+        case "":
             break;
     }
-    return $tt;
 }

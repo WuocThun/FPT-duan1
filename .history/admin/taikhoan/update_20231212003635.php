@@ -81,7 +81,7 @@ if(is_array($tk)) {
 
 
             <div class="row mb20 btn_container_dm">
-                <br> <input type="hidden" name="id" value="<?php if(isset($id)&& ($id >0)) echo $id ?>">
+                <br> <input type="text" name="id" value="<?php if(isset($id)&& ($id >0)) echo $id ?>">
                 <input type="submit" class="btn_dm" name="capnhat" value="Cập nhật">
                 <input type="submit" class="btn_dm" value="Nhập lại">
                 <a class="btn_dm" href="index.php?act=dskh">

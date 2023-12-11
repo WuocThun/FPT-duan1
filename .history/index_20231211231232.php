@@ -263,9 +263,8 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                 $bill = loadOne_bill($idbill);
                 include "view/xacnhangiohang.php";
                 break;
-                case "giohangcuatoi":
-                    $listbill = loadall_bill($_SESSION['userdn']['id']);
-                    include "view/giohangcuatoi.php";
+                case "test":
+                    include "view/test.php";
                     break;
         default:
             include "view/home.php";

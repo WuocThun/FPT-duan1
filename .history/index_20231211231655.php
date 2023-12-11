@@ -265,6 +265,7 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                 break;
                 case "giohangcuatoi":
                     $listbill = loadall_bill($_SESSION['userdn']['id']);
+                    
                     include "view/giohangcuatoi.php";
                     break;
         default:

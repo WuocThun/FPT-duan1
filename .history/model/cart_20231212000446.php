@@ -254,11 +254,11 @@ function loadall_cart($idbill)
     $bill = pdo_query($sql);
     return $bill;
 }
-function loadall_cart_cout($idbill)
+function loadall_cart($idbill)
 {
     $sql = "select * from cart where idbill=" .$idbill;
     $bill = pdo_query($sql);
-    return sizeof($bill);
+    return $bill;
 }
 function loadall_bill($iduser)
 {

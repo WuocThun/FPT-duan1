@@ -8,26 +8,25 @@ if(isset($bill)&&(is_array($bill))){
     KOKORO <?=$bill['id']?>
 </li>
 <li>
-    - Ngày đặt hàng <?=$bill['ngaydathang']?> 
+    - Ngày đặt hàng <?=$bill['ngaydathang']?> ,000
 </li>
 <li>
-    - tổng đơn hàng <?=$bill['total']?>,000
+    - tổng đơn hàng <?=$bill['total']?>
 </li>
 <?php
-if($bill['bill_pttt']!=1)
+if($bill['bill_pttt']=1)
 {
-    echo '
-    <li>
-        - phương thức thanh toán: Thanh toán Online
-    </li>
-    ';
-}else{
-    echo '
+echo '
 <li>
     - phương thức thanh toán: Thanh toán sau khi nhận hàng
 </li>
 ';
- 
+}else{
+    echo '
+<li>
+    - phương thức thanh toán: Thanh toán Online
+</li>
+';
 }
 ?>
 
@@ -35,12 +34,12 @@ if($bill['bill_pttt']!=1)
 <div>
 <table>
     <tr>
-        <td>Người đặt hàng: </td>
+        <td>Người đặt hàng</td>
         <td><?=$bill['bill_name']?>
         </td>
     </tr>
     <tr>
-        <td>số điện thoại: </td>
+        <td>số điện thoại</td>
         <td><?=$bill['bill_tel']?>
         </td>
     </tr>

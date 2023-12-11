@@ -240,14 +240,14 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                 //tạo bill
                 if (isset($_POST['dongydathang']) && ($_POST['dongydathang'])) {
                     if(isset($_SESSION['userdn']))
-                    $iduser = $_SESSION['userdn']['id'];
+                    $iduser
                     $name= $_POST['nameuser'];
                     $tel= $_POST['tel'];
                     $addr= $_POST['addr'];
                     $pttt= $_POST['pttt'];
                     $ngaydathang = date("d/m/Y");
                     $tongdonhang = tongdonhang();
-                    $idbill = insert_bill($iduser,$name, $tel,$addr,$pttt,$ngaydathang,$tongdonhang);
+                    $idbill = insert_bill($name, $tel,$addr,$pttt,$ngaydathang,$tongdonhang);
                     //insert into cart : $_SESSION['mycart'] & idbill
                     foreach ($_SESSION['mycart'] as $cart){
                         // insert_cart($_SESSION['userdn']['id'],$cart[2],$cart[1],$cart[3],$cart[4],$cart[5],$idbill);
@@ -263,9 +263,8 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                 $bill = loadOne_bill($idbill);
                 include "view/xacnhangiohang.php";
                 break;
-                case "giohangcuatoi":
-                    $listbill = loadall_bill($_SESSION['userdn']['id']);
-                    include "view/giohangcuatoi.php";
+                case "test":
+                    include "view/test.php";
                     break;
         default:
             include "view/home.php";

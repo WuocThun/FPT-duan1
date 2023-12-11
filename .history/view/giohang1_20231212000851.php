@@ -109,7 +109,7 @@ extract($_SESSION['userdn']);
 if ($role ==1) { ?>
     <a href="admin/index.php">Đăng nhập Admin</a> <br>
     <?php }?> 
-    <a href="index.php?act=giohangcuatoi">Đơn hàng của tôi</a> <br>
+    <a href="index.php?act=giohangcuatoi">Đơn hàng của tôi</a> 
     <a href="index.php?act=quenmk">Quên Mật khẩu</a> <br>
     <a href="index.php?act=thoat">Thoát</a> <br>
 </div>
