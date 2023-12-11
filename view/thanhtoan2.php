@@ -87,13 +87,14 @@ if(isset($_SESSION['userdn'])){
     $nameuser= $_SESSION['userdn']['nameuser'];
     $addr= $_SESSION['userdn']['addr'];
     $tel= $_SESSION['userdn']['tel'];
-    $name= $_SESSION['userdn']['user'];
     $id= $_SESSION['userdn']['id'];
 }else{
     $name= "";
+    $nameuser="";
     $addr= "";
     $tel= "";
-    $name= "";
+    $id= "";
+
 };
 
 ?>

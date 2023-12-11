@@ -224,7 +224,6 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                 //đẩy mảng con vô mảng 3
                 array_push($_SESSION['mycart'],$spadd);
             };
-
             include "view/giohang1.php";
             break;
             case "delcart":
@@ -250,17 +249,21 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                     //insert into cart : $_SESSION['mycart'] & idbill
                     foreach ($_SESSION['mycart'] as $cart){
                         // insert_cart($_SESSION['userdn']['id'],$cart[2],$cart[1],$cart[3],$cart[4],$cart[5],$idbill);
-                        insert_cart($_SESSION['userdn']['id'],$cart[0],$cart[2],$cart[1],$cart[4],$cart[5],$idbill);
+                        insert_cart($_SESSION['userdn']['id'],$cart[0],$cart[2],$cart[1],$cart[3],$cart[4],$cart[5],$idbill);
                     }
 
                     ///xoá session cart 
                     $_SESSION['cart']=[];
 
                 }
+                
                 $billct = loadall_cart($idbill);
                 $bill = loadOne_bill($idbill);
                 include "view/xacnhangiohang.php";
                 break;
+                case "test":
+                    include "view/test.php";
+                    break;
         default:
             include "view/home.php";
             break;

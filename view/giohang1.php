@@ -125,7 +125,7 @@ if ($role ==1) { ?>
 
     
             <?php
-                view_cart();
+                view_cart1();
 
             // <tr>
             //     <td>Ảnh món ăn</td>

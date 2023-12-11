@@ -26,7 +26,7 @@ if(isset($bill)&&(is_array($bill))){
     </tr>
     <tr>
         <td>số điện thoại</td>
-        <td><?=$bill['bill_tell']?>
+        <td><?=$bill['bill_tel']?>
         </td>
     </tr>
     <tr>
@@ -38,7 +38,16 @@ if(isset($bill)&&(is_array($bill))){
 </table>
 </div>
 <div>
+    <table>
     <?php 
-        bill_chitiet($listbill);
+        bill_chitiet($billct);
     ?>
+    </table>
 </div>
+<style>
+
+    *{
+        color: white;
+    }
+
+</style>
