@@ -20,7 +20,8 @@ function view_cart(){
         $hinhsp = $img_path.$cart[2];
         $ttien = $cart[3] * $cart[4];
         $tong += $ttien;
-        $xoasp= '<a href="index.php?act=delcart&idcart='.$i.'"><input type="button" value="Xoá"></a>';
+        $xoasp= '<a href="index.php?act=delcart&idcart='.$i.'">
+        <input type="button" value="Xoá"></a>';
        
         echo '
         
@@ -162,10 +163,10 @@ function view_cart1() {
         <tr>
         <td><img src="'.$hinhsp.'" height="80px" alt=""></td>
         <td>'.$cart[1].'</td>
-        <td>'.$cart[3].',000</td><br>
-        <td>'.$cart[4].'</td><br> 
-        <td>'.$ttien.',000</td><br>
-        <td>'.$xoasp.'</td><br>
+        <td>'.$cart[3].',000</td>
+        <td>'.$cart[4].'</td>
+        <td>'.$ttien.',000</td>
+        <td>'.$xoasp.'</td>
         
 
     </tr>
@@ -192,7 +193,6 @@ function view_cart_noPay() {
         <td>Giá</td> 
         <td>Số lượng</td>
         <td>Thành tiền</td>
-        <td></td>
     </tr>
 
 
@@ -208,9 +208,9 @@ function view_cart_noPay() {
         <tr>
         <td><img src="'.$hinhsp.'" height="80px" alt=""></td>
         <td>'.$cart[1].'</td>
-        <td>'.$cart[3].',000</td><br>
-        <td>'.$cart[4].'</td><br> 
-        <td>'.$ttien.',000</td><br>
+        <td>'.$cart[3].',000</td>
+        <td>'.$cart[4].'</td> 
+        <td>'.$ttien.',000</td>
 
     </tr>
 

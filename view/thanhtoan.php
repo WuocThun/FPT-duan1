@@ -5,10 +5,10 @@
     margin-top: -6%;
 }
 
-.tongtt {
+.tongtt{
     background-color: rgba(11, 11, 11, 0.3);
     /* Màu nền cho thẻ nav */
-    transform: translate(60%, -121%);
+    transform: translate(60%, -110%);
     /* Để căn giữa thẻ nav chính xác */
     color: white;
     width: 37%;
