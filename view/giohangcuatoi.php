@@ -109,9 +109,9 @@ font-size: 40px;     }
                 </tr>
                    <?php
                    if(is_array($listbill)){
-                    $ttdh = get_ttdh($bill['bill_status']);
-                    $count = loadall_cart_cout($bill['id']);
-                    foreach ($listbill as $bill){
+                       foreach ($listbill as $bill){
+                        $count = loadall_cart_cout($bill['id']);
+                        $ttdh = get_ttdh($bill['bill_status']);
                     extract($bill);
                         echo '
                         <tr>
