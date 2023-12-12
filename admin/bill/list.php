@@ -3,12 +3,14 @@
         <H1>Danh Sách đơn hàng</H1>
     </div>
     <div class="row mb10 frmdsloai">
-
+        <form action="index.php?act=listbill" method="post">    
+            <input type="text" name="kyw" placeholder="ID BILL" >
+            <input type="submit" name="listok" id="">
+        </form>
         <table>
             <tr>
-                <td></td>
                 <td>Mã đơn hàng</td>
-                <td>Khách hàng</td>
+                <td>Tên Khách hàng</td>
                 <td>Địa chỉ</td>
                 <td>Số điện thoại</td>
                 <td>Số lượng</td>
@@ -16,31 +18,29 @@
                 <td>Tình trạng đơn hàng</td>
                 <td>Ngày đặt hàng</td>
                 <td>Thao tác</td>
-                <td></td>
-              
             </tr>
              <?php
                     foreach ($listbill as $bill) {
                         extract($bill);
                         $xoabill ="index.php?act=xoabill&id=".$id ;
+                        $suabill ="index.php?act=suabill&id=".$id ;
                         $kh = '
-                        <td>'.$bill["bill_name"].'</td>
+                        '.$bill["bill_name"].'
                         <td>'.$bill["bill_addr"].'</td>
                         <td>'.$bill["bill_tel"].'</td>
                         ';
                         $countsp = loadall_cart_cout($bill['id']);
                         $ttdh = get_ttdh($bill['bill_status']);
                         echo ' <tr>
-                                <td><input type="checkbox" name="" id=""></td>
-                                <td>KOKORO- '.$bill['id'].'></td>
+                                <td>KOKORO- '.$bill['id'].'</td>
                                 <td>'.$kh.'</td>
                                 <td>'.$countsp.'</td>
-                                <td>'.$bill['total'].'</td>
+                                <td>'.$bill['total'].',000</td>
                                 <td>'.$ttdh.'</td>
                                 <td>'.$bill['ngaydathang'].'</td>
-                                <td>Thao tác</td>
                                 <td>
-                                         <a href="'.$xoabill.'"><input class="btn-act" type="button" value="xoá"></a>
+                                <a href="'.$suabill.'"><input class="btn-act" type="button" value="Sửa"></a>
+                                <a href="'.$xoabill.'"><input class="btn-act" type="button" value="xoá"></a>
                                 </td>
                                 
                             </tr>';

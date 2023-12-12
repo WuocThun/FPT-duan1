@@ -260,11 +260,12 @@ function loadall_cart_cout($idbill)
     $bill = pdo_query($sql);
     return sizeof($bill);
 }
-function loadall_bill($iduser)
+function loadall_bill($kyw="",$iduser=0)
 {
     //nối chuỗi
     $sql = "select * from bill where 1";
     if($iduser>0)  $sql.= " AND iduser=" .$iduser;
+    if($kyw!="")  $sql.= " AND id like '%".$kyw."%'";
     $sql.= " order by id desc";
     $billist = pdo_query($sql);
     return $billist;
@@ -285,4 +286,14 @@ function get_ttdh($n) {
             break;
     }
     return $tt;
+}
+function delete_bill($id) {
+    $sql = "delete from bill where id=" . $_GET['id'];
+    pdo_execute($sql);
+}
+
+function update_bill($id, $bill_status)
+{
+    $sql = "update bill set  bill_status='".$bill_status."' where id=" . $id;
+    pdo_execute($sql);
 }
