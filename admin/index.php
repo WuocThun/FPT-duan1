@@ -224,6 +224,7 @@ if (isset($_GET['act'])) {
                     }
                     $listbill = loadall_bill($kyw="",0);
                     include 'bill/list.php';
+                    break;
                     case "suabill":
                         if (isset($_GET['id']) && ($_GET['id'] > 0)) {
                             $billone = loadOne_bill($_GET['id']);
@@ -240,7 +241,17 @@ if (isset($_GET['act'])) {
                             $listbill = loadall_bill($kyw="",0);
                             include "bill/list.php";
                             break;
-            //end thống kê
+            //end bill
+                //thống kê
+                case "thongkebill";
+                $listthongke = loadall_thongkebill();
+                include "thongke/listthongke.php";
+                break;
+                case "piechar";
+                $listthongke = loadall_thongkebill();
+                include 'thongke/piechart.php';
+                break;
+                //end thống kê
         default:
             include "home.php";
             break;

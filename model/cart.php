@@ -271,6 +271,7 @@ function loadall_bill($kyw="",$iduser=0)
     return $billist;
 }
 function get_ttdh($n) {
+    $tt= "";
     switch($n){
         case "0":
             $tt = "Đơn hàng mới";
@@ -284,8 +285,8 @@ function get_ttdh($n) {
         case "3":
             $tt = "Đã giao hàng";
             break;
-    }
-    return $tt;
+        }
+        return $tt;
 }
 function delete_bill($id) {
     $sql = "delete from bill where id=" . $_GET['id'];
@@ -296,4 +297,19 @@ function update_bill($id, $bill_status)
 {
     $sql = "update bill set  bill_status='".$bill_status."' where id=" . $id;
     pdo_execute($sql);
+}
+function loadall_thongkebill(){
+    $sql = "select danhmuc.id as madm,
+         danhmuc.namedm as tendm,
+         count(sanpham.id) as countsp,
+         min(sanpham.newpricesp) as minpricesp,
+         max(sanpham.newpricesp) as maxpricesp,
+         avg (sanpham.newpricesp) as avgprice";
+    $sql.=" from sanpham left join danhmuc on danhmuc.id=sanpham.iddm";
+    $sql.= " group by danhmuc.id order by danhmuc.id desc";
+    $listtk = pdo_query($sql);
+    return $listtk;
+}
+function total_price() {
+    
 }

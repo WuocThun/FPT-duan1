@@ -24,5 +24,6 @@
                 <li><a href="index.php?act=dskh">Khách hàng</a></li>
                 <li><a href="index.php?act=dsbl">Bình luận</a></li>
                 <li><a href="index.php?act=listbill">Bill</a></li>
+                <li><a href="index.php?act=thongkebill">Thống kê</a></li>
             </ul>
         </div>
