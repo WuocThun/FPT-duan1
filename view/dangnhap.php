@@ -238,20 +238,23 @@
         <form onsubmit="return dangky()" method="post">
             <h1>ĐĂNG KÝ</h1>
 
-            <input type="text" name="user" id="name" placeholder="Username"><br><br>
+            <input type="text" name="user" id="name" placeholder="Tên đăng nhập"><br><br>
+            <div id="nameError" class="error"></div>
+
+            <input type="text" name="nameuser" id="name" placeholder="Họ và tên"><br><br>
             <div id="nameError" class="error"></div>
 
             
-            <input type="password" name="pass" id="pass" placeholder="Password"><br><br>
+            <input type="password" name="pass" id="pass" placeholder="Mật khẩu"><br><br>
             <div id="passwordError" class="error"></div>
 
             <input type="text" name="email" id="email" placeholder="Email"><br><br>
             <div id="emailError" class="error"></div>
 
-            <input type="text" name="addr" id="addrr" placeholder="Address"><br><br>
+            <input type="text" name="addr" id="addrr" placeholder="Địa chỉ"><br><br>
             <div id="addressError" class="error"></div>
 
-            <input type="number" name="tel" id="phone" placeholder="Phone"><br><br>
+            <input type="number" name="tel" id="phone" placeholder="Số điện thoại"><br><br>
             <div id="phoneError" class="error"></div>
 
 
