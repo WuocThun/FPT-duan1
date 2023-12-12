@@ -7,13 +7,13 @@
 .tongtt {
     background-color: rgba(11, 11, 11, 0.3);
     /* Màu nền cho thẻ nav */
-    transform: translate(60%, -116%);
+    transform: translate(50%, -122%);
     /* Để căn giữa thẻ nav chính xác */
     color: white;
     width: 37%;
-    margin-left: 30%;
+    margin-left: 35%;
     text-align: center;
-    padding: 2%;
+    padding: 1%;
     border-radius: 100px;
     box-shadow: 0px 0px 5px black;
     margin-bottom: -40%;
@@ -48,7 +48,7 @@
 }
 
 .tongtt input[type="text"] {
-    width: 95%;
+    width: 90%;
 }
 
 .tongtt input[type="submit"] {
@@ -68,10 +68,23 @@
 
 
 }
+.tongtt h5{
+    margin-top: 1%;
+}
 .tongtt_2{
     display: flex;
     justify-content: center;
     color: white;
+}
+.tongtt_2 table,tr,td{
+    border: 1px solid white;
+    border-collapse: collapse;
+}
+.tongtt_2 span{
+    margin-top: 1.5%;
+    padding: 20px;
+    font-size: 20px;
+    color: brown;
 }
 .tongtt_2 tr td{
     width: 150px;
@@ -125,14 +138,14 @@ if(isset($_SESSION['userdn'])){
             <div id="telError" class="error"></div>
             <br><input type="text" name="addr" value="<?=$addr?>" id="addtt"> <br>
             <div id="addError" class="error"></div><br>
-            <table>
-                <td>
-                    <td><input type="radio" name="pttt" id="" value="1" checked>Thanh toán sau khi nhận hàng</td>
-                    <td><input type="radio" name="pttt" id="" value="2" >Thanh toán chuyển khoản </td>
-                </td>
-            </table>
+            
+                
+                    <input type="radio" name="pttt" id="" value="1" checked>Thanh toán sau khi nhận hàng
+                    <input type="radio" name="pttt" id="" value="2" >Thanh toán chuyển khoản 
+            
+        
             <input name="dongydathang" type="submit" value="Thanh Toán">
-            <h4>Bạn cần nhập thêm thông tin để hoàn thiện </h4>
+            <h5>Bạn cần nhập thêm thông tin để hoàn thiện </h5>
                 <input type="hidden" name="id" value="$id">
         </form>
     </div>

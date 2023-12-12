@@ -133,7 +133,7 @@ function bill_chitiet($listbill){
 }
 
 echo'
-<span>Tổng tiền:'.$tong.',000</span> 
+<span>Tổng tiền: '.$tong.',000</span> 
 ';
 }
 function view_cart1() {
@@ -143,12 +143,12 @@ function view_cart1() {
 
         echo '      
         <tr>
-        <td>Ảnh món ăn</td>
-        <td>Tên món ăn </td>
-        <td>Giá</td> 
-        <td>Số lượng</td>
-        <td>Thành tiền</td>
-        <td></td>
+        <th>Ảnh món ăn</th>
+        <th>Tên món ăn </th>
+        <th>Giá</th> 
+        <th>Số lượng</th>
+        <th>Thành tiền</th>
+        <th>Chức năng</th>
     </tr>
 
 

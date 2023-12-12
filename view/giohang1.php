@@ -16,7 +16,10 @@
 
 .tonggh tr {
     width: 10%;
-    border: 1px solid #ddd;
+}
+.tonggh table,tr,th,td{
+    border-collapse: collapse;
+
 }
 
 .tonggh table {
@@ -35,7 +38,7 @@
     width: 10%;
 }
 
-.tonggh table tr td:nth-child(2) {
+.tonggh table tr td:nth-child(2),.tonggh table tr th:nth-child(2) {
     width: 30%;
     text-align: left;
     padding: 3%;
@@ -43,7 +46,7 @@
     /* Đặt kích thước cho td thứ hai */
 }
 
-.tonggh table tr td:nth-child(3) {
+.tonggh table tr td:nth-child(3),.tonggh table tr th:nth-child(3) {
     width: 5%;
     /* Đặt kích thước cho td thứ ba (nhỏ hơn td thứ hai) */
 }
@@ -69,15 +72,21 @@
 
 
 }
-
-.tonggh button {
+.tonggh button{
     width: 10%;
     padding: 1%;
     background-color: brown;
     color: white;
 }
 
-.tonggh button:hover {
+.tonggh input{
+    width: 50%;
+    padding: 4%;
+    background-color: brown;
+    color: white;
+}
+
+.tonggh input:hover {
     opacity: 0.7;
     /* Giảm độ mờ khi hover */
 
