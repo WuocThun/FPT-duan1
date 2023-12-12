@@ -5,7 +5,6 @@ include("../model/danhmuc.php");
 include("../model/sanpham.php");
 include("../model/binhluan.php");
 include ("../model/taikhoan.php");
-include ("../model/cart.php");
 //MVC
 if (isset($_GET['act'])) {
     $act = $_GET['act'];
@@ -208,11 +207,10 @@ if (isset($_GET['act'])) {
                     include 'binhluan/list.php';
                     break;
             // end BÌNH LUẬN
-            //Thống kê bill
-            case 'listbill':
-                $listbill = loadall_bill(0);
-                include "bill/list.php";
-                break;
+            //Thống kê
+
+
+            
             //end thống kê
         default:
             include "home.php";

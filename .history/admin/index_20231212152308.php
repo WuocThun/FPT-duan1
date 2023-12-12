@@ -210,7 +210,7 @@ if (isset($_GET['act'])) {
             // end BÌNH LUẬN
             //Thống kê bill
             case 'listbill':
-                $listbill = loadall_bill(0);
+                $listbill = 
                 include "bill/list.php";
                 break;
             //end thống kê

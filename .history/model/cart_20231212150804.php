@@ -264,8 +264,7 @@ function loadall_bill($iduser)
 {
     //nối chuỗi
     $sql = "select * from bill where 1";
-    if($iduser>0)  $sql .= " and iduser=" .$iduser;
-    $sql .= " order by id desc=";
+        $sql .= " iduser=" .$iduser;
     $billist = pdo_query($sql);
     return $billist;
 }
