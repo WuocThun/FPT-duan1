@@ -44,14 +44,14 @@ body {
   color: rgb(232, 231, 231);
   margin-bottom: -12%;
 }
-.chu h1 {
-  animation: chuyendong 2s infinite alternate;//trong 2s ,sẽ lặp vô hạn, thay đổi mỗi lần lặp.
-  font-size: 75px;
+.chu h2 {
+  animation: chuyendong 2s infinite alternate;
+  font-size:75px;
   margin-bottom: -10px;
   text-shadow: 2px 2px 2px #000;
 }
-//phóng to chúng từ kích thước ban đầu và điều chỉnh độ mờ. 
-//Hiệu ứng chạy trong vòng 2 giây và lặp lại vô hạn với hướng thay đổi sau mỗi lần lặp.
+/* phóng to chúng từ kích thước ban đầu và điều chỉnh độ mờ. 
+Hiệu ứng chạy trong vòng 2 giây và lặp lại vô hạn với hướng thay đổi sau mỗi lần lặp.*/
 
 @keyframes chuyendong {
   0% {

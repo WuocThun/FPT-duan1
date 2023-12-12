@@ -3,7 +3,7 @@
 </div>
 
 <div class="chu">
-    <h1>SUSHI KOKORO</h1> <br>
+    <h2>SUSHI KOKORO</h2> <br>
     <p>Món ăn tinh hoa ẩm thực nhật bản</p>
 </div>
 <div class=" m-0 p-0 tong1">

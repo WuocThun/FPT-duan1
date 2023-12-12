@@ -17,7 +17,7 @@ font-size: 40px;     }
         .tonggh
          tr {
             width: 10%;
-            border: 1px solid #ddd;
+            border: 1px solid black;
         }
 
         .tonggh
@@ -27,6 +27,16 @@ font-size: 40px;     }
             margin-right: 10%;
 
         }
+        .tonggh table,tr,th,td{
+    border-collapse: collapse;
+
+}
+.tonggh table tr th{
+    background-color: white;
+    color: brown;
+    padding: 25px;
+}
+   
 
         .tonggh
          table tr td img {
@@ -40,8 +50,6 @@ font-size: 40px;     }
 
         .tonggh
          table tr td:nth-child(2) {
-            width: 30%;
-            text-align: left;
             padding: 3%;
 
             /* Đặt kích thước cho td thứ hai */
@@ -69,9 +77,7 @@ font-size: 40px;     }
         }
         .tonggh table tr:hover{
             color: black;
-            background-color: antiquewhite;
-            opacity: 0.7; /* Giảm độ mờ khi hover */
-
+            background-color: white;
 
         }
 
@@ -101,11 +107,11 @@ font-size: 40px;     }
             <div class="tonggh">
                 <table>
                 <tr>
-                    <td>Mã đơn hàng</td>
-                    <td>Ngày đặt</td>
-                    <td>Số lượng mặt hàng</td>
-                    <td>Tổng giá trị</td>
-                    <td>Tình trạng đơn hàng</td>
+                    <th>Mã đơn hàng</th>
+                    <th>Ngày đặt</th>
+                    <th>Số lượng mặt hàng</th>
+                    <th>Tổng giá trị</th>
+                    <th>Tình trạng đơn hàng</th>
                 </tr>
                    <?php
                    if(is_array($listbill)){

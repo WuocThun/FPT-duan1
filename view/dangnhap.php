@@ -55,6 +55,8 @@
         background-color: brown;
         border-radius: 50px;
         color: white;
+        margin-top: -2%;
+
     }
 
     .container_ input[type="submit"]:hover {
@@ -269,7 +271,6 @@
             <div id="namednError" class="error"></div>
             <input type="password" placeholder="Password" name="passdn" id="passdn"><br><br>
             <div id="passError" class="error"></div>
-            <a href="index.php?act=quenmk">Quên Mật khẩu</a> <br>
             <input type="submit" name="dangnhap" value="Đăng Nhập">
             <?php
             if (isset($thongbao) && ($thongbao != "")) {
@@ -291,8 +292,8 @@
                     </div>
                     <div style="background-image: url(img/mau.jpg) ; background-size: cover;" class="toggle-panel toggle-right">
                         <h1>Hello!!</h1> <br>
-                        <a href="#">Quên mật khẩu?</a>
-                        <p>Bạn chưa có tài khoản? <a href="index.php?act=dangky">Đăng ký ngay.</a></p>
+                        <a href="index.php?act=quenmk">Quên mật khẩu?</a>
+                        <p>Bạn chưa có tài khoản? <a href="#">Đăng ký ngay.</a></p>
                         <button class="hidden" id="register">Đăng ký</button>
                     </div>
                 </div>

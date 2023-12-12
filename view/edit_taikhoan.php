@@ -217,9 +217,16 @@
         padding: 3%;
 
     }
+    ._form label{
+        width: 100%;
+        padding-right: 20px;
+        text-align: left;
+        margin-right: 5%;
+
+    }
 
     .fr img {
-        width: 900px;
+        width: 800px;
         margin-top: 5%;
         height: 550px;
     }
@@ -227,8 +234,8 @@
     #_form input[type="text"],
     input[type="password"],
     input[type="number"] {
-        width: 480px;
-        padding: 3%;
+        width: 70%;
+        padding: 10px;
         margin-bottom: 5%;
         border-top: none;
         border-left: none;
@@ -242,38 +249,35 @@
         color: #f0f0f0;
         font-weight: bold;
 
-
     }
 
     #_form h1 {
-        margin-top: -4%;
-        font-size: 45px;
+        margin-top: -5%;
+        margin-bottom: 50px;
+        font-size: 35px;
         color: rgb(255, 254, 254);
         text-shadow: 2px 2px 2px #c92727;
+        text-align: center;
     }
 
     #_form {
-        text-align: center;
         margin-left: -5%;
+        text-align: right;
     }
 
     #_form input[type="submit"],
     input[type="reset"] {
-        width: 30%;
-        border-radius: 50px;
-
-        margin-left: 3%;
+        width: 150px;
         padding: 2.5%;
         background-color: brown;
         color: white;
-        margin-top: 5%;
         margin-bottom: 5%;
         font-size: 15px;
         box-shadow: 0px 0px 3px brown;
         opacity: 1;
         /* Giảm độ mờ khi hover */
         transition: opacity 0.3s ease;
-
+        margin-right: 25%;
     }
 
     #_form input[type="submit"]:hover,
@@ -323,22 +327,22 @@
         <?php
         extract ($_SESSION['userdn']);
         ?>
-        <h1>Chỉnh sửa tài khoản, <?=$user?></h1>
+        <h1>CHỈNH SỬA TÀI KHOẢN, <?=$user?></h1>
 <?php
 if (isset($_SESSION['userdn'])&& (is_array($_SESSION['userdn']))) {
     extract($_SESSION['userdn']);
 }
 ?>
         <form action="index.php?act=edit_taikhoan" method="post">
-                        <p>Tài khoản</p>
+                        <label>Tài khoản</label>
                         <input type="text" id="name" name="user" value="<?=$user?>" ><br><br>
-                        <p>Mật khẩu</p>
+                        <label>Mật khẩu</label>
                         <input type="text" id="pass" name="pass" value="<?=$pass?>"><br><br>
-                        <p>Email</p>
+                        <label>Email</label>
                         <input type="text" id="email" name="email" value="<?=$email?>"><br><br>
-                        <p>Số điện thoại</p>
+                        <label>Số điện thoại</label>
                         <input type="number" id="tel" name="tel" value="<?=$tel?>"><br><br>
-                        <p>Địa chỉ</p>
+                        <label>Địa chỉ</label>
                         <input type="hidden" name="id" value="<?=$id?>">
                         <input type="text" id="addr" name="addr" value="<?=$addr?>"><br><br>                   
                     <input type="submit" name="capnhat" value="Cập nhật">
