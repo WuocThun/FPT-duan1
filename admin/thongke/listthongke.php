@@ -16,7 +16,6 @@
             <?php
             foreach ($listthongke as $thongke) {
                 extract($thongke);
-             
                 echo ' <tr>
                         <td>'.$madm.'</td>
                         <td>'.$tendm.'</td>
@@ -31,7 +30,18 @@
 
         </table>
     </div>
-    <button>  <a href="index.php?act=piechar">Biểu đồ tròn </a></button>
+    <div>
+    <?php
+     include "piechart.php";
+    ?>
+    </div>
+    <div>
+        <?php
+        // include "linechart.php";
+
+        ?>
+    </div>
+    <!-- <button>  <a href="index.php?act=piechar">Biểu đồ tròn </a></button> -->
     <div class="row formcontent">
     </div>
 </div>

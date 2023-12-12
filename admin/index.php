@@ -244,11 +244,13 @@ if (isset($_GET['act'])) {
             //end bill
                 //thống kê
                 case "thongkebill";
+                // $total_price1 =  total_price();
                 $listthongke = loadall_thongkebill();
                 include "thongke/listthongke.php";
                 break;
-                case "piechar";
+                case "char";
                 $listthongke = loadall_thongkebill();
+                // include 'thongke/linechart.php';
                 include 'thongke/piechart.php';
                 break;
                 //end thống kê

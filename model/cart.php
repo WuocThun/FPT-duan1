@@ -311,5 +311,7 @@ function loadall_thongkebill(){
     return $listtk;
 }
 function total_price() {
-    
+    $sql = "select sum(total) as sumbill from bill";
+    $totalprice = pdo_query($sql);
 }
+// return $totalprice;
