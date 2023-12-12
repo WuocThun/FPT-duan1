@@ -1,7 +1,7 @@
 <div class="row">
 
     <div class="row frmtitle">
-        <H1>Danh Sách Loại danh mục</H1>
+        <H1>Thống kê danh mục</H1>
     </div>
     <div class="row mb10 frmdsloai">
         <table>
@@ -23,16 +23,35 @@
                         <td>'.$minpricesp.',000</td>
                         <td>'.$maxpricesp.',000</td>
                         <td>'.$avgprice.'</td>
-                </tr>';
+                        </tr>
+
+                ';
             }
+            
             ?>
-
-
+        </table>
+        <div class="row frmtitle">
+        <H1>Doanh thu - Tổng đơn hàng</H1>
+        </div>
+            <table> 
+            <tr>
+                <th>Tổng doanh thu</th>
+                <th>Tổng đơn đã đặt</th>
+            </tr>
+            <tr>
+                <?php
+                echo '
+                <td>'.$total_price.',000 VNĐ</td>
+                <td>'.$tongdon.' Đơn</td>
+                ';
+                ?>
+            </tr>
+                
         </table>
     </div>
     <div>
     <?php
-     include "piechart.php";
+         include "piechart.php";
     ?>
     </div>
     <div>

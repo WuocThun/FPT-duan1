@@ -311,7 +311,40 @@ function loadall_thongkebill(){
     return $listtk;
 }
 function total_price() {
-    $sql = "select sum(total) as sumbill from bill";
-    $totalprice = pdo_query($sql);
+    $pdo = new PDO("mysql:host=127.0.0.1:3309;dbname=duan1", "root", "");
+
+    // Chuẩn bị truy vấn SQL
+    $sql = 'SELECT SUM(total) AS total_sumBill FROM bill';
+    $stmt = $pdo->prepare($sql);
+
+    // Thực hiện truy vấn
+    $stmt->execute();
+
+    // Lấy kết quả
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // Đóng kết nối đến cơ sở dữ liệu
+    $pdo = null;
+
+    return $result['total_sumBill'];
 }
-// return $totalprice;
+function tongdon () {
+    // Kết nối đến cơ sở dữ liệu
+    $pdo = new PDO("mysql:host=127.0.0.1:3309;dbname=duan1", "root", "");
+
+    // Chuẩn bị truy vấn SQL
+
+    $sql = "SELECT COUNT(*) AS total_amount FROM bill";
+    $stmt = $pdo->prepare($sql);
+
+    // Thực hiện truy vấn
+    $stmt->execute();
+
+    // Lấy kết quả
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // Đóng kết nối đến cơ sở dữ liệu
+    $pdo = null;
+
+    return $result['total_amount'];
+}

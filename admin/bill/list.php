@@ -9,15 +9,15 @@
         </form>
         <table>
             <tr>
-                <td>Mã đơn hàng</td>
-                <td>Tên Khách hàng</td>
-                <td>Địa chỉ</td>
-                <td>Số điện thoại</td>
-                <td>Số lượng</td>
-                <td>Giá trị</td>
-                <td>Tình trạng đơn hàng</td>
-                <td>Ngày đặt hàng</td>
-                <td>Thao tác</td>
+                <th>Mã đơn hàng</th>
+                <th>Tên Khách hàng</th>
+                <th>Địa chỉ</th>
+                <th>Số điện thoại</th>
+                <th>Số lượng</th>
+                <th>Giá trị</th>
+                <th>Tình trạng đơn hàng</th>
+                <th>Ngày đặt hàng</th>
+                <th>Thao tác</th>
             </tr>
              <?php
                     foreach ($listbill as $bill) {

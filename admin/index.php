@@ -244,7 +244,8 @@ if (isset($_GET['act'])) {
             //end bill
                 //thống kê
                 case "thongkebill";
-                // $total_price1 =  total_price();
+                $total_price = total_price();
+                $tongdon = tongdon ();
                 $listthongke = loadall_thongkebill();
                 include "thongke/listthongke.php";
                 break;
