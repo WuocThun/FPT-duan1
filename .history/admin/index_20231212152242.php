@@ -210,51 +210,10 @@ if (isset($_GET['act'])) {
             // end BÌNH LUẬN
             //Thống kê bill
             case 'listbill':
-                if(isset($_POST['kyw'])&& ($_POST['kyw']!="")){
-                $kyw = $_POST['kyw'];
-                }else{
-                $kyw = "";
-                }
-                $listbill = loadall_bill($kyw,0);
+
                 include "bill/list.php";
                 break;
-                case "xoabill":
-                    if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                        delete_bill($_GET['id']);
-                    }
-                    $listbill = loadall_bill($kyw="",0);
-                    include 'bill/list.php';
-                    break;
-                    case "suabill":
-                        if (isset($_GET['id']) && ($_GET['id'] > 0)) {
-                            $billone = loadOne_bill($_GET['id']);
-                        }
-                        $listbill = loadall_bill($kyw="",0);
-                        include "bill/update.php";
-                        break;
-                        case "updatebill":
-                    if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
-                    $id = $_POST['id'];
-                    $bill_status = $_POST['bill_status'];
-                        update_bill($id,$bill_status);
-                }
-                            $listbill = loadall_bill($kyw="",0);
-                            include "bill/list.php";
-                            break;
-            //end bill
-                //thống kê
-                case "thongkebill";
-                $total_price = total_price();
-                $tongdon = tongdon ();
-                $listthongke = loadall_thongkebill();
-                include "thongke/listthongke.php";
-                break;
-                case "char";
-                $listthongke = loadall_thongkebill();
-                // include 'thongke/linechart.php';
-                include 'thongke/piechart.php';
-                break;
-                //end thống kê
+            //end thống kê
         default:
             include "home.php";
             break;

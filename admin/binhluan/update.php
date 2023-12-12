@@ -47,6 +47,7 @@
                 <input type="text" name="comment" value="<?=$comment?>">
             </div>
             <input type="hidden" name="iduser" value="<?=$iduser ?>">
+            <input type="text" name="daycomment" value="<?=$daycomment ?>">
             <input type="hidden" name="idpro" value="<?=$idpro ?>">
             <input type="hidden" name="id" value="<?php if(isset($id)&& ($id >0)) echo $id ?>">
             <input type="submit" class="btn_dm" name="capnhat" value="Cập nhật">

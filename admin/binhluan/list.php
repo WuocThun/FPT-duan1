@@ -26,12 +26,7 @@ extract($ses);
             extract($binhluan);
             $suabl = "index.php?act=suabl&id=".$id;
             $xoabl = "index.php?act=xoabl&id=".$id;
-            // $imgpath= "../upload/".$imgdm;
-            // if(is_file($imgpath)){
-            //     $hinh = "<img src='".$imgpath."' height='80'>";
-            // }else{
-            //     $hinh = "No photo";
-            // }
+         
             echo ' <tr>
                     <td><input type="checkbox" name="" id=""></td>
                     <td>' . $id . '</td>

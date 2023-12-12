@@ -302,7 +302,7 @@
            
         </div>
     </div>
-    <script src="/FPT-duan1/view/style/scrip.js">   </script>
+    <script src="/FPT-duan1/view/style/scrip.js"></script>
     <!-- <script src="../view/tyle/scrip.js"></script> -->
 </body>
 

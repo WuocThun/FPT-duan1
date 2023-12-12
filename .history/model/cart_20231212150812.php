@@ -133,7 +133,7 @@ function bill_chitiet($listbill){
 }
 
 echo'
-<span>Tổng tiền: '.$tong.',000</span> 
+<span>Tổng tiền:'.$tong.',000</span> 
 ';
 }
 function view_cart1() {
@@ -143,12 +143,12 @@ function view_cart1() {
 
         echo '      
         <tr>
-        <th>Ảnh món ăn</th>
-        <th>Tên món ăn </th>
-        <th>Giá</th> 
-        <th>Số lượng</th>
-        <th>Thành tiền</th>
-        <th>Chức năng</th>
+        <td>Ảnh món ăn</td>
+        <td>Tên món ăn </td>
+        <td>Giá</td> 
+        <td>Số lượng</td>
+        <td>Thành tiền</td>
+        <td></td>
     </tr>
 
 
@@ -260,18 +260,15 @@ function loadall_cart_cout($idbill)
     $bill = pdo_query($sql);
     return sizeof($bill);
 }
-function loadall_bill($kyw="",$iduser=0)
+function loadall_bill($iduser)
 {
     //nối chuỗi
     $sql = "select * from bill where 1";
-    if($iduser>0)  $sql.= " AND iduser=" .$iduser;
-    if($kyw!="")  $sql.= " AND id like '%".$kyw."%'";
-    $sql.= " order by id desc";
+        $sql .= " and iduser=" .$iduser;
     $billist = pdo_query($sql);
     return $billist;
 }
 function get_ttdh($n) {
-    $tt= "";
     switch($n){
         case "0":
             $tt = "Đơn hàng mới";
@@ -285,66 +282,6 @@ function get_ttdh($n) {
         case "3":
             $tt = "Đã giao hàng";
             break;
-        }
-        return $tt;
-}
-function delete_bill($id) {
-    $sql = "delete from bill where id=" . $_GET['id'];
-    pdo_execute($sql);
-}
-
-function update_bill($id, $bill_status)
-{
-    $sql = "update bill set  bill_status='".$bill_status."' where id=" . $id;
-    pdo_execute($sql);
-}
-function loadall_thongkebill(){
-    $sql = "select danhmuc.id as madm,
-         danhmuc.namedm as tendm,
-         count(sanpham.id) as countsp,
-         min(sanpham.newpricesp) as minpricesp,
-         max(sanpham.newpricesp) as maxpricesp,
-         avg (sanpham.newpricesp) as avgprice";
-    $sql.=" from sanpham left join danhmuc on danhmuc.id=sanpham.iddm";
-    $sql.= " group by danhmuc.id order by danhmuc.id desc";
-    $listtk = pdo_query($sql);
-    return $listtk;
-}
-function total_price() {
-    $pdo = new PDO("mysql:host=127.0.0.1:3309;dbname=duan1", "root", "");
-
-    // Chuẩn bị truy vấn SQL
-    $sql = 'SELECT SUM(total) AS total_sumBill FROM bill';
-    $stmt = $pdo->prepare($sql);
-
-    // Thực hiện truy vấn
-    $stmt->execute();
-
-    // Lấy kết quả
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-
-    // Đóng kết nối đến cơ sở dữ liệu
-    $pdo = null;
-
-    return $result['total_sumBill'];
-}
-function tongdon () {
-    // Kết nối đến cơ sở dữ liệu
-    $pdo = new PDO("mysql:host=127.0.0.1:3309;dbname=duan1", "root", "");
-
-    // Chuẩn bị truy vấn SQL
-
-    $sql = "SELECT COUNT(*) AS total_amount FROM bill";
-    $stmt = $pdo->prepare($sql);
-
-    // Thực hiện truy vấn
-    $stmt->execute();
-
-    // Lấy kết quả
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-
-    // Đóng kết nối đến cơ sở dữ liệu
-    $pdo = null;
-
-    return $result['total_amount'];
+    }
+    return $tt;
 }
