@@ -19,13 +19,14 @@
                 <td></td>
               
             </tr>
-            <!-- <?php
+             <?php
                     foreach ($listbill as $bill) {
                         extract($bill);
+                        $xoabill ="index.php?act=xoabill&id=".$id ;
                         $kh = '
-                        <td>'.$bill['bill_name'].'</td>
-                        <td>'.$bill['bill_addr'].'</td>
-                        <td>'.$bil;['bill_tel'].'</td>
+                        <td>'.$bill["bill_name"].'</td>
+                        <td>'.$bill["bill_addr"].'</td>
+                        <td>'.$bill["bill_tel"].'</td>
                         ';
                         $countsp = loadall_cart_cout($bill['id']);
                         $ttdh = get_ttdh($bill['bill_status']);
@@ -39,13 +40,12 @@
                                 <td>'.$bill['ngaydathang'].'</td>
                                 <td>Thao tác</td>
                                 <td>
-                                    <a href="'.$suakh.'"> <input class="btn-act" type="button" value="Sửa"></a> 
-                                    <a href="'.$xoakh.'"><input class="btn-act" type="button" value="xoá"></a>
+                                         <a href="'.$xoabill.'"><input class="btn-act" type="button" value="xoá"></a>
                                 </td>
                                 
                             </tr>';
                     }                
-                ?> -->
+                ?> 
 
 
         </table>
