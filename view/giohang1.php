@@ -67,10 +67,13 @@
 .tonggh table tr:hover {
     color: black;
     background-color: antiquewhite;
-    opacity: 0.7;
-    /* Giảm độ mờ khi hover */
+   
 
 
+}
+.tonggh table tr:nth-child(1):hover {
+    color: white;
+    background-color: black;
 }
 .tonggh button{
     width: 10%;
