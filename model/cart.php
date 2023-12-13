@@ -311,7 +311,8 @@ function loadall_thongkebill(){
     return $listtk;
 }
 function total_price() {
-    $pdo = new PDO("mysql:host=127.0.0.1:3309;dbname=duan1", "root", "");
+    // $pdo = new PDO("mysql:host=127.0.0.1:3309;dbname=duan1", "root", "");
+    $pdo = new PDO("mysql:host=localhost;dbname=duan1", "root", "");
 
     // Chuẩn bị truy vấn SQL
     $sql = 'SELECT SUM(total) AS total_sumBill FROM bill';
@@ -330,7 +331,8 @@ function total_price() {
 }
 function tongdon () {
     // Kết nối đến cơ sở dữ liệu
-    $pdo = new PDO("mysql:host=127.0.0.1:3309;dbname=duan1", "root", "");
+    // $pdo = new PDO("mysql:host=127.0.0.1:3309;dbname=duan1", "root", "");
+    $pdo = new PDO("mysql:host=localhost;dbname=duan1", "root", "");
 
     // Chuẩn bị truy vấn SQL
 
