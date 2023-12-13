@@ -10,7 +10,7 @@ include "view/header.php";
 include 'global.php';
 if(!isset($_SESSION['mycart'])) $_SESSION['mycart']=[];
 $spnew = loadAll_sanpham_home();
-$dsdm = loadAll_danhmuc();
+$dsdm = Top5_dm();
 $d1dm = loadAll_danhmuc_home();
 if ((isset($_GET["act"])) && ($_GET["act"] != "")){
     $act = $_GET["act"];
@@ -22,6 +22,7 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
             if (isset($_GET['iddm']) && ($_GET['iddm'] > 0)) {
                 $iddm = $_GET['iddm'];
                 $dssp = loadAll_sanpham("", $iddm);
+                $dsdm1 = load_ten_dm($_GET['iddm']);
                 // $tendm = load_ten_dm($iddm);
                 // $tendm =  doad_namedm($iddm);
                 include "view/sanpham1.php";

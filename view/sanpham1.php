@@ -26,9 +26,13 @@
 <div>
     <div id="tile1" class="muc">
 <h1>
-    <!-- <?php
-    echo $namedm1
-    ?> -->
+    <?php 
+    // foreach ($dsdm1 as $dm1) {
+    // extract($dm1);
+    // echo $namedm
+    // }
+    // echo $namedm1
+    ?>
 </h1>       
     </div>
     <hr>

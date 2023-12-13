@@ -325,8 +325,9 @@ function total_price() {
     $result = $stmt->fetch(PDO::FETCH_ASSOC);
 
     // Đóng kết nối đến cơ sở dữ liệu
-    $pdo = null;
+    // $pdo = null;
 
+    // return $sql;
     return $result['total_sumBill'];
 }
 function tongdon () {
