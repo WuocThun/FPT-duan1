@@ -20,7 +20,7 @@
     ?>
 </div>
 <div>
-<div id="tile1" class="muc">
+<div  id="tile1" class="muc">
         <h1>NHỮNG MÓN ĂN MỚI</h1>
     </div>
     <hr>

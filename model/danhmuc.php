@@ -10,6 +10,7 @@ function insert_danhmuc($namedm, $imgdm)
 //     extract($tendm['']);
 //     return $namedm;
 // }
+
 function delete_danhmuc($id)
 {
     $sql = "delete from danhmuc where id=" . $_GET['id'];
@@ -21,18 +22,23 @@ function loadAll_danhmuc_home()
     $listdanhmuc = pdo_query($sql);
     return $listdanhmuc;
 }
+function Top5_dm(){
+    $sql = "select * from danhmuc order by id desc limit 5";
+    $listdanhmuc = pdo_query($sql);
+    return $listdanhmuc;
+}
+
 function loadAll_danhmuc()
 {
     $sql = "select * from danhmuc order by id desc";
     $listdanhmuc = pdo_query($sql);
     return $listdanhmuc;
 }
-function load_ten_dm($iddm)
+function load_ten_dm($id)
  {
-    $sql = "select * from danhmuc where id=" .$iddm;
+    $sql = "select namedm from danhmuc where id=" .$id;
     $dm =pdo_query($sql);
-    extract($dm);
-    return $namedm;
+    return $dm;
 }
 function loadOne_danhmuc($id)
 {

@@ -119,7 +119,7 @@
         z-index: 2;
     }
 
-    .container_.active.sign-in {
+    .container_.active.sign-in { /*Đăng nhập*/
         transform: translateX(100%);
     }
 
@@ -235,7 +235,7 @@
 <div class="container_" id="container_">
     <div class="form-container_ sign-up">
 
-
+      
 
         <form onsubmit="return dangky()" method="post">
             <h1>ĐĂNG KÝ</h1>
@@ -261,6 +261,7 @@
 
 
             <input type="submit" name="dangky" value="Đăng ký">
+        
         </form>
     </div>
 
@@ -274,7 +275,7 @@
             <input type="submit" name="dangnhap" value="Đăng Nhập">
             <?php
             if (isset($thongbao) && ($thongbao != "")) {
-                echo '<h3 style="color:red;margin:20px">' . $thongbao . '</h3>';
+                echo '<h4 style="color:red;margin:10px">' . $thongbao . '</h4>';
             } ?>
         </form>
         <?php
@@ -293,7 +294,7 @@
                     <div style="background-image: url(img/mau.jpg) ; background-size: cover;" class="toggle-panel toggle-right">
                         <h1>Hello!!</h1> <br>
                         <a href="index.php?act=quenmk">Quên mật khẩu?</a>
-                        <p>Bạn chưa có tài khoản? <a href="#">Đăng ký ngay.</a></p>
+                        <p>Bạn chưa có tài khoản? <a href="index.php?act=dangky">Đăng ký ngay.</a></p>
                         <button class="hidden" id="register">Đăng ký</button>
                     </div>
                 </div>

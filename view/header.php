@@ -4,7 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>KOKORO</title>
+    <link rel="shortcut icon" href="https://scontent-den4-1.xx.fbcdn.net/v/t1.15752-9/410578609_315571031317634_4419286347064214404_n.jpg?stp=dst-jpg_p206x206&_nc_cat=111&ccb=1-7&_nc_sid=510075&_nc_ohc=A8QcAbEHTzMAX8GaE5s&_nc_ad=z-m&_nc_cid=0&_nc_ht=scontent-den4-1.xx&oh=03_AdS61KyRIR2UPXAk13rZnW6CjsF-YAvtYVxcD6CqipaHAQ&oe=65A11433">
+    <!-- <link rel="shortcut icon" type="image/png" href="../img/logo.jpg"/> -->
+
     <link rel="stylesheet" href="view/style/style1.css">
     <style>
         .paste-button {
