@@ -102,6 +102,9 @@
     display: none;
     margin-top: -20px;
 }
+.center_aler h1{
+    margin-bottom: -50px;
+}
 </style>
 
 </head>
@@ -125,7 +128,10 @@ if(isset($_SESSION['userdn'])){
 
 ?>
 
+<?php
+if($_SESSION['mycart']){
 
+?>
     <div class="tongtt">
         <h1>THÔNG TIN ĐƠN HÀNG</h1>
         <form onsubmit="return thanhtoan()" action="index.php?act=xacnhangiohang" method="post">
@@ -150,6 +156,7 @@ if(isset($_SESSION['userdn'])){
         </form>
     </div>
 </div>
+
 <div class="thanhtoan">
     <div class="tongtt_2">
             <table>
@@ -157,6 +164,16 @@ if(isset($_SESSION['userdn'])){
         view_cart_noPay();
         ?>
         </table>
+        <?php 
+}else
+{
+    echo  '    
+    <div style="text-align: center;" id="tile1" class="muc center_aler">
+        <h1>Giỏ hàng trống</h1>
+    </div>
+    ';
+}
+        ?>
     </div>
 </div>
 <script src="/FPT-duan1/view/style/scrip.js"></script>

@@ -116,9 +116,9 @@ font-size: 40px;     }
                    <?php
                    if(is_array($listbill)){
                        foreach ($listbill as $bill){
-                        $count = loadall_cart_cout($bill['id']);
-                        $ttdh = get_ttdh($bill['bill_status']);
-                    extract($bill);
+                           $count = loadall_cart_cout($bill['id']);
+                           $ttdh = get_ttdh($bill['bill_status']);
+                           extract($bill);
                         echo '
                         <tr>
                         <td>KOKORO-'.$bill['id'].'</td>
@@ -129,7 +129,7 @@ font-size: 40px;     }
                         </tr>
                         ';
                     }
-                   }
+                        }
                    ?>
                 </table>
             </div>

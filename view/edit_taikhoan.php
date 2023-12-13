@@ -336,6 +336,8 @@ if (isset($_SESSION['userdn'])&& (is_array($_SESSION['userdn']))) {
         <form action="index.php?act=edit_taikhoan" method="post">
                         <label>Tài khoản</label>
                         <input type="text" id="name" name="user" value="<?=$user?>" ><br><br>
+                        <label>Họ và tên</label>
+                        <input type="text" id="name" name="nameuser" value="<?=$nameuser?>" ><br><br>
                         <label>Mật khẩu</label>
                         <input type="text" id="pass" name="pass" value="<?=$pass?>"><br><br>
                         <label>Email</label>

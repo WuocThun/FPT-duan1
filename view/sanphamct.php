@@ -193,9 +193,8 @@ session_start();
             <div class="row-flex">
                 <a href="index.php?act=thanhtoan">
                     <button>Mua ngay</button></a> 
-                    <?php
-                    $sesi = $_SESSION['userdn'];
-                        if(isset($sesi)){
+                     <?php
+                        if(isset($_SESSION['userdn'])){
                             
                         echo '
                         <form action="index.php?act=giohang1" method="post">
@@ -211,7 +210,7 @@ session_start();
 
                         }
                         else{
-                            ?>
+                            ?> 
                     <a href="index.php?act=dangnhap"><button>
                     Cần đăng nhập 
                     </button></a>

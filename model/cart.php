@@ -140,6 +140,7 @@ function view_cart1() {
     global  $img_path;
     $tong = 0;
     $i= 0;
+    $xoaspall= '<a href="index.php?act=delcart"><input type="button" value="Xoá hết "></a>';
 
         echo '      
         <tr>
@@ -149,6 +150,8 @@ function view_cart1() {
         <th>Số lượng</th>
         <th>Thành tiền</th>
         <th>Chức năng</th>
+        <th>        '.$xoaspall.' 
+        </th>
     </tr>
 
 
@@ -161,24 +164,21 @@ function view_cart1() {
         $xoasp= '<a href="index.php?act=delcart&idcart='.$i.'"><input type="button" value="Xoá"></a>';
         echo '
         <tr>
-        <td><img src="'.$hinhsp.'" height="80px" alt=""></td>
+         <td><img src="'.$hinhsp.'" height="80px" alt=""></td>  
+      
         <td>'.$cart[1].'</td>
         <td>'.$cart[3].',000</td>
         <td>'.$cart[4].'</td>
         <td>'.$ttien.',000</td>
-        <td>'.$xoasp.'</td>
-        
-
+        <td>'.$xoasp.'
+        </td>
     </tr>
-
     ';
     $i+=1;
-  
-
 }
 echo'
 <span>Tổng tiền:'.$tong.',000</span> 
-<a href="index.php?act=thanhtoan"><button>Thanh toán</button></a>
+<a name="thanhtoan" href="index.php?act=thanhtoan"><button>Thanh toán</button></a>
 ';   
 }
 function view_cart_noPay() {

@@ -102,6 +102,13 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
             };
             include "view/dangnhap.php";
             break;
+            case "binhluan":
+            if(isset($_GET['iddm']) && ($_GET['iddm'])){
+                $iddm = $_GET['iddm'];
+                
+            }
+            include 'view/binhluan.php';
+            break;
         case "dangky":
             if (isset($_POST['dangky']) && ($_POST['dangky'] > 0)) {
                 if (
@@ -158,8 +165,10 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
             }
             include 'view/bodangky.php';
             break;
+
         case "sanphamct":
             if (isset($_GET['idsp']) && ($_GET['idsp'] > 0)) {
+                $_SESSION['userdn'];
                 $onesp = loadOne_sanpham($_GET['idsp']);
                 include "view/sanphamct.php";
             } else {
@@ -173,6 +182,7 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                 if (isset($_POST['capnhat']) && ($_POST['capnhat'])) {
                     $id = $_POST['id'];
                     $user = $_POST['user'];
+                    $nameuser = $_POST['nameuser'];
                     $pass = $_POST['pass'];
                     $email = $_POST['email'];
                     $tel = $_POST['tel'];
@@ -213,7 +223,7 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                 session_unset();
                 header('location: index.php');
         case "giohang1":
-            if (isset($_POST['addtocard']) && ($_POST['addtocard'])) {
+            if (isset($_POST['addtocard']) && ($_POST['addtocard']) ) {
                 // $onesp = loadOne_sanpham($_GET['idsp']);
                 $id= $_POST['id'];
                 $namesp= $_POST['namesp'];
@@ -221,10 +231,14 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                 $newpricesp= $_POST['newpricesp'];
                 $soluong =1;
                 $thanhtien = $soluong * $newpricesp;
-                $spadd= [$id, $namesp,$img,$newpricesp,$soluong,$thanhtien];
-                //đẩy mảng con vô mảng 3
+                $spadd= [$id, $namesp,$imgsp,$newpricesp,$soluong,$thanhtien];
                 array_push($_SESSION['mycart'],$spadd);
             };
+            // else{
+            //     $_SESSION['mycart']=[];
+
+            // };
+            
             include "view/giohang1.php";
             break;
             case "delcart":
@@ -265,7 +279,7 @@ if ((isset($_GET["act"])) && ($_GET["act"] != "")){
                 include "view/xacnhangiohang.php";
                 break;
                 case "giohangcuatoi":
-                    $listbill = loadall_bill($_SESSION['userdn']['id']);
+                    $listbill = loadall_bill("",$_SESSION['userdn']['id']);
                     include "view/giohangcuatoi.php";
                     break;
         default:

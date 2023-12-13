@@ -1,10 +1,17 @@
 <?php
-session_start(); 
+session_start();
+ob_start();
+
+// extract($_SESSION['userdn']);
+    if(isset($_SESSION['userdn'])){
 $iduser = $_SESSION['userdn']['id'];
+$_SESSION['userdn'];
 include '../model/pdo.php';
 include '../model/binhluan.php';
+
 $idpro = $_REQUEST['idpro'];
 $dsbl = doadAll_bl($idpro);
+$thongbao = "";
 ?>
 
 <!DOCTYPE html>
@@ -87,7 +94,9 @@ $dsbl = doadAll_bl($idpro);
 
 
     }
-
+    table{
+        width: 60%;
+    }
     .tableBl input[type="submit"] {
         border: none;
         background-color: brown;
@@ -189,14 +198,14 @@ $dsbl = doadAll_bl($idpro);
             <th>NGÀY</th>
         </tr>
         <?php
-        echo $iduser; 
-        echo $idpro; 
+        // echo $iduser; 
+        // echo $idpro; 
         foreach ($dsbl as $bl) {
             extract($bl);
                 echo '
                 <tr> 
                 <td>'.$comment.'</td>
-                <td>'.$iduser.'</td>
+                 <td>'.$iduser.'</td> 
                 <td>'.$daycomment.'</td>
             </tr>
             '
@@ -212,20 +221,50 @@ $dsbl = doadAll_bl($idpro);
     </table>
     <div>
     <?php
+    }
 if(isset($_SESSION['userdn'])){
     extract($_SESSION['userdn']);
     ?>
+    <div>
     <form style="text-align:center;" action="<?=$_SERVER['PHP_SELF']?>" method="post">
         <input type="hidden" name="idpro" value="<?=$idpro?>">
         <input type="text" height="5000px" name="comment" id="" cols="100%" rows="5" placeholder="Viết bình luận của bạn"></input><br><br>
         <input type="submit" value="Gửi bình luận" name="guibinhluan">
+        <?=$thongbao?>
         </div>
     </form>
+
+
     <?php
 }else{
 ?>
  <form style="text-align:center;" action="<?=$_SERVER['PHP_SELF']?>" method="post">
         <input type="hidden" name="idpro" value="<?=$idpro?>">
+        <?php
+        include '../model/pdo.php';
+        include '../model/binhluan.php';
+        $idpro = $_REQUEST['idpro'];
+        $dsbl = doadAll_bl($idpro);
+        echo '
+        <table>
+        <tr>
+        <th>BÌNH LUẬN</th>
+        <th>USER</th>
+        <th>NGÀY</th>
+     </tr>
+        ';
+         foreach ($dsbl as $bl) {
+            extract($bl);
+                echo '
+                
+                <tr> 
+                <td>'.$comment.'</td>
+                <td>Ẩn danh</td>
+                <td>'.$daycomment.'</td>
+            </tr>
+            </table>
+            ';}
+        ?>
         <!-- <input type="text" height="5000px" name="comment" id="" cols="100%" rows="5" placeholder="Viết bình luận của bạn"></input><br><br> -->
         <!-- <input type="submit" value="Gửi bình luận" name="guibinhluan"> -->
         <h1>Bạn cần đăng nhập để bình luận</h1>
@@ -236,13 +275,16 @@ if(isset($_SESSION['userdn'])){
 }
 ?>
     <?php
-if(isset($_POST['guibinhluan'])&&($_POST['guibinhluan'])){
+if(isset($_POST['guibinhluan'])&&($_POST['guibinhluan']) ){
+    $idpro = $_REQUEST['idpro'];
     $comment = $_POST['comment'];
     $idpro = $_POST['idpro'];
     $iduser = $_SESSION['userdn']['id'];
     $daycomment = date("d/m/Y");
     insert_Bl($comment, $iduser, $idpro, $daycomment);
-    header("location: ".$_SERVER['HTTP_REFERER']);
+    // header("location: index.php?act=sanphamct&idsp=".$idpro);
+     header("location: ".$_SERVER['HTTP_REFERER']); 
+     ob_end_flush();
 }
 ?>
 </body>

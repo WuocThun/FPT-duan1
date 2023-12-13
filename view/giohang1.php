@@ -102,7 +102,10 @@
     /* Giảm độ mờ khi hover */
 
 }
+table{
+    width: 80%;
 
+}
 .tonggh span,
 button {
     margin: 3%;
