@@ -150,13 +150,5 @@ if(isset($_SESSION['userdn'])){
         </form>
     </div>
 </div>
-<div class="thanhtoan">
-    <div class="tongtt_2">
-            <table>
-            <?php
-        view_cart_noPay();
-        ?>
-        </table>
-    </div>
-</div>
+
 <script src="/FPT-duan1/view/style/scrip.js"></script>

@@ -278,6 +278,7 @@
         /* Giảm độ mờ khi hover */
         transition: opacity 0.3s ease;
         margin-right: 25%;
+        border-radius: 50px;
     }
 
     #_form input[type="submit"]:hover,

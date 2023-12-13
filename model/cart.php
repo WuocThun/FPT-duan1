@@ -103,13 +103,12 @@ function bill_chitiet($listbill){
         echo '      
 
         <tr>
-        <td>Ảnh món ăn</td>
-        <td>Tên món ăn<br>
-        <td>Giá<br>
-        <td>Số lượng<br>
-        <td>Thành tiền<br>
-        </td>
-        <td></td>
+        <th>Ảnh món ăn</th>
+        <th>Tên món ăn<th>
+        <th>Giá<th>
+        <th>Số lượng<th>
+        <th>Thành tiền<th>
+
     </tr>';
 
     foreach ($listbill as $cart){
@@ -120,11 +119,11 @@ function bill_chitiet($listbill){
         
         <tr>
         <td><img src="'.$hinhsp.'" height="80px" alt=""></td>
-        <td>'.$cart['name'].'<br>
-        <td>'.$cart['price'].',000<br>
-        <td>'.$cart['soluong'].'<br>
-        <td>'.$cart['thanhtien'].',000<br>
-        </td>
+        <td>'.$cart['name'].'<td>
+        <td>'.$cart['price'].',000<td>
+        <td>'.$cart['soluong'].'<td>
+        <td>'.$cart['thanhtien'].',000<td>
+      
     </tr>
 
     ';

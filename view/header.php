@@ -121,8 +121,8 @@ if(isset($_SESSION['userdn'])){
                 <li><a href="index.php">Trang chủ</a></li>
                 <li><a href="index.php?act=sanpham">Sản phẩm</a></li>
                 <li><a href="index.php?act=gioithieu">Giới thiệu</a></li>
-                <li><a href="index.php?act=giohang">Giỏ hàng</a></li>
-                <li><a href="index.php?act=giohang1">Xin chào|<b><?=$user?></b>|</a></li>
+                <li><a href="index.php?act=giohang1">Giỏ hàng</a></li>
+                <li><a href="index.php?act=giohang">Xin chào|<b><?=$user?></b>|</a></li>
             </ul>
 
             <div class="paste-button">
@@ -131,8 +131,8 @@ if(isset($_SESSION['userdn'])){
             <a id="top" href="index.php">Trang chủ</a>
             <a id="middle" href="index.php?act=sanpham">Sản phẩm</a>
             <a id="bottom" href="index.php?act=gioithieu">Giới thiệu</a>
-            <a id="bottom" href="index.php?act=giohang">Giỏ hàng</a>
-            <a id="bottom" href="index.php?act=giohang1">Đăng nhập</a>
+            <a id="bottom" href="index.php?act=giohang1">Giỏ hàng</a>
+            <a id="bottom" href="index.php?act=giohang">Đăng nhập</a>
         </div>
         </div>
        
