@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,4 +27,5 @@
                 <li><a href="index.php?act=listbill">Bill</a></li>
                 <li><a href="index.php?act=thongkebill">Thống kê</a></li>
             </ul>
+
         </div>

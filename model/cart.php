@@ -1,3 +1,4 @@
+
 <?php
 function view_cart(){
     global  $img_path;
@@ -350,4 +351,5 @@ function tongdon () {
     $pdo = null;
 
     return $result['total_amount'];
+
 }

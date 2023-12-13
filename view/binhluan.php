@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 ob_start();
@@ -288,5 +289,6 @@ if(isset($_POST['guibinhluan'])&&($_POST['guibinhluan']) ){
 }
 ?>
 </body>
+
 
 </html>
