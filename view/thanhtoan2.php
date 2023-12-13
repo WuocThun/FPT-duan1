@@ -157,6 +157,8 @@ if($_SESSION['mycart']){
     </div>
 </div>
 
+
+
 <div class="thanhtoan">
     <div class="tongtt_2">
             <table>
@@ -176,4 +178,5 @@ if($_SESSION['mycart']){
         ?>
     </div>
 </div>
+
 <script src="/FPT-duan1/view/style/scrip.js"></script>
