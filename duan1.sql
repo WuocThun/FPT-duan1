@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th12 11, 2023 lúc 04:27 PM
+-- Thời gian đã tạo: Th12 13, 2023 lúc 12:11 PM
 -- Phiên bản máy phục vụ: 10.4.28-MariaDB
 -- Phiên bản PHP: 8.2.4
 
@@ -29,6 +29,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `bill` (
   `id` int(11) NOT NULL,
+  `iduser` int(11) NOT NULL,
   `bill_name` varchar(45) NOT NULL,
   `bill_tel` varchar(45) NOT NULL,
   `bill_addr` varchar(45) NOT NULL,
@@ -45,26 +46,27 @@ CREATE TABLE `bill` (
 -- Đang đổ dữ liệu cho bảng `bill`
 --
 
-INSERT INTO `bill` (`id`, `bill_name`, `bill_tel`, `bill_addr`, `bill_pttt`, `ngaydathang`, `total`, `bill_status`, `recive_name`, `recive_addr`, `recive_tel`) VALUES
-(1, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '02:19:14pm 11/12/2023', 260, 0, NULL, NULL, NULL),
-(2, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '02:32:14pm 11/12/2023', 260, 0, NULL, NULL, NULL),
-(3, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '02:55:38pm 11/12/2023', 420, 0, NULL, NULL, NULL),
-(4, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
-(5, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
-(6, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
-(7, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
-(8, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
-(9, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
-(10, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
-(11, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
-(12, 'toI BI DEDE', '0123123123', 'Da nang ', 1, '11/12/2023', 580, 0, NULL, NULL, NULL),
-(13, '0', '0966105411', 'Đà Nẵng', 1, '11/12/2023', 310, 0, NULL, NULL, NULL),
-(14, '0', '0966105411', 'Đà Nẵng', 1, '11/12/2023', 310, 0, NULL, NULL, NULL),
-(15, '0', '0966105411', 'Đà Nẵng', 1, '11/12/2023', 460, 0, NULL, NULL, NULL),
-(16, 'nhuly', '0966105411', 'Đà Nẵng', 1, '11/12/2023', 610, 0, NULL, NULL, NULL),
-(17, 'nhuly', '0966105411', 'Đà Nẵng', 1, '11/12/2023', 610, 0, NULL, NULL, NULL),
-(18, 'nhuly', '0966105411', 'Đà Nẵng', 1, '11/12/2023', 610, 0, NULL, NULL, NULL),
-(19, '0', '0966105411', 'Đà Nẵng', 1, '11/12/2023', 310, 0, NULL, NULL, NULL);
+INSERT INTO `bill` (`id`, `iduser`, `bill_name`, `bill_tel`, `bill_addr`, `bill_pttt`, `ngaydathang`, `total`, `bill_status`, `recive_name`, `recive_addr`, `recive_tel`) VALUES
+(1, 0, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '02:19:14pm 11/12/2023', 260, 0, NULL, NULL, NULL),
+(2, 0, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '02:32:14pm 11/12/2023', 260, 0, NULL, NULL, NULL),
+(3, 0, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '02:55:38pm 11/12/2023', 420, 0, NULL, NULL, NULL),
+(4, 0, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
+(5, 0, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
+(6, 0, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
+(7, 0, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
+(8, 0, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
+(9, 0, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
+(10, 0, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
+(11, 0, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '11/12/2023', 420, 0, NULL, NULL, NULL),
+(12, 0, 'toI BI DEDE', '0123123123', 'Da nang ', 1, '11/12/2023', 580, 0, NULL, NULL, NULL),
+(13, 0, '0', '0966105411', 'Đà Nẵng', 1, '11/12/2023', 310, 0, NULL, NULL, NULL),
+(14, 0, '0', '0966105411', 'Đà Nẵng', 1, '11/12/2023', 310, 0, NULL, NULL, NULL),
+(15, 0, '0', '0966105411', 'Đà Nẵng', 1, '11/12/2023', 460, 0, NULL, NULL, NULL),
+(16, 0, 'nhuly', '0966105411', 'Đà Nẵng', 1, '11/12/2023', 610, 0, NULL, NULL, NULL),
+(17, 0, 'nhuly', '0966105411', 'Đà Nẵng', 1, '11/12/2023', 610, 0, NULL, NULL, NULL),
+(18, 0, 'nhuly', '0966105411', 'Đà Nẵng', 1, '11/12/2023', 610, 0, NULL, NULL, NULL),
+(19, 0, '0', '0966105411', 'Đà Nẵng', 1, '11/12/2023', 310, 0, NULL, NULL, NULL),
+(20, 19, 'Hồ phạm Quốc Thuận', '0123123123', 'Da nang ', 1, '13/12/2023', 150, 0, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
@@ -168,7 +170,8 @@ INSERT INTO `cart` (`id`, `iduser`, `idpro`, `img`, `name`, `price`, `soluong`, 
 (49, 18, 69, '', 'Rượu Sake Nhật', 150, 1, 150, 18),
 (50, 18, 74, '', 'Salad hải sản', 150, 1, 150, 18),
 (51, 18, 74, '', 'Salad hải sản', 150, 1, 150, 19),
-(52, 18, 73, '', 'Sashimi cá tra', 160, 1, 160, 19);
+(52, 18, 73, '', 'Sashimi cá tra', 160, 1, 160, 19),
+(53, 19, 74, '', 'Salad hải sản', 150, 1, 150, 20);
 
 -- --------------------------------------------------------
 
@@ -339,7 +342,7 @@ ALTER TABLE `taikhoan`
 -- AUTO_INCREMENT cho bảng `bill`
 --
 ALTER TABLE `bill`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT cho bảng `binhluan`
@@ -351,7 +354,7 @@ ALTER TABLE `binhluan`
 -- AUTO_INCREMENT cho bảng `cart`
 --
 ALTER TABLE `cart`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=53;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=54;
 
 --
 -- AUTO_INCREMENT cho bảng `danhmuc`

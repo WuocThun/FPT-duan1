@@ -237,7 +237,7 @@ function insert_bill($iduser,$name, $tel,$addr,$pttt,$ngaydathang,$tongdonhang)
 }
 function insert_cart($iduser, $idpro,$img,$name,$price,$soluong,$thanhtien,$idbill)
 {
-    $sql = "INSERT INTO cart(iduser,idpro,img,name,price,soluong,thanhtien,idbill) 
+    $sql = "INSERT INTO cart(iduser,idpro,img,name,price,soluong,thanhtien,idbill)  
     VALUES ('$iduser', '$idpro','$img','$name','$price','$soluong','$thanhtien','$idbill')";
     return pdo_execute($sql);
 }
