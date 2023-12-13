@@ -150,7 +150,6 @@ function view_cart1() {
         <th>Giá</th> 
         <th>Số lượng</th>
         <th>Thành tiền</th>
-        <th>Chức năng</th>
         <th>        '.$xoaspall.' 
         </th>
     </tr>
