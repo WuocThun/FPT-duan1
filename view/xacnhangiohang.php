@@ -27,90 +27,41 @@ if(isset($bill)&&(is_array($bill))){
 </div>
 
 <div class="thongtin">
-
 <li>
     KOKORO <?=$bill['id']?>
 </li>
 <li>
-
-    - Ngày đặt hàng <?=$bill['ngaydathang']?> 
-</li>
-<li>
-    - tổng đơn hàng <?=$bill['total']?>,000
-
     Ngày đặt hàng: <?=$bill['ngaydathang']?> 
 </li>
 <li>
     Tổng đơn hàng:<?=$bill['total']?>,000
-
 </li>
 <?php
 if($bill['bill_pttt']!=1)
 {
     echo '
     <li>
-
-        - phương thức thanh toán: Thanh toán Online
-
         Phương thức thanh toán: Thanh toán Online
-
     </li>
     ';
 }else{
     echo '
 <li>
-
-    - phương thức thanh toán: Thanh toán sau khi nhận hàng
-
     Phương thức thanh toán: Thanh toán sau khi nhận hàng
-
 </li>
 ';
  
 }
 ?>
-
+<a  href="index.php?act=giohangcuatoi"><button style="color: white; background-color:bisque">KIỂM TRA ĐƠN HÀNG</button></a>
 </div>
-
-<div>
-<table>
-    <tr>
-        <td>Người đặt hàng: </td>
-        <td><?=$bill['bill_name']?>
-        </td>
-    </tr>
-    <tr>
-        <td>số điện thoại: </td>
-        <td><?=$bill['bill_tel']?>
-        </td>
-    </tr>
-    <tr>
-        <td>Địa chỉ</td>
-        <td><?=$bill['bill_addr']?>
-        </td>
-    </tr>
-  
-</table>
-</div>
-<div>
-
 </div>
 <div class="_table">
-
     <table>
     <?php 
         bill_chitiet($billct);
     ?>
     </table>
-
-</div>
-<style>
-
-    *{
-        color: white;
-    }
-
-
 
 </div>
 <style>
@@ -181,5 +132,4 @@ if($bill['bill_pttt']!=1)
         }
 
     
-
 </style>
