@@ -1,8 +1,5 @@
 
 
-
-
-
 <style>
 .giohang {
     color: white;

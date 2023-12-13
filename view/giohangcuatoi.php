@@ -1,7 +1,4 @@
 
-
-
-
 <style>
         .giohang {
             color: white;
@@ -140,5 +137,3 @@ font-size: 40px;     }
 
         </div>
 
-
-       
