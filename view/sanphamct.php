@@ -198,7 +198,7 @@ session_start();
                         if(isset($sesi)){
                             
                         echo '
-                        <form action="index.php?act=giohang" method="post">
+                        <form action="index.php?act=giohang1" method="post">
                         <input type="hidden" name="id" value="'.$id.'" >
                         <input type="hidden" name="namesp"  value="'.$namesp.'" >
                         <input type="hidden" name="imgsp"  value="'.$imgsp.'" >

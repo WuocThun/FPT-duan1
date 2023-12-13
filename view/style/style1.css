@@ -14,14 +14,13 @@ body {
   margin: 0 auto;
 }
 .menu {
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1); /* Đổ bóng ở phía dưới thanh menu */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 1); 
   z-index: 7; /* Đặt menu trên cùng */
   margin-top: -10px;
-  position: sticky;
+  position: sticky; /* thanh menu giữ nguyên ở đầu trang trong khi người dùng cuộn trang xuống.*/
   top: 0;
-  transform: translate(0%, 0%); /* Để căn giữa thẻ nav chính xác */
-  background-color: rgba(0, 0, 0, 0.615); /* Màu nền cho thẻ nav */
-  padding: 20px; /* Khoảng cách bên trong thẻ nav */
+  background-color: rgba(0, 0, 0, 0.615);
+  padding: 20px; 
 }
 
 

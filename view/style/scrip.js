@@ -3,15 +3,21 @@ const container_ = document.getElementById('container_');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
 
-console.log(registerBtn)
+// console.log(registerBtn)
 
-registerBtn.addEventListener('click', () => {
-    container_.classList.add("active");
+registerBtn.addEventListener('click', () => { //khi bắt được sự kiện click của người dùng ấn vào nút đăng ký
+    container_.classList.add("active"); // thêm class "active" vào phần tử có id là 'container_' để kích hoạt các hiệu ứng trong active
 });
 
-loginBtn.addEventListener('click', () => {
-    container_.classList.remove("active");
+loginBtn.addEventListener('click', () => {//khi bắt được sự kiện click của người dùng ấn vào nút đăng nhập 
+    container_.classList.remove("active");//loại bỏ class "active" khỏi phần tử có id là 'container_'
 });
+
+
+
+
+
+
 // chạy tự động 
 var index = 1;
 function changeImage() {
