@@ -140,8 +140,7 @@ if($bill['bill_pttt']!=1)
 
      }
      ._table a button:hover{
-        background-color: white;
-        color: brown;
+        opacity: 0.8;
 
 
      }

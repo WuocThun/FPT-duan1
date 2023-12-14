@@ -190,6 +190,10 @@ $thongbao = "";
         color: brown;
         transition: color 0.3s;
     }
+    input[type="submit"]:hover{
+                opacity: 0.8;
+
+            }
     </style>
 
     <table class="bl">

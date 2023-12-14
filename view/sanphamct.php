@@ -169,6 +169,7 @@ session_start();
             .binhl{
                 margin-left:-10%;
             }
+    
  </style>
                 </head>
                 <?php

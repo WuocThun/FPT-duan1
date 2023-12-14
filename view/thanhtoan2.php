@@ -62,8 +62,8 @@
     color: white;
 }
 
-.tongtt button:hover {
-    opacity: 0.7;
+.tongtt button:hover,.tongtt input[type="submit"]:hover {
+    opacity: 0.8;
     /* Giảm độ mờ khi hover */
 
 
@@ -161,17 +161,13 @@ if($_SESSION['mycart']){
 
 <div class="thanhtoan">
     <div class="tongtt_2">
-            <table>
-            <?php
-        view_cart_noPay();
-        ?>
-        </table>
+      
         <?php 
 }else
 {
     echo  '    
-    <div style="text-align: center;" id="tile1" class="muc center_aler">
-        <h1>Giỏ hàng trống</h1>
+    <div style="text-align: center;  " id="tile1" class="muc center_aler">
+        <h1 style=" transform: translate(0%, -1070%);">GIỎ HÀNG TRỐNG</h1>
     </div>
     ';
 }

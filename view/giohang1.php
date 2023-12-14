@@ -8,11 +8,12 @@
 }
 
 .giohang h1 {
-    margin-bottom: 3%;
+    margin-bottom: 2%;
     text-align: center;
     color: rgb(255, 254, 254);
     text-shadow: 2px 2px 2px #c92727;
-    font-size: 40px;
+    font-size: 50px;
+
 }
 
 
@@ -67,7 +68,7 @@
 }
 
 .tonggh table tr:hover {
-    color: brown;
+    color: black;
     background-color: white;
    
 

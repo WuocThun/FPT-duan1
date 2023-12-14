@@ -144,7 +144,7 @@ function view_cart1() {
     global  $img_path;
     $tong = 0;
     $i= 0;
-    $xoaspall= '<a href="index.php?act=delcart"><input type="button" value="Xoá hết "></a>';
+    $xoaspall= '<a href="index.php?act=delcart"><input type="button" value="Xoá hết"></a>';
 
         echo '      
         <tr>
@@ -180,7 +180,7 @@ function view_cart1() {
     $i+=1;
 }
 echo'
-<span>Tổng tiền:'.$tong.',000</span> 
+<span>Tổng tiền: '.$tong.',000</span> 
 <a name="thanhtoan" href="index.php?act=thanhtoan"><button>Thanh toán</button></a>
 ';   
 }
