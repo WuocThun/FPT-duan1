@@ -32,7 +32,7 @@
       }
       .container_ p{
        font-size: 14px;
-       line-height: 20px;
+       line-height: 10px;
        letter-spacing: 0.3px;
        margin: 20px 0;
        
@@ -237,7 +237,7 @@
     input[type="number"] {
         width: 70%;
         padding: 10px;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
         border-top: none;
         border-left: none;
         border-right: none;
@@ -272,7 +272,7 @@
         padding: 2.5%;
         background-color: brown;
         color: white;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
         font-size: 15px;
         box-shadow: 0px 0px 3px brown;
         opacity: 1;

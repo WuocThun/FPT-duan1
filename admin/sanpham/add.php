@@ -46,7 +46,7 @@
                     <input type="text" name="namesp">
                     </div>
                     <div class="row mb10 text_dm">
-                        Giá mới
+                        Giá mới <br>
                         <input placeholder="ex: 190.000" type="number" name="newpricesp">
                     </div>
                     <div class="row mb10 text_dm">

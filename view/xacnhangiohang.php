@@ -53,7 +53,7 @@ if($bill['bill_pttt']!=1)
  
 }
 ?>
-<a  href="index.php?act=giohangcuatoi"><button style="color: white; background-color:bisque">KIỂM TRA ĐƠN HÀNG</button></a>
+
 </div>
 </div>
 <div class="_table">
@@ -79,7 +79,7 @@ if($bill['bill_pttt']!=1)
     .thongtin{
         flex-direction: column;
         line-height: 2;
-        width: 30%;
+        width: 31%;
         display: flex;
         justify-content: center;
      
@@ -95,13 +95,13 @@ if($bill['bill_pttt']!=1)
         border-collapse: collapse;
     }
 
-    ._table table,._table span{
+    ._table table,._table span,._table a{
         display: flex;
         justify-content: center;
         text-align: center;
         color: white;
     }
-    ._table span{
+    ._table span,._table a{
         margin-bottom: 20px;
     }
     ._table tr td{
@@ -110,7 +110,7 @@ if($bill['bill_pttt']!=1)
 
 
     ._table tr td:nth-child(1){
-        width: 350px;
+        width: 400px;
         height: 100px;
     } 
     ._table tr:nth-child(1){
@@ -127,9 +127,26 @@ if($bill['bill_pttt']!=1)
         color: black;
         background-color: white;
     }
-        ._table tr th{  
-            height: 100px;
-        }
+
+
+     ._table a button{
+        background-color: brown;
+        color: white;
+        padding: 10px;
+        font-size: 15px;
+     }
+     ._table a{
+        text-decoration: none;
+
+     }
+     ._table a button:hover{
+        background-color: white;
+        color: brown;
+
+
+     }
+
+
 
     
 </style>

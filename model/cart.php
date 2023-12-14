@@ -105,12 +105,12 @@ function bill_chitiet($listbill){
 
         <tr>
         <td>Ảnh món ăn</td>
-        <td>Tên món ăn<br>
-        <td>Giá<br>
-        <td>Số lượng<br>
-        <td>Thành tiền<br>
-        </td>
+        <td>Tên món ăn</td>
+        <td>Giá</td>
+        <td>Số lượng</td>
+        <td>Thành tiền</td>
         <td></td>
+
     </tr>';
 
     foreach ($listbill as $cart){
@@ -121,11 +121,13 @@ function bill_chitiet($listbill){
         
         <tr>
         <td><img src="'.$hinhsp.'" height="80px" alt=""></td>
-        <td>'.$cart['name'].'<br>
-        <td>'.$cart['price'].',000<br>
-        <td>'.$cart['soluong'].'<br>
-        <td>'.$cart['thanhtien'].',000<br>
-        </td>
+        <td>'.$cart['name'].'</td>
+        <td>'.$cart['price'].',000</td>
+        <td>'.$cart['soluong'].'</td>
+        <td>'.$cart['thanhtien'].',000</td>
+        <td></td>
+
+
     </tr>
 
     ';
@@ -134,7 +136,8 @@ function bill_chitiet($listbill){
 }
 
 echo'
-<span>Tổng tiền: '.$tong.',000</span> 
+<span>Tổng tiền: '.$tong.',000</span>
+ <a href="index.php?act=giohangcuatoi"><button>Kiểm tra đơn hàng</button></a>
 ';
 }
 function view_cart1() {
